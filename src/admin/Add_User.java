@@ -48,7 +48,6 @@ boolean isblooked;
         jSeparator15 = new javax.swing.JSeparator();
         jTextField5 = new javax.swing.JTextField();
         jSeparator14 = new javax.swing.JSeparator();
-        jCheckBox1 = new javax.swing.JCheckBox();
         jButton13 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -105,7 +104,7 @@ boolean isblooked;
         jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("Enter ID");
+        jTextField3.setText("ID");
         jTextField3.setBorder(null);
         jTextField3.setOpaque(false);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -247,12 +246,6 @@ boolean isblooked;
         jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 210, 20));
         jPanel3.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 210, 10));
 
-        jCheckBox1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setText("Is Block");
-        jCheckBox1.setOpaque(false);
-        jPanel3.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 90, -1));
-
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
@@ -361,18 +354,17 @@ boolean isblooked;
         address=jTextField4.getText();
         phone=Integer.valueOf(jTextField5.getText());
         email=jTextField6.getText();
-        isblooked=jCheckBox1.getVerifyInputWhenFocusTarget();
         librarian.add_rEADER( id, password, first_name, last_name, phone, "r", address, email, isblooked);
         JOptionPane.showMessageDialog(new Add_User(),"You have added a new reader successfully");
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -414,7 +406,6 @@ boolean isblooked;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -438,7 +429,7 @@ boolean isblooked;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    public javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
