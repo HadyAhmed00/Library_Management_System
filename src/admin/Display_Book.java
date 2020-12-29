@@ -50,6 +50,7 @@ public class Display_Book extends javax.swing.JFrame {
         jSeparator13 = new javax.swing.JSeparator();
         jButton17 = new javax.swing.JButton();
         jTextField8 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
         jButton19 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jSeparator14 = new javax.swing.JSeparator();
@@ -189,6 +190,11 @@ public class Display_Book extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 210, -1));
+
+        jLabel15.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Waiting List");
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 170, 30));
 
         jButton19.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton19.setForeground(new java.awt.Color(255, 255, 255));
@@ -472,6 +478,7 @@ public class Display_Book extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
