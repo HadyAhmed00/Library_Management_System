@@ -141,6 +141,9 @@ public class Display_Book extends javax.swing.JFrame {
         });
         jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 210, 30));
 
+        jList1.setBackground(new java.awt.Color(17, 9, 50));
+        jList1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jList1.setForeground(new java.awt.Color(255, 255, 255));
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -148,7 +151,7 @@ public class Display_Book extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jList1);
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(781, 100, 90, 210));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, 200, 30));
         jPanel3.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 400, 10));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
