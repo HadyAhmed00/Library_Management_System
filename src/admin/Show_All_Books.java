@@ -96,7 +96,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
         jTextField3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("the user name uneditable");
+        jTextField3.setText("the book name is uneditable");
         jTextField3.setBorder(null);
         jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField3.setOpaque(false);
@@ -185,7 +185,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
         jTextField7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField7.setText("the user id uneditable");
+        jTextField7.setText("number of copies is uneditable");
         jTextField7.setBorder(null);
         jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField7.setOpaque(false);
@@ -205,7 +205,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
         jTextField6.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setText("the user phone uneditable");
+        jTextField6.setText("production year is uneditable");
         jTextField6.setBorder(null);
         jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField6.setOpaque(false);
@@ -219,17 +219,17 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 200, 30));
+        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 210, 30));
 
         jLabel14.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Catogry");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 80, 30));
+        jLabel14.setText("Category :");
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 90, 30));
 
         jTextField8.setBackground(new java.awt.Color(17, 9, 50));
         jTextField8.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField8.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField8.setText("the user Catogary uneditable");
+        jTextField8.setText("the book category is uneditable");
         jTextField8.setBorder(null);
         jTextField8.setOpaque(false);
         jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -237,14 +237,14 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jTextField8FocusGained(evt);
             }
         });
-        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 210, 30));
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, -1, 30));
         jPanel3.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 400, 10));
 
         jTextField5.setEditable(false);
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField5.setText("the user Adress uneditable");
+        jTextField5.setText("the book author is uneditable");
         jTextField5.setBorder(null);
         jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField5.setOpaque(false);
@@ -253,13 +253,13 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jTextField5FocusGained(evt);
             }
         });
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 200, 30));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 210, 30));
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setText("the user id uneditable");
+        jTextField4.setText("the book ID is uneditable");
         jTextField4.setBorder(null);
         jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
@@ -281,7 +281,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton20.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton20.setForeground(new java.awt.Color(255, 255, 255));
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton20.setText("Rent this one");
+        jButton20.setText("Rent This One");
         jButton20.setBorder(null);
         jButton20.setBorderPainted(false);
         jButton20.setContentAreaFilled(false);
@@ -412,7 +412,7 @@ public class Show_All_Books extends javax.swing.JFrame {
       
        if(i==0)
         {
-            JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry there are no more books");
+            JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry, there are no more books");
         }
        else
        {
@@ -470,7 +470,7 @@ public class Show_All_Books extends javax.swing.JFrame {
          
         String name=Home.books[i].getBook_Name();
         User.rent_book(Rant_Book_Option.rent_option_is_pressed, name);
-        JOptionPane.showMessageDialog(new Show_All_Books(), "yoh have rented this book with id "+Home.books[i].getBook_ID());
+        JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
        
     }//GEN-LAST:event_jButton20ActionPerformed
 

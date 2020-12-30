@@ -33,7 +33,6 @@ public class Admin_GUI extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
-        jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         jButton17 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -49,7 +48,6 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -61,13 +59,12 @@ public class Admin_GUI extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 200, 10));
-        jPanel2.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 10));
         jPanel2.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 200, 10));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton17.setText("Return rented book");
+        jButton17.setText("Return Rented Book");
         jButton17.setBorder(null);
         jButton17.setBorderPainted(false);
         jButton17.setContentAreaFilled(false);
@@ -101,7 +98,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton16.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton16.setForeground(new java.awt.Color(255, 255, 255));
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton16.setText("Show all rented Books");
+        jButton16.setText("Show All Rented Books");
         jButton16.setBorder(null);
         jButton16.setBorderPainted(false);
         jButton16.setContentAreaFilled(false);
@@ -118,7 +115,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton15.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton15.setText("Show all Readers");
+        jButton15.setText("Show All Readers");
         jButton15.setBorder(null);
         jButton15.setBorderPainted(false);
         jButton15.setContentAreaFilled(false);
@@ -135,7 +132,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton13.setText("Show all Books");
+        jButton13.setText("Show All Books");
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
@@ -152,7 +149,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton2.setText("Add User to list");
+        jButton2.setText("Add User To List");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
@@ -220,7 +217,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton6.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton6.setText("Remove User from list");
+        jButton6.setText("Remove User From List");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
@@ -254,7 +251,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton8.setText(" Rent a Book");
+        jButton8.setText(" Rent Book");
         jButton8.setBorder(null);
         jButton8.setBorderPainted(false);
         jButton8.setContentAreaFilled(false);
@@ -302,18 +299,6 @@ public class Admin_GUI extends javax.swing.JFrame {
         });
         jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 330, 180, 50));
 
-        jButton11.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("Login As Reader");
-        jButton11.setBorder(null);
-        jButton11.setBorderPainted(false);
-        jButton11.setContentAreaFilled(false);
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton11.setDefaultCapable(false);
-        jButton11.setFocusPainted(false);
-        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 180, 50));
-
         jButton12.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
         jButton12.setText("Logout");
@@ -329,7 +314,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 180, 50));
+        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 180, 50));
 
         jButton14.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton14.setForeground(new java.awt.Color(255, 255, 255));
@@ -523,7 +508,6 @@ public class Admin_GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
@@ -544,7 +528,6 @@ public class Admin_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     // End of variables declaration//GEN-END:variables
 }

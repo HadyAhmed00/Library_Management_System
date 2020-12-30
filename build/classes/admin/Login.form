@@ -233,7 +233,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Login"/>
+            <Property name="text" type="java.lang.String" value="Librarian Login"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>

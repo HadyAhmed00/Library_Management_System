@@ -51,13 +51,13 @@ String name;
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Rent Book Form");
+        jLabel5.setText("Return Book Form");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 310, -1));
 
         jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Enter The Book neme");
+        jLabel8.setText("Enter The Book's Name");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, -1));
 
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
@@ -139,7 +139,7 @@ String name;
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton13.setText("Rent This Book");
+        jButton13.setText("Return This Book");
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);

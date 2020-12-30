@@ -59,7 +59,7 @@ public class Rent_a_Book extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Enter The Book neme");
+        jLabel8.setText("Enter The Book's Name");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, -1));
 
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));

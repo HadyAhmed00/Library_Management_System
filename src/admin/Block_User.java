@@ -60,7 +60,7 @@ int id;
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Enter The User Id");
+        jLabel7.setText("Enter The User ID");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, -1));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel3.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));

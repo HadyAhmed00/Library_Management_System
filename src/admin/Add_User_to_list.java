@@ -64,13 +64,13 @@ int user_id;
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Enter The User Id");
+        jLabel7.setText("Enter User ID");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Enter The Book Id");
+        jLabel8.setText("Enter Book ID");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, -1, -1));
 
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));

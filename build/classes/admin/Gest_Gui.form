@@ -152,7 +152,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Gest Menu"/>
+            <Property name="text" type="java.lang.String" value="Guest Menu"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>

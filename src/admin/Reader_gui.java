@@ -54,7 +54,7 @@ public class Reader_gui extends javax.swing.JFrame {
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton13.setText("Show all Books");
+        jButton13.setText("Show All Books");
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
@@ -71,7 +71,7 @@ public class Reader_gui extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton2.setText("Add yoursalf to list");
+        jButton2.setText("Add Yourself To List");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
@@ -122,7 +122,7 @@ public class Reader_gui extends javax.swing.JFrame {
         jButton8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton8.setText(" Rent a Book");
+        jButton8.setText(" Rent Book");
         jButton8.setBorder(null);
         jButton8.setBorderPainted(false);
         jButton8.setContentAreaFilled(false);

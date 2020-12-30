@@ -111,7 +111,7 @@ public class Display_Book extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Category");
+        jLabel10.setText("Category :");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 80, 30));
 
         jLabel11.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -141,7 +141,7 @@ public class Display_Book extends javax.swing.JFrame {
                 jTextField7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 220, 30));
+        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 230, 30));
 
         jList1.setBackground(new java.awt.Color(17, 9, 50));
         jList1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
@@ -255,7 +255,7 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setText("the book id is uneditable");
+        jTextField4.setText("the book ID is uneditable");
         jTextField4.setBorder(null);
         jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
