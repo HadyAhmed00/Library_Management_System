@@ -152,6 +152,7 @@ public class Home extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        cont.log.jTextField1.setText("Librarian Login");
         cont.home.setVisible(false);
         cont.log.setVisible(true);
         Home.login=true;
@@ -160,6 +161,7 @@ public class Home extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
+        cont.log.jTextField1.setText("Reader Login");
         cont.home.setVisible(false);
         cont.log.setVisible(true);
         Home.login=false;
