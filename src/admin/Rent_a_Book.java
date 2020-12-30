@@ -210,14 +210,32 @@ public class Rent_a_Book extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         name=jTextField3.getText();
-       if(Home.login)
+
+        
+        int checkForID=Login.getIdForIsBlocked;
+        int ctr;
+        boolean checkIsBlocked=false;
+        for ( ctr=0;ctr<Home.r_index;ctr++){
+            if(Home.readers[ctr].ID==checkForID){
+               checkIsBlocked=Home.readers[ctr].is_Blocked;
+               break;
+            }
+        }
+        if(Home.readers[ctr].is_Blocked == true){
+            JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
+        }
+        //end 
+        else{
+                    if(Home.login)
        {
            Home.libs[Home.current_user_index].rent_book(name);
+       } 
+        
+                    else { Home.readers[Home.current_user_index].rent_book(name);}
        }
-       else
-       {
-           Home.readers[Home.current_user_index].rent_book(name);
-       }
+ 
+                 
+        
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed

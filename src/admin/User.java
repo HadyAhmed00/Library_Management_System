@@ -49,7 +49,7 @@ public abstract class User {
         
         
     }
-    public static boolean search_member(int id,int r_index,Reader r_arr[])
+   public static boolean search_member(int id,int r_index,Reader r_arr[])
     {
         
         boolean found1=false;

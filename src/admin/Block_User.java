@@ -209,9 +209,13 @@ int id;
         id = Integer.valueOf(jTextField2.getText());
          if(User.search_member(id, Home.r_index, Home.readers))
         {
-            
+            if(Home.readers[User.current_member_id].is_Blocked==true){
+                JOptionPane.showMessageDialog(new Block_User(), "the user is already blocked");
+            }
+            else{
             Home.readers[User.current_member_id].is_Blocked=true;
-            JOptionPane.showMessageDialog(new Block_User(), "the user with id "+id+" is blocked");
+            
+            JOptionPane.showMessageDialog(new Block_User(), "the user with id "+id+" is blocked");}
         }
         else
              JOptionPane.showMessageDialog(new Block_User(), "Member is not found!!","Alert",JOptionPane.WARNING_MESSAGE);;

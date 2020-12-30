@@ -361,7 +361,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
         
         if(i==Home.r_index)
         {
-            JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry, there are no more books");
+            JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry, there are no more readers");
         }
         else
         {
@@ -426,7 +426,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         if(i==0)
         {
-            JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry there are no more books");
+            JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry there are no more readers");
         }
         else{
         i--;

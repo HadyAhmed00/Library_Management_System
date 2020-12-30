@@ -466,18 +466,36 @@ public class Show_All_Books extends javax.swing.JFrame {
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
-        
-         
         String name=Home.books[i].getBook_Name();
-        if(Home.login)
+
+        
+        int checkForID=Login.getIdForIsBlocked;
+        int ctr;
+        boolean checkIsBlocked=false;
+        for ( ctr=0;ctr<Home.r_index;ctr++){
+            if(Home.readers[ctr].ID==checkForID){
+               checkIsBlocked=Home.readers[ctr].is_Blocked;
+               break;
+            }
+        }
+        if(Home.readers[ctr].is_Blocked == true){
+            JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
+        }
+        
+        else{
+         if(Home.login)
        {
            Home.libs[Home.current_user_index].rent_book(name);
+           JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
        }
-       else
-       {
-           Home.readers[Home.current_user_index].rent_book(name);
+                 else{
+        Home.readers[Home.current_user_index].rent_book(name);
+        System.out.println(Home.readers[ctr].is_Blocked);
+        JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
        }
+        }
        
+        
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jTextField7FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusGained

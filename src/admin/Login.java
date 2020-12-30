@@ -18,6 +18,7 @@ import javax.swing.JPopupMenu;
 public class Login extends javax.swing.JFrame {
 int id;
 String pass;
+public static int getIdForIsBlocked;
     /** Creates new form Login */
     public Login() {
         initComponents();
@@ -194,6 +195,7 @@ String pass;
         else
         {
             id = Integer.valueOf(jTextField3.getText());
+            getIdForIsBlocked=id;
         pass=jPasswordField1.getText();
         boolean log=false;
         if(Home.login==true)
