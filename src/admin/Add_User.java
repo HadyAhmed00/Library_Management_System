@@ -356,6 +356,8 @@ boolean isblooked;
         email=jTextField6.getText();
         librarian.add_rEADER( id, password, first_name, last_name, phone, "r", address, email, isblooked);
         JOptionPane.showMessageDialog(new Add_User(),"You have added a new reader successfully");
+        cont.add_user.setVisible(false);
+        cont.new_user_info.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -429,7 +431,7 @@ boolean isblooked;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
