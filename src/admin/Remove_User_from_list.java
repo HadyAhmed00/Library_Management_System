@@ -232,6 +232,9 @@ public class Remove_User_from_list extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        int user_id=Integer.valueOf(jTextField2.getText());
+        String book_name=jTextField3.getText();
+        User.remove_book_from_list(user_id, book_name);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed

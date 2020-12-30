@@ -209,7 +209,7 @@ public class Search_For_Book extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
         //cont.Dis_Book.
-        name=jTextField1.getText();
+       /* name=jTextField1.getText();
         DefaultListModel<String> model2 = new DefaultListModel<>();
         if(User.search_for_book(name, Home.b_index, Home.books))
         {
@@ -230,7 +230,37 @@ public class Search_For_Book extends javax.swing.JFrame {
             }
         }
         else 
+            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);*/
+       
+       
+        name=jTextField1.getText();
+        DefaultListModel<String> model2 = new DefaultListModel<>();
+        if(User.search_for_book(name, Home.b_index, Home.books))
+        {
+               
+            if(Home.books[User.currentbook_id].watting_list_index==0)
+            {
+                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", 0, " ", false);
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                cont.se_book.setVisible(false);
+               cont.Dis_Book.setVisible(true);
+            }
+            else
+            {
+            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                 cont.se_book.setVisible(false);
+                 cont.Dis_Book.setVisible(true);
+            }
+            }
+        }
+        else 
             JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);
+            
+
+
             
         
     }//GEN-LAST:event_jButton17ActionPerformed
