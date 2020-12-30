@@ -94,6 +94,7 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
         jTextField3.setText("the book name is uneditable");
         jTextField3.setBorder(null);
+        jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField3.setOpaque(false);
         jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -150,6 +151,7 @@ public class Display_Book extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jScrollPane1.setViewportView(jList1);
 
         jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, 200, 30));
@@ -178,6 +180,7 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField8.setForeground(new java.awt.Color(255, 255, 255));
         jTextField8.setText("number of copies is uneditable");
         jTextField8.setBorder(null);
+        jTextField8.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField8.setOpaque(false);
         jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -225,6 +228,7 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
         jTextField6.setText("production year is uneditable");
         jTextField6.setBorder(null);
+        jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField6.setOpaque(false);
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -238,6 +242,7 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
         jTextField5.setText("the book author is uneditable");
         jTextField5.setBorder(null);
+        jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField5.setOpaque(false);
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -252,6 +257,7 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
         jTextField4.setText("the book id is uneditable");
         jTextField4.setBorder(null);
+        jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -290,7 +296,7 @@ public class Display_Book extends javax.swing.JFrame {
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         jButton25.setContentAreaFilled(false);
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton25.setDefaultCapable(false);
         jButton25.setFocusPainted(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -391,8 +397,16 @@ public class Display_Book extends javax.swing.JFrame {
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        cont.Dis_Book.setVisible(false);
-        cont.Admin.setVisible(true);
+         if (Home.login)
+        {
+            cont.Dis_Book.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        if (Home.login==false)
+        {
+           cont.Dis_Book.setVisible(false);
+           cont.read.setVisible(true);
+        }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed

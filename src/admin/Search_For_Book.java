@@ -113,7 +113,7 @@ public class Search_For_Book extends javax.swing.JFrame {
         jButton34.setBorder(null);
         jButton34.setBorderPainted(false);
         jButton34.setContentAreaFilled(false);
-        jButton34.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton34.setDefaultCapable(false);
         jButton34.setFocusPainted(false);
         jButton34.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

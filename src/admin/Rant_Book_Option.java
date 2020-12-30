@@ -96,7 +96,7 @@ public class Rant_Book_Option extends javax.swing.JFrame {
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         jButton25.setContentAreaFilled(false);
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton25.setDefaultCapable(false);
         jButton25.setFocusPainted(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -175,8 +175,16 @@ public class Rant_Book_Option extends javax.swing.JFrame {
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        cont.option.setVisible(false);
-        cont.Admin.setVisible(true);
+         if (Home.login)
+        {
+            cont.option.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        if (Home.login==false)
+        {
+           cont.option.setVisible(false);
+           cont.read.setVisible(true);
+        }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
