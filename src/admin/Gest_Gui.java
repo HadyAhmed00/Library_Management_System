@@ -139,16 +139,14 @@ public class Gest_Gui extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        
-cont.Dis_Book.Display(Home.books[0].getBook_Name(), String.valueOf(Home.books[0].getBook_ID()), Home.books[0].getProduction_year(), Home.books[0].getAuthor_name(),Home.books[0].getCategory(),String.valueOf(Home.books[0].getNo_of_existing_copies()));
-        //all.setVisible(true);
-        cont.Admin.setVisible(false);
+
+        cont.gest.setVisible(false);
         cont.show.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        cont.Admin.setVisible(false);
+        cont.gest.setVisible(false);
         cont.se_book.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 

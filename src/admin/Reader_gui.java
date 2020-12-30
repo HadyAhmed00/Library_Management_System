@@ -251,8 +251,9 @@ public class Reader_gui extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-          cont.read.setVisible(false );
+        cont.read.setVisible(false );
         cont.log.setVisible(true);
+        Home.login=false;
     }//GEN-LAST:event_jButton12ActionPerformed
 
     /**
