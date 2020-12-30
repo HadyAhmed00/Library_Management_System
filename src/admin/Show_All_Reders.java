@@ -89,7 +89,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
         jTextField3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("the user nsme unedatablee");
+        jTextField3.setText("the user name is uneditable");
         jTextField3.setBorder(null);
         jTextField3.setOpaque(false);
         jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -112,7 +112,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Adrress :");
+        jLabel10.setText("Addrress :");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, 70, 30));
 
         jLabel11.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -182,7 +182,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
         jTextField7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField7.setText("the user E-mail unedatablee");
+        jTextField7.setText("the user e-mail is uneditable");
         jTextField7.setBorder(null);
         jTextField7.setOpaque(false);
         jTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -201,7 +201,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
         jTextField6.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setText("the user phone unedatablee");
+        jTextField6.setText("the user phone number is uneditable");
         jTextField6.setBorder(null);
         jTextField6.setOpaque(false);
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -214,13 +214,13 @@ public void show_r(String first_name,String last_name,String Id,String address,S
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 200, 30));
+        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 270, 30));
 
         jTextField5.setEditable(false);
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField5.setText("the user Address unedatablee");
+        jTextField5.setText("the user address is uneditable");
         jTextField5.setBorder(null);
         jTextField5.setOpaque(false);
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -233,13 +233,13 @@ public void show_r(String first_name,String last_name,String Id,String address,S
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 200, 30));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, -1, 30));
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setText("the user id unedatablee");
+        jTextField4.setText("the user ID is uneditable");
         jTextField4.setBorder(null);
         jTextField4.setOpaque(false);
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {

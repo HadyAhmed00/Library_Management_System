@@ -3,6 +3,7 @@ public class contaner
 {
    Home home =new Home();
    Login log = new Login();
+   Login reader_log=new Login();
    Admin_GUI Admin=new Admin_GUI(); 
    Add_User add_user =new Add_User(); 
    Add_User_to_list a_list =new Add_User_to_list();

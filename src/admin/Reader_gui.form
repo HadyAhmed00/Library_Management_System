@@ -72,7 +72,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/admin/lib textuers/botton.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Show all Books"/>
+            <Property name="text" type="java.lang.String" value="Show All Books"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
@@ -104,7 +104,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/admin/lib textuers/botton.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Add yoursalf to list"/>
+            <Property name="text" type="java.lang.String" value="Add Yourself To List"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
@@ -200,7 +200,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/admin/lib textuers/botton.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" Rent a Book"/>
+            <Property name="text" type="java.lang.String" value=" Rent Book"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>

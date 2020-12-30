@@ -63,9 +63,8 @@ boolean isblooked;
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 160, -1));
 
         jTextField1.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField1.setFont(new java.awt.Font("Berlin Sans FB", 0, 11)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField1.setText("Enter Last Name");
+        jTextField1.setText("Enter last Name");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -137,7 +136,7 @@ boolean isblooked;
 
         jTextField2.setBackground(new java.awt.Color(17, 9, 50));
         jTextField2.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField2.setText("Enter The First Name");
+        jTextField2.setText("Enter first name");
         jTextField2.setBorder(null);
         jTextField2.setOpaque(false);
         jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -154,7 +153,7 @@ boolean isblooked;
 
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setText("Enter Adress");
+        jTextField4.setText("Enter address");
         jTextField4.setBorder(null);
         jTextField4.setOpaque(false);
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -213,7 +212,7 @@ boolean isblooked;
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Adress");
+        jLabel10.setText("Address");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 90, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -222,7 +221,7 @@ boolean isblooked;
 
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setText("Enter Emaile");
+        jTextField6.setText("Enter email");
         jTextField6.setBorder(null);
         jTextField6.setOpaque(false);
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -235,7 +234,7 @@ boolean isblooked;
 
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField5.setText("Enter Phone number");
+        jTextField5.setText("Enter phone number");
         jTextField5.setBorder(null);
         jTextField5.setOpaque(false);
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -429,7 +428,7 @@ boolean isblooked;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;

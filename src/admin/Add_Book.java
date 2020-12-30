@@ -146,7 +146,7 @@ String name,production_year,auther,category;
 
         jTextField11.setBackground(new java.awt.Color(17, 9, 50));
         jTextField11.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField11.setText("Enter Number Of Copys");
+        jTextField11.setText("Enter Number Of Copies");
         jTextField11.setBorder(null);
         jTextField11.setOpaque(false);
         jTextField11.addFocusListener(new java.awt.event.FocusAdapter() {

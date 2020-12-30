@@ -96,7 +96,7 @@ public class Gest_Gui extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Gest Menu");
+        jLabel3.setText("Guest Menu");
         jLabel3.setToolTipText("");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 20, 170, 60));

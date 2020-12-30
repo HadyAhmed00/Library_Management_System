@@ -76,7 +76,7 @@ int id;
         jLabel16.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("User ID");
+        jLabel16.setText("Enter User ID");
         jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 160, -1, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -137,7 +137,7 @@ int id;
         jButton15.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton15.setText("Remove the user");
+        jButton15.setText("Remove User");
         jButton15.setBorder(null);
         jButton15.setBorderPainted(false);
         jButton15.setContentAreaFilled(false);

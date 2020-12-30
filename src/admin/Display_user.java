@@ -89,7 +89,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
         jTextField3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("the user name ");
+        jTextField3.setText("the user name is uneditable");
         jTextField3.setBorder(null);
         jTextField3.setOpaque(false);
         jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -112,19 +112,19 @@ public void Display_u(String f_name,String l_name, String id,String address , St
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Adrress :");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 70, 30));
+        jLabel10.setText("Addrress :");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 80, 30));
 
         jLabel11.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("The User phone Number:");
+        jLabel11.setText("The User Phone Number:");
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, -1, 30));
 
         jLabel12.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("rented books");
+        jLabel12.setText("Rented Books");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, -1, 30));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
@@ -148,7 +148,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
         jTextField7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField7.setText("the user E-mail unedatablee");
+        jTextField7.setText("the user e-mail is uneditable");
         jTextField7.setBorder(null);
         jTextField7.setOpaque(false);
         jTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -161,7 +161,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
                 jTextField7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, 200, 30));
+        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 200, 30));
 
         jList1.setBackground(new java.awt.Color(17, 9, 50));
         jList1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
@@ -185,7 +185,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
         jTextField6.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setText("the user phone unedatablee");
+        jTextField6.setText("the user phone number is uneditable");
         jTextField6.setBorder(null);
         jTextField6.setOpaque(false);
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -198,13 +198,13 @@ public void Display_u(String f_name,String l_name, String id,String address , St
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 200, 30));
+        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 260, 30));
 
         jTextField5.setEditable(false);
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField5.setText("the user Address unedatablee");
+        jTextField5.setText("the user address is uneditable");
         jTextField5.setBorder(null);
         jTextField5.setOpaque(false);
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -217,13 +217,13 @@ public void Display_u(String f_name,String l_name, String id,String address , St
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 200, 30));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 220, 30));
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setText("the user id unedatablee");
+        jTextField4.setText("the user ID is uneditable");
         jTextField4.setBorder(null);
         jTextField4.setOpaque(false);
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {

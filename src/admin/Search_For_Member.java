@@ -147,7 +147,7 @@ public class Search_For_Member extends javax.swing.JFrame {
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton17.setText("See The Member INFO");
+        jButton17.setText("Display Member Info");
         jButton17.setBorder(null);
         jButton17.setBorderPainted(false);
         jButton17.setContentAreaFilled(false);

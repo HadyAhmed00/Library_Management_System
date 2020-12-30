@@ -53,11 +53,11 @@ public class Search_For_Book extends javax.swing.JFrame {
 
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel25.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Search For Book");
-        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 140, 20));
+        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 190, 20));
         jPanel6.add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 200, 10));
         jPanel6.add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel6.add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
@@ -66,7 +66,7 @@ public class Search_For_Book extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("Book name");
+        jLabel26.setText("Book Name");
         jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, -1, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -75,7 +75,7 @@ public class Search_For_Book extends javax.swing.JFrame {
 
         jTextField1.setBackground(new java.awt.Color(17, 9, 50));
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Enter Booke name");
+        jTextField1.setText("Enter book's name");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -144,7 +144,7 @@ public class Search_For_Book extends javax.swing.JFrame {
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton17.setText("Search the Book");
+        jButton17.setText("Search For The Book");
         jButton17.setBorder(null);
         jButton17.setBorderPainted(false);
         jButton17.setContentAreaFilled(false);

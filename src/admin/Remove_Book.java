@@ -59,7 +59,7 @@ String name;
 
         jTextField15.setBackground(new java.awt.Color(17, 9, 50));
         jTextField15.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField15.setText("Enter Book name");
+        jTextField15.setText("Enter book name");
         jTextField15.setBorder(null);
         jTextField15.setOpaque(false);
         jTextField15.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -80,7 +80,7 @@ String name;
         jLabel26.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("Book name");
+        jLabel26.setText("Book Name");
         jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
 
         jButton33.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
