@@ -24,4 +24,5 @@ public class contaner
    Gest_Gui gest = new Gest_Gui();
    Show_rented_books show_rented=new Show_rented_books();
    Return_a_book ret_book=new Return_a_book();
+   display_new_user new_user_info =new display_new_user();
 }

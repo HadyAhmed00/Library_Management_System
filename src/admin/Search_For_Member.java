@@ -191,8 +191,16 @@ public class Search_For_Member extends javax.swing.JFrame {
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         // TODO add your handling code here:
-        cont.se_member.setVisible(false);
-        cont.Admin.setVisible(true);
+        if (Home.login)
+        {
+            cont.se_member.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        if (Home.login==false)
+        {
+           cont.se_member.setVisible(false);
+           cont.read.setVisible(true);
+        }
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
