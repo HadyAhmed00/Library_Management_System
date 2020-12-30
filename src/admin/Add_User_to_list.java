@@ -218,8 +218,16 @@ int user_id;
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        cont.a_list.setVisible(false);
-        cont.Admin.setVisible(true);
+         if (Home.login)
+        {
+            cont.a_list.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        if (Home.login==false)
+        {
+           cont.a_list.setVisible(false);
+           cont.read.setVisible(true);
+        }
 
     }//GEN-LAST:event_jButton24ActionPerformed
 

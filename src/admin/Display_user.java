@@ -91,6 +91,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
         jTextField3.setText("the user name is uneditable");
         jTextField3.setBorder(null);
+        jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField3.setOpaque(false);
         jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -150,6 +151,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
         jTextField7.setText("the user e-mail is uneditable");
         jTextField7.setBorder(null);
+        jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField7.setOpaque(false);
         jTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -171,6 +173,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jScrollPane1.setViewportView(jList1);
 
         jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, 190, 30));
@@ -187,6 +190,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
         jTextField6.setText("the user phone number is uneditable");
         jTextField6.setBorder(null);
+        jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField6.setOpaque(false);
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -206,6 +210,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
         jTextField5.setText("the user address is uneditable");
         jTextField5.setBorder(null);
+        jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField5.setOpaque(false);
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -225,6 +230,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
         jTextField4.setText("the user ID is uneditable");
         jTextField4.setBorder(null);
+        jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -285,7 +291,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         jButton25.setContentAreaFilled(false);
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton25.setDefaultCapable(false);
         jButton25.setFocusPainted(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -373,8 +379,16 @@ public void Display_u(String f_name,String l_name, String id,String address , St
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        cont.Display.setVisible(false);
-        cont.Admin.setVisible(true);
+         if (Home.login)
+        {
+            cont.Display.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        if (Home.login==false)
+        {
+           cont.Display.setVisible(false);
+           cont.read.setVisible(true);
+        }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
