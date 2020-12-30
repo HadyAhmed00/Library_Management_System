@@ -210,7 +210,14 @@ public class Rent_a_Book extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         name=jTextField3.getText();
-        User.rent_book(Rant_Book_Option.rent_option_is_pressed, name);
+       if(Home.login)
+       {
+           Home.libs[Home.current_user_index].rent_book(name);
+       }
+       else
+       {
+           Home.readers[Home.current_user_index].rent_book(name);
+       }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed

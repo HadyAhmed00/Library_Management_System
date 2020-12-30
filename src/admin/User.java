@@ -137,53 +137,8 @@ public abstract class User {
             return false;
         }
     }
-    public static void rent_book(boolean is_p,String name)
-    {
-            if(User.search_for_book(name,Home.b_index ,Home.books))
-            {
-                
-                if(Home.login==false)
-                {
-                  if(Home.readers[Home.current_user_index].rented_index==3)
-                  {
-                      JOptionPane.showMessageDialog(new Rent_a_Book(),"sorry you can't rent more books");
-                  }
-                  else
-                  {
-                    Home.readers[Home.current_user_index].my_rented[Home.readers[Home.current_user_index].rented_index]= Home.books[User.currentbook_id];
-                    Home.readers[Home.current_user_index].rented_index++;
-                    int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
-                    no--;
-                    Home.rented_book_index++;
-                    Home.Rented_books[Home.rented_book_index]=Home.books[User.currentbook_id];
-                    JOptionPane.showMessageDialog(new Rent_a_Book(),"You have rented the required book of name "+name+" successfully");
-                }
-               
-                }
-                else
-                {
-                    if(Home.libs[Home.current_user_index].rented_index==3)
-                  {
-                      JOptionPane.showMessageDialog(new Rent_a_Book(),"sorry you can't rent more books");
-                  }
-                  else
-                  {
-                    Home.libs[Home.current_user_index].my_rented[Home.libs[Home.current_user_index].rented_index]= Home.books[User.currentbook_id];
-                    Home.libs[Home.current_user_index].rented_index++;
-                    int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
-                    no--;
-                    Home.rented_book_index++;
-                    Home.Rented_books[Home.rented_book_index]=Home.books[User.currentbook_id];
-                    JOptionPane.showMessageDialog(new Rent_a_Book(),"You have rented the required book of name "+name+" successfully");
-                }
-                }
-            
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(new Rent_a_Book(),"This book has not been found!!","Alert",JOptionPane.WARNING_MESSAGE);
-            }
-        }
+    public abstract void rent_book(String name);
+    
       public static void add_user_to_watting_list(int user_id,String book_name)
       {
           if(User.search_for_book(book_name, Home.b_index, Home.books))

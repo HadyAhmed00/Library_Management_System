@@ -469,8 +469,14 @@ public class Show_All_Books extends javax.swing.JFrame {
         
          
         String name=Home.books[i].getBook_Name();
-        User.rent_book(Rant_Book_Option.rent_option_is_pressed, name);
-        JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
+        if(Home.login)
+       {
+           Home.libs[Home.current_user_index].rent_book(name);
+       }
+       else
+       {
+           Home.readers[Home.current_user_index].rent_book(name);
+       }
        
     }//GEN-LAST:event_jButton20ActionPerformed
 

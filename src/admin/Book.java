@@ -30,12 +30,16 @@ public class Book {
         this.no_of_existing_copies = no_of_existing_copies;
         this.author_name = author_name;
         this.category = category;
-        //waitting_list[0]=new Reader(0, "", "", "", "", "", 0, "", false);
+      
         
     }
 
     public int getBook_ID() {
         return Book_ID;
+    }
+
+    public void setNo_of_existing_copies(int no_of_existing_copies) {
+        this.no_of_existing_copies = no_of_existing_copies;
     }
 
     public String getBook_Name() {

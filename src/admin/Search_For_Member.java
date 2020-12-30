@@ -216,8 +216,6 @@ public class Search_For_Member extends javax.swing.JFrame {
         DefaultListModel<String> model = new DefaultListModel<>();
         if(User.search_member(id, Home.r_index, Home.readers))
         {
-            
-                 
            if(User.type.equals("r"))
            {   
               
@@ -228,13 +226,7 @@ public class Search_For_Member extends javax.swing.JFrame {
                  cont.Display.jList1.setModel(model);
                  cont.se_member.setVisible(false);
                  cont.Display.setVisible(true);
-             }
-                 
-                 
-            
-            
-            cont.se_member.setVisible(false);
-                 cont.Display.setVisible(true);
+             } 
         }
            else if(User.type.equals("l"))
            {
@@ -246,11 +238,6 @@ public class Search_For_Member extends javax.swing.JFrame {
              cont.se_member.setVisible(false);
              cont.Display.setVisible(true);
              }
-            
-            
-                     
-            
-            
            }
           
         }
