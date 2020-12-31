@@ -25,4 +25,5 @@ public class contaner
    Show_rented_books show_rented=new Show_rented_books();
    Return_a_book ret_book=new Return_a_book();
    display_new_user new_user_info =new display_new_user();
+   Addofselftoorderlist add_of_self=new Addofselftoorderlist();
 }

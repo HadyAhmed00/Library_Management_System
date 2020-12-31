@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -380,6 +381,30 @@ public class Display_Book extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
+         String name=jTextField3.getText();
+
+        
+        int checkForID=Login.getIdForIsBlocked;
+        int ctr;
+        boolean checkIsBlocked=false;
+        for ( ctr=0;ctr<Home.r_index;ctr++){
+            if(Home.readers[ctr].ID==checkForID){
+               checkIsBlocked=Home.readers[ctr].is_Blocked;
+               break;
+            }
+        }
+        if(Home.readers[ctr].is_Blocked == true){
+            JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
+        }
+        //end 
+        else{
+                    if(Home.login)
+       {
+           Home.libs[Home.current_user_index].rent_book(name);
+       } 
+        
+                    else { Home.readers[Home.current_user_index].rent_book(name);}
+       }
         
     }//GEN-LAST:event_jButton17ActionPerformed
 

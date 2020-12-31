@@ -138,83 +138,9 @@ public abstract class User {
         }
     }
     public abstract void rent_book(String name);
-    public static void add_user_to_watting_list(int user_id,String book_name)
-      {
-          if(User.search_for_book(book_name, Home.b_index, Home.books))
-        {
-            if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
-            {
-                if(User.search_member(user_id, Home.r_index, Home.readers))
-                {
-                    if(User.type.equals("r"))
-                    {
-                     
-                     Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.readers[User.current_member_id];
-                     Home.books[User.currentbook_id].watting_list_index++;
-                     JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
-                    }
-                    else
-                    {
-                    
-                     Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.libs[User.current_member_id];
-                      Home.books[User.currentbook_id].watting_list_index++;
-                     JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
-                        
-                    }
-                }
-                else
-                {
-                    JOptionPane.showMessageDialog(new Add_User_to_list(), "user is not found");
-                }
-               
-                
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(new Add_User_to_list(), "you catnt do that as this book is avilable");
-            }
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(new Add_User_to_list(), "book is not found");
-        }
-      }
+    
 
-      public static void remove_book_from_list(int user_id,String book_name)
-      {
-          int the_index=0;
-          boolean is_found=false;
-          if(User.search_for_book(book_name, Home.b_index, Home.books))
-          {
-              for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
-                  if(Home.books[User.currentbook_id].waitting_list[i].ID==user_id)
-                  {
-                      the_index=i;
-                      is_found=true;
-                      break;
-                  }
-                  else 
-                  {
-                      is_found=false;
-                      
-                  }
-              }
-              if(is_found)
-              {
-                   for (int i = the_index; i <Home.books[User.currentbook_id].watting_list_index; i++) {
-                      Home.books[User.currentbook_id].waitting_list[i]=Home.books[User.currentbook_id].waitting_list[i+1];
-                  }
-                  Home.books[User.currentbook_id].watting_list_index--;
-                  JOptionPane.showMessageDialog(new Remove_User_from_list(), "user is re,oved from the book list with name "+Home.books[User.currentbook_id].getBook_Name());
-              }
-              else 
-                  JOptionPane.showMessageDialog(new Remove_User_from_list(), "user is not found in list");
-              
-              
-          }
-          else
-          JOptionPane.showMessageDialog(new Remove_User_from_list(), "book is not found in list");
-      }
+      
     
     }
 

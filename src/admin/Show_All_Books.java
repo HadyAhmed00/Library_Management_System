@@ -491,7 +491,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                  else{
         Home.readers[Home.current_user_index].rent_book(name);
         System.out.println(Home.readers[ctr].is_Blocked);
-        JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
+        
        }
         }
        

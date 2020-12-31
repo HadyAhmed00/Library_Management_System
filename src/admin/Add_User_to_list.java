@@ -241,7 +241,7 @@ int user_id;
         // TODO add your handling code here:
         user_id=Integer.valueOf(jTextField2.getText());
         book_name=jTextField3.getText();
-        User.add_user_to_watting_list(user_id, book_name);
+        librarian.add_user_to_watting_list(user_id, book_name);
         System.out.println(Home.books[1].waitting_list[0].ID);
     }//GEN-LAST:event_jButton13ActionPerformed
 

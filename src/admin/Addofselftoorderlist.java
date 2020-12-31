@@ -5,18 +5,18 @@
  */
 package admin;
 
-/**
- *
- * @author Hany
- */
 import static admin.Admin_GUI.cont;
 
-public class Remove_User_from_list extends javax.swing.JFrame {
+/**
+ *
+ * @author hadi
+ */
+public class Addofselftoorderlist extends javax.swing.JFrame {
 
     /**
-     * Creates new form Remove_User_from_list
+     * Creates new form Addofselftoorderlist
      */
-    public Remove_User_from_list() {
+    public Addofselftoorderlist() {
         initComponents();
     }
 
@@ -31,15 +31,12 @@ public class Remove_User_from_list extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jSeparator9 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jSeparator11 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextField2 = new javax.swing.JTextField();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
@@ -55,20 +52,13 @@ public class Remove_User_from_list extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Remove User From List Form");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 310, -1));
-        jPanel3.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 200, 10));
-
-        jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Enter The User ID");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, -1, -1));
+        jLabel5.setText("Add User To List Form");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 230, -1));
 
         jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Enter The Book ID");
+        jLabel8.setText("Enter Book name");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, -1, -1));
 
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
@@ -81,28 +71,16 @@ public class Remove_User_from_list extends javax.swing.JFrame {
                 jTextField3FocusGained(evt);
             }
         });
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 200, 20));
         jPanel3.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 200, 10));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel3.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
         jPanel3.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 10));
-
-        jTextField2.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setText("User ID");
-        jTextField2.setBorder(null);
-        jTextField2.setOpaque(false);
-        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField2FocusGained(evt);
-            }
-        });
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 200, -1));
 
         jButton24.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
@@ -127,7 +105,7 @@ public class Remove_User_from_list extends javax.swing.JFrame {
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         jButton25.setContentAreaFilled(false);
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton25.setDefaultCapable(false);
         jButton25.setFocusPainted(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -162,7 +140,7 @@ public class Remove_User_from_list extends javax.swing.JFrame {
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton13.setText("Remove From List");
+        jButton13.setText("Add To List");
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
@@ -209,39 +187,43 @@ public class Remove_User_from_list extends javax.swing.JFrame {
         jTextField3.setText("");
     }//GEN-LAST:event_jTextField3FocusGained
 
-    private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
-        // TODO add your handling code here:
-        jTextField2.setText("");
-    }//GEN-LAST:event_jTextField2FocusGained
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        cont.rem_list.setVisible(false);
-        cont.Admin.setVisible(true);
+        if (Home.login)
+        {
+            cont.a_list.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        if (Home.login==false)
+        {
+            cont.a_list.setVisible(false);
+            cont.read.setVisible(true);
+        }
     }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        cont.a_list.setVisible(false );
+        cont.log.setVisible(true);
+    }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         // TODO add your handling code here:
-        cont.rem_list.setVisible(false);
+        cont.a_list.setVisible(false);
         cont.home.setVisible(true);
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        int user_id=Integer.valueOf(jTextField2.getText());
+        
         String book_name=jTextField3.getText();
-        librarian.remove_book_from_list(user_id, book_name);
+        Reader.Add_of_self_to_watting_list(book_name);
+        
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
-          cont.rem_list.setVisible(false );
-        cont.log.setVisible(true);
-    }//GEN-LAST:event_jButton25ActionPerformed
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -260,20 +242,20 @@ public class Remove_User_from_list extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Remove_User_from_list.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Addofselftoorderlist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Remove_User_from_list.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Addofselftoorderlist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Remove_User_from_list.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Addofselftoorderlist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Remove_User_from_list.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Addofselftoorderlist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Remove_User_from_list().setVisible(true);
+                new Addofselftoorderlist().setVisible(true);
             }
         });
     }
@@ -287,15 +269,12 @@ public class Remove_User_from_list extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

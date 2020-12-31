@@ -20,6 +20,7 @@ public class Reader extends User {
     {
         if(User.search_for_book(name,Home.b_index ,Home.books))
             {
+                
                   int checkForID=Login.getIdForIsBlocked;
                   int ctr;
                   boolean checkIsBlocked=false;
@@ -33,6 +34,12 @@ public class Reader extends User {
                  JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
                  }
                  else {
+                     if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
+                {
+                    JOptionPane.showMessageDialog(new Rent_a_Book(),"sorry you can't rent this book and you can book it");
+                }
+                     else
+                     {
                   if(Home.readers[Home.current_user_index].rented_index==3)
                   {
                       System.out.println(Home.readers[ctr].is_Blocked);
@@ -50,6 +57,7 @@ public class Reader extends User {
                     JOptionPane.showMessageDialog(new Rent_a_Book(),"You have rented the required book of name "+name+" successfully");
                     System.out.println(Home.readers[ctr].is_Blocked);
                   }
+                     }
                 }
             }
         else
@@ -62,4 +70,35 @@ public class Reader extends User {
     
         
     
+
+public static void Add_of_self_to_watting_list(String book_name)
+{
+          if(User.search_for_book(book_name, Home.b_index, Home.books))
+        {
+            if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
+            {
+                    if(Home.books[User.currentbook_id].watting_list_index==5)
+                    {
+                          JOptionPane.showMessageDialog(new Add_User_to_list(), "sorry you can't book this book now");
+                    }
+                    else
+                    {
+                    
+                     
+                     Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.readers[Home.current_user_index];
+                     Home.books[User.currentbook_id].watting_list_index++;
+                     JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
+                   }
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(new Add_User_to_list(), "you catnt do that as this book is avilable");
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(new Add_User_to_list(), "book is not found");
+        }
+        
+}
 }
