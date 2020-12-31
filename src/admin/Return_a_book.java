@@ -210,23 +210,33 @@ String name;
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+
         boolean rented_is_found=false; 
+        int index=0;
         name=jTextField3.getText();
-        if(User.search_for_book(name, Home.b_index, Home.books))
-        {
+        
+            
             for(int i=0;i<=Home.rented_book_index;i++)
             {
                 if(Home.Rented_books[i].getBook_Name()==name)
                 {
                     rented_is_found=true;
+                    index=i;
                     break;
+                }
+                else
+                {
+                    rented_is_found=false;
                 }
             }
             if(rented_is_found==true)
             {
-                int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
+                int no=Home.books[index].getNo_of_existing_copies();
                 no++;
+                Home.books[index].setNo_of_existing_copies(no);
+                
                 JOptionPane.showMessageDialog(new Return_a_book(), "You have returned this book successfully");
+                
             }
             else
             {
@@ -235,7 +245,8 @@ String name;
             
             
             
-        }
+        
+        
     }//GEN-LAST:event_jButton13ActionPerformed
 
     /**
