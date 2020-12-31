@@ -7,6 +7,7 @@ package admin;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 import static admin.Admin_GUI.cont;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -40,6 +41,7 @@ public class Reader_gui extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -170,6 +172,23 @@ public class Reader_gui extends javax.swing.JFrame {
         });
         jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 180, 50));
 
+        jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(255, 255, 255));
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
+        jButton17.setText("Return Rented Book");
+        jButton17.setBorder(null);
+        jButton17.setBorderPainted(false);
+        jButton17.setContentAreaFilled(false);
+        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton17.setFocusPainted(false);
+        jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, 180, 50));
+
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 110, 80));
@@ -257,6 +276,21 @@ public class Reader_gui extends javax.swing.JFrame {
         Home.login=false;
     }//GEN-LAST:event_jButton12ActionPerformed
 
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        if(Home.rented_book_index==-1)
+        {
+            JOptionPane.showMessageDialog(new Reader_gui(), "There are no rented books to return");
+        }
+        else{
+            cont.ret_book.setVisible(true);
+            cont.Admin.setVisible(false);
+        }
+
+        //cont.se_member.setVisible(true);
+        // cont.Admin.setVisible(false);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -297,6 +331,7 @@ public class Reader_gui extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton7;

@@ -6,6 +6,7 @@
 package admin;
 
 import javax.swing.JOptionPane;
+import admin.contaner;
 
 /**
  *
@@ -69,7 +70,7 @@ public class librarian extends User
         }
         else
         {
-            JOptionPane.showMessageDialog(new Remove_Book(), "sorry book not found");
+            JOptionPane.showMessageDialog(new Remove_Book(), "Sorry book is not found");
         } 
     }
     public static void add_rEADER(int id,String pass,String first, String last,int phone, String type, String address, String email, boolean b)     
@@ -127,7 +128,7 @@ public class librarian extends User
             }
             else
             {
-                JOptionPane.showMessageDialog(new Add_User_to_list(), "you catnt do that as this book is avilable");
+                JOptionPane.showMessageDialog(new Add_User_to_list(), "you can't do that as this book is avilable");
             }
         }
         else
@@ -162,7 +163,7 @@ public class librarian extends User
                     Home.books[User.currentbook_id].waitting_list[i]=Home.books[User.currentbook_id].waitting_list[i+1];
                 }
                 Home.books[User.currentbook_id].watting_list_index--;
-                JOptionPane.showMessageDialog(new Remove_User_from_list(), "user is re,oved from the book list with name "+Home.books[User.currentbook_id].getBook_Name());
+                JOptionPane.showMessageDialog(new Remove_User_from_list(), "User is removed from the book list with name "+Home.books[User.currentbook_id].getBook_Name());
             }
           else 
             JOptionPane.showMessageDialog(new Remove_User_from_list(), "user is not found in list");

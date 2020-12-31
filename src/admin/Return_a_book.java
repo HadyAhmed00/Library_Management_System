@@ -210,12 +210,31 @@ String name;
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-         name=jTextField3.getText();
+        boolean rented_is_found=false; 
+        name=jTextField3.getText();
         if(User.search_for_book(name, Home.b_index, Home.books))
         {
-            int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
-            no++;
-            JOptionPane.showMessageDialog(new Return_a_book(), "you have returned this book successfuly");
+            for(int i=0;i<=Home.rented_book_index;i++)
+            {
+                if(Home.Rented_books[i].getBook_Name()==name)
+                {
+                    rented_is_found=true;
+                    break;
+                }
+            }
+            if(rented_is_found==true)
+            {
+                int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
+                no++;
+                JOptionPane.showMessageDialog(new Return_a_book(), "You have returned this book successfully");
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(new Return_a_book(), "The book has not been found","Failed!",JOptionPane.WARNING_MESSAGE);
+            }
+            
+            
+            
         }
     }//GEN-LAST:event_jButton13ActionPerformed
 

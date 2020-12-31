@@ -475,7 +475,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         
         if(Home.rented_book_index==-1)
         {
-            JOptionPane.showMessageDialog(new Admin_GUI(), "there are no rented books");
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to rent");
         }
         
  
@@ -492,8 +492,15 @@ public class Admin_GUI extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
-        cont.ret_book.setVisible(true);
-        cont.Admin.setVisible(false);
+        if(Home.rented_book_index==-1)
+        {
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to return");
+        }
+        else{
+            cont.ret_book.setVisible(true);
+            cont.Admin.setVisible(false);
+        }
+        
       
         
        //cont.se_member.setVisible(true);
