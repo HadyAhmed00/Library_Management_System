@@ -212,7 +212,7 @@ String name;
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
 
            
-        if(Validation.valid2(jTextField3.getText())){
+        
         boolean rented_is_found=false;
         boolean rented_is_found_for_current_user=false;
         int index=0;
@@ -319,10 +319,7 @@ String name;
         }
             
             
-        }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
-
-        }
+       
             
             
         

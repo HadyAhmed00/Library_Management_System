@@ -242,7 +242,7 @@ public class Search_For_Book extends javax.swing.JFrame {
        
        
         
-  if(Validation.valid2(jTextField1.getText())){
+  
       name=jTextField1.getText();
         DefaultListModel<String> model2 = new DefaultListModel<>();
         if(User.search_for_book(name, Home.b_index, Home.books))
@@ -271,10 +271,7 @@ public class Search_For_Book extends javax.swing.JFrame {
             
      
           
-        }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
-
-        }
+        
 
             
         

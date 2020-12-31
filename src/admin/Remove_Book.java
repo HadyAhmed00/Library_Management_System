@@ -181,13 +181,10 @@ String name;
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
-        if(Validation.valid2(jTextField15.getText())){
+        
         name=jTextField15.getText();
         librarian.remove_book(name);
-        }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
-
-        }
+        
         
     }//GEN-LAST:event_jButton17ActionPerformed
 
