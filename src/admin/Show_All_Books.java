@@ -96,15 +96,10 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
         jTextField3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("the book name is uneditable");
+        jTextField3.setText(" name");
         jTextField3.setBorder(null);
         jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField3.setOpaque(false);
-        jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField3FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 200, 20));
 
         jLabel9.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -194,31 +189,16 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jTextField7FocusGained(evt);
             }
         });
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
-            }
-        });
         jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 200, -1));
 
         jTextField6.setEditable(false);
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
         jTextField6.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setText("production year is uneditable");
+        jTextField6.setText("production year");
         jTextField6.setBorder(null);
         jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField6.setOpaque(false);
-        jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField6FocusGained(evt);
-            }
-        });
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
-            }
-        });
         jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 210, 30));
 
         jLabel14.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -229,7 +209,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField8.setBackground(new java.awt.Color(17, 9, 50));
         jTextField8.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField8.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField8.setText("the book category is uneditable");
+        jTextField8.setText("category");
         jTextField8.setBorder(null);
         jTextField8.setOpaque(false);
         jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -244,30 +224,20 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField5.setText("the book author is uneditable");
+        jTextField5.setText("author");
         jTextField5.setBorder(null);
         jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField5.setOpaque(false);
-        jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField5FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 210, 30));
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setText("the book ID is uneditable");
+        jTextField4.setText("ID");
         jTextField4.setBorder(null);
         jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
-        jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField4FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 200, 20));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel3.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
@@ -399,11 +369,6 @@ public class Show_All_Books extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusGained
-        // TODO add your handling code here:
-        jTextField3.setText("");
-    }//GEN-LAST:event_jTextField3FocusGained
-
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -423,22 +388,6 @@ public class Show_All_Books extends javax.swing.JFrame {
         //ont.Dis_Book.setVisible(false);
         //cont.se_book.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jTextField6FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6FocusGained
-
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
-
-    private void jTextField5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField5FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5FocusGained
-
-    private void jTextField4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField4FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4FocusGained
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
@@ -515,10 +464,6 @@ public class Show_All_Books extends javax.swing.JFrame {
     private void jTextField7FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusGained
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField7FocusGained
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
 
