@@ -82,11 +82,6 @@ public class Remove_User_from_list extends javax.swing.JFrame {
                 jTextField3FocusGained(evt);
             }
         });
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 200, 20));
         jPanel3.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 200, 10));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
@@ -241,7 +236,7 @@ public class Remove_User_from_list extends javax.swing.JFrame {
         
         
         
-         if(Validation.valid1(jTextField3.getText())){
+         if(Validation.valid2(jTextField2.getText())&&Validation.valid1(jTextField3.getText())){
       int user_id=Integer.valueOf(jTextField2.getText());
         String book_name=jTextField3.getText();
         librarian.remove_book_from_list(user_id, book_name);
@@ -256,10 +251,6 @@ public class Remove_User_from_list extends javax.swing.JFrame {
           cont.rem_list.setVisible(false );
         cont.log.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
