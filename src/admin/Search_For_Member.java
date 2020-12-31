@@ -211,21 +211,17 @@ public class Search_For_Member extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         //((DefaultListModel)cont.Display.jList1.getModel()).clear();
-        id=Integer.valueOf(jTextField15.getText());
+         if(Validation.valid1(jTextField15.getText())){
+      id=Integer.valueOf(jTextField15.getText());
         
         DefaultListModel<String> model = new DefaultListModel<>();
         if(User.search_member(id, Home.r_index, Home.readers))
         {
+            
+                 
            if(User.type.equals("r"))
            {   
-               if (Home.readers[User.current_member_id].rented_index==0) {
-                   Home.readers[User.current_member_id].my_rented[0]=new Book(0, "","", 0,"","");
-                   model.addElement(Home.readers[User.current_member_id].my_rented[0].getBook_Name());
-                   cont.Display.jList1.setModel(model);
-                 cont.se_member.setVisible(false);
-                 cont.Display.setVisible(true);
-               }
- 
+              
              for (int i = 0; i <=Home.readers[User.current_member_id].rented_index; i++)
              {
                  
@@ -233,17 +229,17 @@ public class Search_For_Member extends javax.swing.JFrame {
                  cont.Display.jList1.setModel(model);
                  cont.se_member.setVisible(false);
                  cont.Display.setVisible(true);
-             } 
+             }
+                 
+                 
+            
+            
+            cont.se_member.setVisible(false);
+                 cont.Display.setVisible(true);
         }
            else if(User.type.equals("l"))
            {
-            if (Home.libs[User.current_member_id].rented_index==0) {
-                   Home.libs[User.current_member_id].my_rented[0]=new Book(0, "","", 0,"","");
-                   model.addElement(Home.libs[User.current_member_id].my_rented[0].getBook_Name());
-                   cont.Display.jList1.setModel(model);
-                 cont.se_member.setVisible(false);
-                 cont.Display.setVisible(true);
-               }
+            
              for (int i = 0; i <=Home.libs[User.current_member_id].rented_index; i++) {
                  
              model.addElement(Home.libs[User.current_member_id].my_rented[i].getBook_Name());
@@ -251,11 +247,22 @@ public class Search_For_Member extends javax.swing.JFrame {
              cont.se_member.setVisible(false);
              cont.Display.setVisible(true);
              }
+            
+            
+                     
+            
+            
            }
           
         }
         else
             JOptionPane.showMessageDialog(new Search_For_Member(), "Member is not found!!","Alert",JOptionPane.WARNING_MESSAGE);
+        
+        
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
         
     }//GEN-LAST:event_jButton17ActionPerformed
 

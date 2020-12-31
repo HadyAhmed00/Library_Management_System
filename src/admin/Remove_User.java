@@ -197,9 +197,15 @@ int id;
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
-        id=Integer.valueOf(jTextField9.getText());
+        
+         if(Validation.valid1(jTextField9.getText())){
+      id=Integer.valueOf(jTextField9.getText());
         librarian.remove_reader(id);
         JOptionPane.showMessageDialog(new Remove_User(), "You have removed data of user no."+id);
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed

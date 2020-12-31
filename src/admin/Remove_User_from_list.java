@@ -10,6 +10,7 @@ package admin;
  * @author Hany
  */
 import static admin.Admin_GUI.cont;
+import javax.swing.JOptionPane;
 
 public class Remove_User_from_list extends javax.swing.JFrame {
 
@@ -232,9 +233,17 @@ public class Remove_User_from_list extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        int user_id=Integer.valueOf(jTextField2.getText());
+        
+        
+        
+         if(Validation.valid2(jTextField2.getText())&&Validation.valid1(jTextField3.getText())){
+      int user_id=Integer.valueOf(jTextField2.getText());
         String book_name=jTextField3.getText();
         librarian.remove_book_from_list(user_id, book_name);
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed

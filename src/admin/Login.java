@@ -7,7 +7,6 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
-import javafx.beans.binding.Bindings;
 import javax.swing.JOptionPane;
 import javax.swing.JPopupMenu;
 
@@ -186,16 +185,15 @@ public static int getIdForIsBlocked;
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-         if(jTextField3.getText().isEmpty()||jPasswordField1.getText().isEmpty())
+          if(!Validation.valid1(jTextField3.getText())||jPasswordField1.getText().isEmpty())
         {
-            JOptionPane.showMessageDialog(new Login(), "Please enter data");
+            JOptionPane.showMessageDialog(new Login(), "Wrong data");
         }
         
         
         else
         {
             id = Integer.valueOf(jTextField3.getText());
-            getIdForIsBlocked=id;
         pass=jPasswordField1.getText();
         boolean log=false;
         if(Home.login==true)
@@ -245,11 +243,12 @@ public static int getIdForIsBlocked;
             }
              else
                 {
-                    JOptionPane.showMessageDialog(new Login(), "Sorry your information is not correct");
+                    JOptionPane.showMessageDialog(new Login(), "sorry your information is not correct");
                 }
         
         }
         }
+         
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
