@@ -42,6 +42,7 @@ public class Reader_gui extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -68,7 +69,7 @@ public class Reader_gui extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 180, 50));
+        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, 180, 50));
 
         jButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -85,7 +86,7 @@ public class Reader_gui extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 180, 50));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 180, 50));
 
         jButton3.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -102,7 +103,7 @@ public class Reader_gui extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, 180, 50));
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 180, 50));
 
         jButton7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
@@ -119,7 +120,7 @@ public class Reader_gui extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, 180, 50));
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 180, 50));
 
         jButton8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
@@ -136,7 +137,7 @@ public class Reader_gui extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, 180, 50));
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 200, 180, 50));
 
         jButton12.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
@@ -187,7 +188,24 @@ public class Reader_gui extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, 180, 50));
+        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 180, 50));
+
+        jButton16.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(255, 255, 255));
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
+        jButton16.setText("Show All Rented Books");
+        jButton16.setBorder(null);
+        jButton16.setBorderPainted(false);
+        jButton16.setContentAreaFilled(false);
+        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton16.setFocusPainted(false);
+        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 180, 50));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -291,6 +309,25 @@ public class Reader_gui extends javax.swing.JFrame {
         // cont.Admin.setVisible(false);
     }//GEN-LAST:event_jButton17ActionPerformed
 
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+
+        if(Home.rented_book_index==-1)
+        {
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to rent");
+        }
+
+        else
+        {
+            int i=0;
+            cont.show_rented.show_rented(Home.Rented_books[i].getBook_Name(), String.valueOf(Home.Rented_books[i].getBook_ID()), Home.Rented_books[i].getProduction_year(), Home.Rented_books[i].getAuthor_name(), Home.Rented_books[i].getCategory(),String.valueOf(Home.Rented_books[i].getNo_of_existing_copies()));
+
+            cont.show_rented.i=0;
+            cont.Admin.setVisible(false);
+            cont.show_rented.setVisible(true);
+        }
+    }//GEN-LAST:event_jButton16ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -331,6 +368,7 @@ public class Reader_gui extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

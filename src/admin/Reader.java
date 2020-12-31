@@ -16,7 +16,35 @@ public class Reader extends User
         public Reader(int ID, String password, String Type, String First_Name, String Last_Name, String Address, int Cellphone, String Email, boolean is_Blocked) {
             super(ID, password, Type, First_Name, Last_Name, Address, Cellphone, Email, is_Blocked);
         }
-        @Override
+        
+    public static void Add_of_self_to_watting_list(String book_name)
+    {
+        if(User.search_for_book(book_name, Home.b_index, Home.books))
+        {
+            if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
+            {
+                if(Home.books[User.currentbook_id].watting_list_index==5)
+                {
+                    JOptionPane.showMessageDialog(new Add_User_to_list(), "sorry you can't book this book now");
+                }
+                else
+                {
+                    Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.readers[Home.current_user_index];
+                    Home.books[User.currentbook_id].watting_list_index++;
+                    JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
+                }
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(new Add_User_to_list(), "you catnt do that as this book is avilable");
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(new Add_User_to_list(), "book is not found");
+        }
+    }
+    @Override
         public  void rent_book(String name)
         {
             if(User.search_for_book(name,Home.b_index ,Home.books))
@@ -69,31 +97,8 @@ public class Reader extends User
                 JOptionPane.showMessageDialog(new Rent_a_Book(),"This book has not been found!!","Alert",JOptionPane.WARNING_MESSAGE);
             }    
         }
-    public static void Add_of_self_to_watting_list(String book_name)
+    public void return_book(String name)
     {
-        if(User.search_for_book(book_name, Home.b_index, Home.books))
-        {
-            if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
-            {
-                if(Home.books[User.currentbook_id].watting_list_index==5)
-                {
-                    JOptionPane.showMessageDialog(new Add_User_to_list(), "sorry you can't book this book now");
-                }
-                else
-                {
-                    Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.readers[Home.current_user_index];
-                    Home.books[User.currentbook_id].watting_list_index++;
-                    JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
-                }
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(new Add_User_to_list(), "you catnt do that as this book is avilable");
-            }
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(new Add_User_to_list(), "book is not found");
-        }
+        System.out.println("Hello World");
     }
 }

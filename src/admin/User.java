@@ -133,7 +133,7 @@ public abstract class User
         }
     }
     public abstract void rent_book(String name);
-    
+    public abstract void return_book(String name);
 }
 
       
