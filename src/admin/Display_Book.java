@@ -113,7 +113,7 @@ public class Display_Book extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Category :");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 80, 30));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 80, 30));
 
         jLabel11.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -220,7 +220,7 @@ public class Display_Book extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Number Of Copies:");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 170, 30));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 170, 30));
         jPanel3.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 410, 10));
 
         jTextField6.setEditable(false);
