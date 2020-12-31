@@ -97,11 +97,6 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField3.setBorder(null);
         jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField3.setOpaque(false);
-        jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField3FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 80, 210, 20));
 
         jLabel9.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -231,11 +226,6 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField6.setBorder(null);
         jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField6.setOpaque(false);
-        jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField6FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 210, 30));
 
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
@@ -245,11 +235,6 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField5.setBorder(null);
         jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField5.setOpaque(false);
-        jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField5FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 210, 30));
 
         jTextField4.setEditable(false);
@@ -260,11 +245,6 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField4.setBorder(null);
         jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
-        jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField4FocusGained(evt);
-            }
-        });
         jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, 210, 20));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel3.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
@@ -374,11 +354,6 @@ public class Display_Book extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusGained
-        // TODO add your handling code here:
-        jTextField3.setText("");
-    }//GEN-LAST:event_jTextField3FocusGained
-
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
          if (Home.isgest==false) 
@@ -417,18 +392,6 @@ public class Display_Book extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(new Show_All_Books(), "you must to be member to use this frtuer");
         }
     }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jTextField6FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6FocusGained
-
-    private void jTextField5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField5FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5FocusGained
-
-    private void jTextField4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField4FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4FocusGained
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:

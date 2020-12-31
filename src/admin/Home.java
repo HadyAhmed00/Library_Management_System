@@ -165,7 +165,6 @@ public class Home extends javax.swing.JFrame {
         cont.log.setVisible(true);
         Home.login=false;
         Home.isgest=false;
-        Home.isgest=true;
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
