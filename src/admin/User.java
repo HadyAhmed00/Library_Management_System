@@ -4,18 +4,19 @@
  * and open the template in the editor.
  */
 package admin;
-import admin.Home;
-import admin.Home;
-import java.util.Scanner;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+//import admin.Home;
+//import admin.Home;
+//import java.util.Scanner;
+//import javax.swing.JFrame;
+//import javax.swing.JOptionPane;
 import static admin.Admin_GUI.cont;
 import javax.swing.DefaultListModel;
 /**
  *
- * @author hadi
+ * @author hadi Atef
  */
-public abstract class User {
+public abstract class User 
+{
     int ID;   //user id
     String password;//user password
     String Type; //user type(admin or reader)
@@ -31,11 +32,8 @@ public abstract class User {
     Book my_rented[]=new Book[3];//array of reader rented books,It is special for each reader 
     static String type;
     DefaultListModel<String> model = new DefaultListModel<>();
-   
-
-    
-    
-        public User(int ID, String password, String Type, String First_Name, String Last_Name, String Address, int Cellphone, String Email, boolean is_blooked) {
+    public User(int ID, String password, String Type, String First_Name, String Last_Name, String Address, int Cellphone, String Email, boolean is_blooked) 
+    {
         this.ID = ID;
         this.password = password;
         this.Type = Type;
@@ -46,15 +44,13 @@ public abstract class User {
         this.Email = Email;
         this.is_Blocked = is_Blocked;
         my_rented[0]=new Book(0,"" , "", 0, "", "");
-        
-        
     }
    public static boolean search_member(int id,int r_index,Reader r_arr[])
     {
-        
         boolean found1=false;
        // boolean found2=false;
-        for (int i = 0; i <=r_index; i++) {
+        for (int i = 0; i <=r_index; i++) 
+        {
             if(id==r_arr[i].ID)
             {
                 current_member_id=i;
@@ -63,7 +59,7 @@ public abstract class User {
             }
             else
                 found1=false;
-    }
+        }
         if(found1==true)
         {
             int ID=Home.readers[User.current_member_id].ID;
@@ -104,7 +100,6 @@ public abstract class User {
            {
                return false;
            }
-           
         }
     }
     public static boolean search_for_book(String namee, int b_index,Book b_arr[])
@@ -138,11 +133,7 @@ public abstract class User {
         }
     }
     public abstract void rent_book(String name);
-    
-
-      
-    
-    }
+}
 
       
 

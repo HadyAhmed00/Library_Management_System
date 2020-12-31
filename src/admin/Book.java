@@ -5,11 +5,9 @@
  */
 package admin;
 
-import javax.swing.JTextField;
-
 /**
  *
- * @author hadi
+ * @author hadi Atef
  */
 public class Book {
    private int Book_ID;
@@ -20,18 +18,14 @@ public class Book {
    private String category;
    int watting_list_index=0;
    User waitting_list[]=new User[5];
-    
-    
-
-    public Book(int Book_Id, String Book_Name, String Book_Production_year, int no_of_existing_copies, String author_name, String category) {
+   public Book(int Book_Id, String Book_Name, String Book_Production_year, int no_of_existing_copies, String author_name, String category) 
+   {
         this.Book_ID = Book_Id;
         this.Book_Name = Book_Name;
         this.production_year = Book_Production_year;
         this.no_of_existing_copies = no_of_existing_copies;
         this.author_name = author_name;
-        this.category = category;
-      
-        
+        this.category = category;  
     }
 
     public int getBook_ID() {
@@ -61,9 +55,4 @@ public class Book {
     public String getCategory() {
         return category;
     }
-
-    
-    
-   
-    
 }

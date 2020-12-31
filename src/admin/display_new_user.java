@@ -36,25 +36,25 @@ public class display_new_user extends javax.swing.JFrame {
         jSeparator57 = new javax.swing.JSeparator();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        pass_f = new javax.swing.JTextField();
         jSeparator58 = new javax.swing.JSeparator();
         jSeparator59 = new javax.swing.JSeparator();
         jSeparator60 = new javax.swing.JSeparator();
         jSeparator61 = new javax.swing.JSeparator();
-        jPasswordField8 = new javax.swing.JPasswordField();
         jLabel44 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
+        name_f = new javax.swing.JTextField();
+        addres_f = new javax.swing.JTextField();
         jSeparator62 = new javax.swing.JSeparator();
         jButton31 = new javax.swing.JButton();
         jButton32 = new javax.swing.JButton();
         jButton33 = new javax.swing.JButton();
         jLabel45 = new javax.swing.JLabel();
+        id_f = new javax.swing.JTextField();
         jLabel46 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField26 = new javax.swing.JTextField();
+        email_f = new javax.swing.JTextField();
         jSeparator63 = new javax.swing.JSeparator();
-        jTextField27 = new javax.swing.JTextField();
+        phone_f = new javax.swing.JTextField();
         jSeparator64 = new javax.swing.JSeparator();
         jButton13 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -87,60 +87,41 @@ public class display_new_user extends javax.swing.JFrame {
         jLabel43.setText("ID");
         jPanel10.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 30, -1));
 
-        jTextField23.setEditable(false);
-        jTextField23.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField23.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jTextField23.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField23.setText("ID");
-        jTextField23.setBorder(null);
-        jTextField23.setOpaque(false);
-        jPanel10.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, 210, 20));
+        pass_f.setEditable(false);
+        pass_f.setBackground(new java.awt.Color(17, 9, 50));
+        pass_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        pass_f.setForeground(new java.awt.Color(255, 255, 255));
+        pass_f.setText("password");
+        pass_f.setBorder(null);
+        pass_f.setOpaque(false);
+        jPanel10.add(pass_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, 210, 20));
         jPanel10.add(jSeparator58, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 450, 10));
         jPanel10.add(jSeparator59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel10.add(jSeparator60, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
         jPanel10.add(jSeparator61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 10));
-
-        jPasswordField8.setEditable(false);
-        jPasswordField8.setBackground(new java.awt.Color(17, 9, 50));
-        jPasswordField8.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jPasswordField8.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField8.setText("jPasswordField1");
-        jPasswordField8.setBorder(null);
-        jPasswordField8.setOpaque(false);
-        jPanel10.add(jPasswordField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, 210, 20));
 
         jLabel44.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("E-mail");
         jPanel10.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 100, -1));
 
-        jTextField24.setEditable(false);
-        jTextField24.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField24.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jTextField24.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField24.setText("The First Name");
-        jTextField24.setBorder(null);
-        jTextField24.setOpaque(false);
-        jTextField24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField24ActionPerformed(evt);
-            }
-        });
-        jPanel10.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 210, 20));
+        name_f.setEditable(false);
+        name_f.setBackground(new java.awt.Color(17, 9, 50));
+        name_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        name_f.setForeground(new java.awt.Color(255, 255, 255));
+        name_f.setText("The First Name");
+        name_f.setBorder(null);
+        name_f.setOpaque(false);
+        jPanel10.add(name_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 210, 20));
 
-        jTextField25.setEditable(false);
-        jTextField25.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField25.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jTextField25.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField25.setText("Adress");
-        jTextField25.setBorder(null);
-        jTextField25.setOpaque(false);
-        jTextField25.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField25FocusGained(evt);
-            }
-        });
-        jPanel10.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 210, 20));
+        addres_f.setEditable(false);
+        addres_f.setBackground(new java.awt.Color(17, 9, 50));
+        addres_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        addres_f.setForeground(new java.awt.Color(255, 255, 255));
+        addres_f.setText("Adress");
+        addres_f.setBorder(null);
+        addres_f.setOpaque(false);
+        jPanel10.add(addres_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 210, 20));
         jPanel10.add(jSeparator62, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 450, 10));
 
         jButton31.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
@@ -199,6 +180,15 @@ public class display_new_user extends javax.swing.JFrame {
         jLabel45.setText("Adress");
         jPanel10.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 100, -1));
 
+        id_f.setEditable(false);
+        id_f.setBackground(new java.awt.Color(17, 9, 50));
+        id_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        id_f.setForeground(new java.awt.Color(255, 255, 255));
+        id_f.setText("ID");
+        id_f.setBorder(null);
+        id_f.setOpaque(false);
+        jPanel10.add(id_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, 210, 20));
+
         jLabel46.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel46.setForeground(new java.awt.Color(255, 255, 255));
         jLabel46.setText("Phone");
@@ -208,24 +198,24 @@ public class display_new_user extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
         jPanel10.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 110, 80));
 
-        jTextField26.setEditable(false);
-        jTextField26.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField26.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jTextField26.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField26.setText("Emaile");
-        jTextField26.setBorder(null);
-        jTextField26.setOpaque(false);
-        jPanel10.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 210, 20));
+        email_f.setEditable(false);
+        email_f.setBackground(new java.awt.Color(17, 9, 50));
+        email_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        email_f.setForeground(new java.awt.Color(255, 255, 255));
+        email_f.setText("Emaile");
+        email_f.setBorder(null);
+        email_f.setOpaque(false);
+        jPanel10.add(email_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 210, 20));
         jPanel10.add(jSeparator63, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 450, 10));
 
-        jTextField27.setEditable(false);
-        jTextField27.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField27.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jTextField27.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField27.setText("Phone number");
-        jTextField27.setBorder(null);
-        jTextField27.setOpaque(false);
-        jPanel10.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 210, 20));
+        phone_f.setEditable(false);
+        phone_f.setBackground(new java.awt.Color(17, 9, 50));
+        phone_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        phone_f.setForeground(new java.awt.Color(255, 255, 255));
+        phone_f.setText("Phone number");
+        phone_f.setBorder(null);
+        phone_f.setOpaque(false);
+        jPanel10.add(phone_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 210, 20));
         jPanel10.add(jSeparator64, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 450, 10));
 
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
@@ -273,18 +263,21 @@ public class display_new_user extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField25FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField25FocusGained
-        // TODO add your handling code here:
-        //jTextField4.setText("");
-    }//GEN-LAST:event_jTextField25FocusGained
-
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         // TODO add your handling code here:
         cont.new_user_info.setVisible(false);
         cont.Admin.setVisible(true);
 
     }//GEN-LAST:event_jButton31ActionPerformed
-
+    public void set_the_new (String name , int id , String pass, String addres,int phon,String email)
+    {
+        name_f.setText(name);
+        id_f.setText(String.valueOf(id));
+        pass_f.setText(pass);
+        addres_f.setText(addres);
+        phone_f.setText(String.valueOf(phon));
+        email_f.setText(email);
+    }
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         // TODO add your handling code here:
         cont.new_user_info.setVisible(false);
@@ -296,10 +289,6 @@ public class display_new_user extends javax.swing.JFrame {
        cont.new_user_info.setVisible(false);
        cont.add_user.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
@@ -336,14 +325,15 @@ public class display_new_user extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                cont.new_user_info.setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            cont.new_user_info.setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField addres_f;
+    private javax.swing.JTextField email_f;
+    private javax.swing.JTextField id_f;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -359,7 +349,6 @@ public class display_new_user extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPasswordField jPasswordField8;
     private javax.swing.JSeparator jSeparator55;
     private javax.swing.JSeparator jSeparator57;
     private javax.swing.JSeparator jSeparator58;
@@ -369,10 +358,8 @@ public class display_new_user extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator62;
     private javax.swing.JSeparator jSeparator63;
     private javax.swing.JSeparator jSeparator64;
-    public javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField name_f;
+    private javax.swing.JTextField pass_f;
+    private javax.swing.JTextField phone_f;
     // End of variables declaration//GEN-END:variables
 }

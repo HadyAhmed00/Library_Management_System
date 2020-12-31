@@ -3,16 +3,17 @@ package admin;
 import static admin.Admin_GUI.cont;
 import javax.swing.JOptionPane;
 
-public class Add_User extends javax.swing.JFrame {
-    String first_name ;
-String last_name;
-int id;
-String password;
-String address;
-int phone;
-String email;
-boolean isblooked;
-    public Add_User() {
+    public class Add_User extends javax.swing.JFrame 
+    {
+        String first_name ;
+        String last_name;
+        int id;
+        String password;
+        String address;
+        int phone;
+        String email;
+        boolean isblooked;
+        public Add_User() {
         initComponents();
     }
 
@@ -63,18 +64,13 @@ boolean isblooked;
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 160, -1));
 
         jTextField1.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField1.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Enter last Name");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField1FocusGained(evt);
-            }
-        });
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
             }
         });
         jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 100, 200, 20));
@@ -106,11 +102,6 @@ boolean isblooked;
         jTextField3.setText("ID");
         jTextField3.setBorder(null);
         jTextField3.setOpaque(false);
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 200, 20));
         jPanel3.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 200, 10));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
@@ -135,18 +126,13 @@ boolean isblooked;
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 90, -1));
 
         jTextField2.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField2.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
         jTextField2.setText("Enter first name");
         jTextField2.setBorder(null);
         jTextField2.setOpaque(false);
         jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField2FocusGained(evt);
-            }
-        });
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
             }
         });
         jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 200, 20));
@@ -290,12 +276,6 @@ boolean isblooked;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-        
-        
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
         cont.add_user.setVisible(false);
@@ -343,6 +323,8 @@ boolean isblooked;
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        cont.add_user.setVisible(false);
+        cont.new_user_info.setVisible(true);
         Home.r_index++;
         Home.userid++;
         last_name=jTextField1.getText();
@@ -355,17 +337,8 @@ boolean isblooked;
         email=jTextField6.getText();
         librarian.add_rEADER( id, password, first_name, last_name, phone, "r", address, email, isblooked);
         JOptionPane.showMessageDialog(new Add_User(),"You have added a new reader successfully");
-        cont.add_user.setVisible(false);
-        cont.new_user_info.setVisible(true);
+        cont.new_user_info.set_the_new(first_name+" "+last_name, id, password, address, phone, email); 
     }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
