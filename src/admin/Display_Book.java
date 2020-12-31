@@ -381,31 +381,41 @@ public class Display_Book extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
-         String name=jTextField3.getText();
-
-        
-        int checkForID=Login.getIdForIsBlocked;
-        int ctr;
-        boolean checkIsBlocked=false;
-        for ( ctr=0;ctr<Home.r_index;ctr++){
-            if(Home.readers[ctr].ID==checkForID){
-               checkIsBlocked=Home.readers[ctr].is_Blocked;
-               break;
+         if (Home.isgest==false) 
+        {
+            String name=jTextField3.getText();
+            int checkForID=Login.getIdForIsBlocked;
+            int ctr;
+            boolean checkIsBlocked=false;
+            for ( ctr=0;ctr<Home.r_index;ctr++)
+            {
+                if(Home.readers[ctr].ID==checkForID)
+                {
+                   checkIsBlocked=Home.readers[ctr].is_Blocked;
+                   break;
+                }
             }
+            if(Home.readers[ctr].is_Blocked == true)
+            {
+                JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
+            } 
+            else
+            {
+                if(Home.login)
+                {
+                    Home.libs[Home.current_user_index].rent_book(name);
+                } 
+
+                else 
+                { 
+                    Home.readers[Home.current_user_index].rent_book(name);
+                }
+           }
         }
-        if(Home.readers[ctr].is_Blocked == true){
-            JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
+        else 
+        {
+            JOptionPane.showMessageDialog(new Show_All_Books(), "you must to be member to use this frtuer");
         }
-        //end 
-        else{
-                    if(Home.login)
-       {
-           Home.libs[Home.current_user_index].rent_book(name);
-       } 
-        
-                    else { Home.readers[Home.current_user_index].rent_book(name);}
-       }
-        
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jTextField6FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusGained
@@ -427,10 +437,18 @@ public class Display_Book extends javax.swing.JFrame {
             cont.Dis_Book.setVisible(false);
             cont.Admin.setVisible(true);
         }
-        if (Home.login==false)
+         else if (Home.login==false)
         {
-           cont.Dis_Book.setVisible(false);
-           cont.read.setVisible(true);
+            if (Home.isgest==false) 
+            {
+                cont.Dis_Book.setVisible(false);
+                cont.read.setVisible(true);
+            }
+            else if (Home.isgest==true)
+            {
+                cont.Dis_Book.setVisible(false);
+                cont.gest.setVisible(true);
+            }
         }
     }//GEN-LAST:event_jButton24ActionPerformed
 

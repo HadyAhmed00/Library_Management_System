@@ -26,8 +26,7 @@ public class Home extends javax.swing.JFrame {
         static librarian libs[]=new librarian[15];//refers to the admins in the library
         static int current_user_index;//refers to the index of current reader or admin
         static boolean login=false; //use to know if the user is reader or admin
-        
-        
+        static boolean isgest =false;
     /**
      * Creates new form Home
      */
@@ -156,7 +155,7 @@ public class Home extends javax.swing.JFrame {
         cont.home.setVisible(false);
         cont.log.setVisible(true);
         Home.login=true;
-
+        Home.isgest=false;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -165,13 +164,15 @@ public class Home extends javax.swing.JFrame {
         cont.home.setVisible(false);
         cont.log.setVisible(true);
         Home.login=false;
-        
+        Home.isgest=false;
+        Home.isgest=true;
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         cont.home.setVisible(false);
         cont.gest.setVisible(true);
+        Home.isgest=true;
     }//GEN-LAST:event_jButton2ActionPerformed
        
     /**

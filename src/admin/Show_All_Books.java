@@ -162,7 +162,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 180, 50));
+        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 390, 180, 50));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
@@ -179,7 +179,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 390, 180, 50));
+        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, 180, 50));
 
         jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
@@ -293,7 +293,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jButton20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 180, 50));
+        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 180, 50));
 
         jButton24.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
@@ -449,8 +449,16 @@ public class Show_All_Books extends javax.swing.JFrame {
         }
         if (Home.login==false)
         {
-           cont.show.setVisible(false);
-           cont.read.setVisible(true);
+           if (Home.isgest==false) 
+            {
+                cont.show.setVisible(false);
+                cont.read.setVisible(true);
+            }
+            else if (Home.isgest==true)
+            {
+                cont.show.setVisible(false);
+                cont.gest.setVisible(true);
+            }
         }
     }//GEN-LAST:event_jButton24ActionPerformed
 
@@ -465,36 +473,42 @@ public class Show_All_Books extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-        String name=Home.books[i].getBook_Name();
-
-        
-        int checkForID=Login.getIdForIsBlocked;
-        int ctr;
-        boolean checkIsBlocked=false;
-        for ( ctr=0;ctr<Home.r_index;ctr++){
-            if(Home.readers[ctr].ID==checkForID){
-               checkIsBlocked=Home.readers[ctr].is_Blocked;
-               break;
+        if (Home.isgest==false)
+        {
+            String name=Home.books[i].getBook_Name();
+            int checkForID=Login.getIdForIsBlocked;
+            int ctr;
+            boolean checkIsBlocked=false;
+            for ( ctr=0;ctr<Home.r_index;ctr++)
+            {
+                if(Home.readers[ctr].ID==checkForID)
+                {
+                   checkIsBlocked=Home.readers[ctr].is_Blocked;
+                   break;
+                }
             }
-        }
-        if(Home.readers[ctr].is_Blocked == true){
-            JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
-        }
-        
-        else{
-         if(Home.login)
-       {
-           Home.libs[Home.current_user_index].rent_book(name);
-           JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
+            if(Home.readers[ctr].is_Blocked == true)
+            {
+                JOptionPane.showMessageDialog(new Show_All_Books(), "You are blocked ");
+            }
+            else
+            {
+               if(Home.login)
+               {
+                   Home.libs[Home.current_user_index].rent_book(name);
+                   JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
+               }
+               else
+               {
+                    Home.readers[Home.current_user_index].rent_book(name);
+                    System.out.println(Home.readers[ctr].is_Blocked);
+               }
+            }
        }
-                 else{
-        Home.readers[Home.current_user_index].rent_book(name);
-        System.out.println(Home.readers[ctr].is_Blocked);
-        
-       }
+        else if (Home.isgest==true)
+        {
+            JOptionPane.showMessageDialog(new Show_All_Books(), "you must be member to use this feruer");
         }
-       
         
     }//GEN-LAST:event_jButton20ActionPerformed
 

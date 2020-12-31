@@ -193,10 +193,18 @@ public class Search_For_Book extends javax.swing.JFrame {
         cont.se_book.setVisible(false);
         cont.Admin.setVisible(true);
         }
-        if (Home.login==false)
+        else if (Home.login==false)
         {
-            cont.se_book.setVisible(false);
-            cont.read.setVisible(true);
+            if (Home.isgest==false)
+            {
+                cont.se_book.setVisible(false);
+                cont.read.setVisible(true);
+            }
+            else if (Home.isgest==true)
+            {
+                cont.se_book.setVisible(false);
+                cont.gest.setVisible(true);
+            }
         }
     }//GEN-LAST:event_jButton33ActionPerformed
 
