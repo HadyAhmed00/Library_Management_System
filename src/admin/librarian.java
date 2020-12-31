@@ -150,14 +150,15 @@ public class librarian extends User
             }
             else
             {
-                if(Home.libs[Home.current_user_index].rented_index==3)
+                if(Home.libs[Home.current_user_index].rented_index==2)
                 {
                     JOptionPane.showMessageDialog(new Rent_a_Book(),"Sorry, you can't rent more books");
                 }
                 else
                 {
-                    Home.libs[Home.current_user_index].my_rented[Home.libs[Home.current_user_index].rented_index]= Home.books[User.currentbook_id];
                     Home.libs[Home.current_user_index].rented_index++;
+                    Home.libs[Home.current_user_index].my_rented[Home.libs[Home.current_user_index].rented_index]= Home.books[User.currentbook_id];
+                    
                     int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
                     no--;
                     Home.books[User.currentbook_id].setNo_of_existing_copies(no);

@@ -251,7 +251,7 @@ String name;
                 } 
                   if(rented_is_found_for_current_user) 
                   {
-                      for (int i = index; i < Home.rented_book_index; i++) {
+                      for (int i = index; i <= Home.rented_book_index; i++) {
                     Home.Rented_books[i]=Home.Rented_books[i+1];
                 }
                 
@@ -285,7 +285,7 @@ String name;
                     }
                 } 
                   if(rented_is_found_for_current_user) 
-                  {for (int i = index; i < Home.rented_book_index; i++) {
+                  {for (int i = index; i <= Home.rented_book_index; i++) {
                     Home.Rented_books[i]=Home.Rented_books[i+1];
                 }
                 

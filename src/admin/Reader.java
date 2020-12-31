@@ -72,15 +72,16 @@ public class Reader extends User
                     }
                     else
                     {
-                        if(Home.readers[Home.current_user_index].rented_index==3)
+                        if(Home.readers[Home.current_user_index].rented_index==2)
                         {
                             System.out.println(Home.readers[ctr].is_Blocked);
                             JOptionPane.showMessageDialog(new Rent_a_Book(),"sorry you can't rent more books");
                         }
                         else
                         {
-                            Home.readers[Home.current_user_index].my_rented[Home.readers[Home.current_user_index].rented_index]= Home.books[User.currentbook_id];
                             Home.readers[Home.current_user_index].rented_index++;
+                            Home.readers[Home.current_user_index].my_rented[Home.readers[Home.current_user_index].rented_index]= Home.books[User.currentbook_id];
+                            
                             int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
                             no--;
                             Home.books[User.currentbook_id].setNo_of_existing_copies(no);                

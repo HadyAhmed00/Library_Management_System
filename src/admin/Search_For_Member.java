@@ -218,7 +218,7 @@ public class Search_For_Member extends javax.swing.JFrame {
         {
            if(User.type.equals("r"))
            {   
-               if (Home.readers[User.current_member_id].rented_index==0) {
+               if (Home.readers[User.current_member_id].rented_index==-1) {
                    Home.readers[User.current_member_id].my_rented[0]=new Book(0, "","", 0,"","");
                    model.addElement(Home.readers[User.current_member_id].my_rented[0].getBook_Name());
                    cont.Display.jList1.setModel(model);
@@ -237,7 +237,7 @@ public class Search_For_Member extends javax.swing.JFrame {
         }
            else if(User.type.equals("l"))
            {
-            if (Home.libs[User.current_member_id].rented_index==0) {
+            if (Home.libs[User.current_member_id].rented_index==-1) {
                    Home.libs[User.current_member_id].my_rented[0]=new Book(0, "","", 0,"","");
                    model.addElement(Home.libs[User.current_member_id].my_rented[0].getBook_Name());
                    cont.Display.jList1.setModel(model);
