@@ -206,19 +206,20 @@ int id;
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        id = Integer.valueOf(jTextField2.getText());
+        if(Validation.valid1(jTextField2.getText())){
+          id = Integer.valueOf(jTextField2.getText());
          if(User.search_member(id, Home.r_index, Home.readers))
         {
-            if(Home.readers[User.current_member_id].is_Blocked==true){
-                JOptionPane.showMessageDialog(new Block_User(), "the user is already blocked");
-            }
-            else{
-            Home.readers[User.current_member_id].is_Blocked=true;
             
-            JOptionPane.showMessageDialog(new Block_User(), "the user with id "+id+" is blocked");}
+            Home.readers[User.current_member_id].is_Blocked=true;
+            JOptionPane.showMessageDialog(new Block_User(), "the user with id "+id+" is blocked");
         }
         else
              JOptionPane.showMessageDialog(new Block_User(), "Member is not found!!","Alert",JOptionPane.WARNING_MESSAGE);;
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
      
         
     }//GEN-LAST:event_jButton13ActionPerformed

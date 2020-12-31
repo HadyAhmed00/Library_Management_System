@@ -322,10 +322,8 @@ import javax.swing.JOptionPane;
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-        cont.add_user.setVisible(false);
-        cont.new_user_info.setVisible(true);
-        Home.r_index++;
+       if(Validation.valid2(jTextField1.getText())&&Validation.valid2(jTextField2.getText())&&Validation.valid1(jTextField5.getText())){
+           Home.r_index++;
         Home.userid++;
         last_name=jTextField1.getText();
         first_name=jTextField2.getText();
@@ -337,7 +335,12 @@ import javax.swing.JOptionPane;
         email=jTextField6.getText();
         librarian.add_rEADER( id, password, first_name, last_name, phone, "r", address, email, isblooked);
         JOptionPane.showMessageDialog(new Add_User(),"You have added a new reader successfully");
-        cont.new_user_info.set_the_new(first_name+" "+last_name, id, password, address, phone, email); 
+        
+        
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     /**

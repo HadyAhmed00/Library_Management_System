@@ -239,10 +239,16 @@ int user_id;
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        user_id=Integer.valueOf(jTextField2.getText());
+        
+        if(Validation.valid1(jTextField2.getText())&&Validation.valid1(jTextField2.getText())){
+       user_id=Integer.valueOf(jTextField2.getText());
         book_name=jTextField3.getText();
         librarian.add_user_to_watting_list(user_id, book_name);
         System.out.println(Home.books[1].waitting_list[0].ID);
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed

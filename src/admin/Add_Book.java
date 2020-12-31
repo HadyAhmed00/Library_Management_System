@@ -336,7 +336,8 @@ String name,production_year,auther,category;
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
-        Home.b_index++;
+        if(Validation.valid2(jTextField7.getText())&&Validation.valid2(jTextField10.getText())&&Validation.valid2(jTextField12.getText())&&Validation.valid1(jTextField11.getText())&&Validation.valid1(jTextField13.getText())){
+                      Home.b_index++;
         Home.bookid++;
         name=jTextField7.getText();
         id=Integer.valueOf(Home.bookid);
@@ -346,7 +347,11 @@ String name,production_year,auther,category;
         production_year=jTextField13.getText();
         category=jTextField12.getText();
         librarian.add_book(id, name, production_year, no_copies, auther, category);
-        JOptionPane.showMessageDialog(new Add_Book(), "You have added a new reader succesfully");
+        JOptionPane.showMessageDialog(new Add_Book(), "You have added a new book succesfully");
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed

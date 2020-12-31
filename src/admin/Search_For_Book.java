@@ -241,7 +241,9 @@ public class Search_For_Book extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);*/
        
        
-        name=jTextField1.getText();
+        
+  if(Validation.valid2(jTextField1.getText())){
+      name=jTextField1.getText();
         DefaultListModel<String> model2 = new DefaultListModel<>();
         if(User.search_for_book(name, Home.b_index, Home.books))
         {
@@ -267,7 +269,12 @@ public class Search_For_Book extends javax.swing.JFrame {
         else 
             JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);
             
+     
+          
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
 
+        }
 
             
         

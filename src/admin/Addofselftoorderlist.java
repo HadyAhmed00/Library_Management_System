@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -216,8 +217,15 @@ public class Addofselftoorderlist extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
         
-        String book_name=jTextField3.getText();
+       
+        if(Validation.valid1(jTextField3.getText())){
+       String book_name=jTextField3.getText();
         Reader.Add_of_self_to_watting_list(book_name);
+        }else{
+                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+
+        }
+        
         
     }//GEN-LAST:event_jButton13ActionPerformed
 
