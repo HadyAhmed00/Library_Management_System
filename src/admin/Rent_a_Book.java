@@ -211,7 +211,7 @@ public class Rent_a_Book extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
        
             
-        if(Validation.valid2(jTextField3.getText())){
+        
         name=jTextField3.getText();
 
         
@@ -237,10 +237,7 @@ public class Rent_a_Book extends javax.swing.JFrame {
                     else { Home.readers[Home.current_user_index].rent_book(name);}
        }
  
-        }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
-
-        }        
+          
         
     }//GEN-LAST:event_jButton13ActionPerformed
 

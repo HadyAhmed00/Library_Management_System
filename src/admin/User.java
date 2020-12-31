@@ -28,7 +28,7 @@ public abstract class User
     boolean is_Blocked;
     static int currentbook_id=0;//the index of the book that i search
     static int current_member_id=0;//the index of the reader that i search
-    int rented_index=0;//the last index of the my rented array, It is special for each reader
+    int rented_index=-1;//the last index of the my rented array, It is special for each reader
     Book my_rented[]=new Book[3];//array of reader rented books,It is special for each reader 
     static String type;
     DefaultListModel<String> model = new DefaultListModel<>();
@@ -43,7 +43,7 @@ public abstract class User
         this.Cellphone = Cellphone;
         this.Email = Email;
         this.is_Blocked = is_Blocked;
-        my_rented[0]=new Book(0,"" , "", 0, "", "");
+        //my_rented[0]=new Book(0,"" , "", 0, "", "");
     }
    public static boolean search_member(int id,int r_index,Reader r_arr[])
     {
