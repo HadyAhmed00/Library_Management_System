@@ -20,8 +20,8 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField4.setText(id);
         jTextField5.setText(a_name);
         jTextField6.setText(year);
-        jTextField7.setText(category);
-        jTextField8.setText(num);
+        jTextField8.setText(category);
+        jTextField7.setText(num);
     }
     /**
      * Creates new form Show_All_Books
@@ -46,9 +46,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jButton19 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jTextField7 = new javax.swing.JTextField();
@@ -119,28 +117,10 @@ public class Show_All_Books extends javax.swing.JFrame {
         jLabel11.setText("Production Year :");
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, -1, 30));
 
-        jLabel13.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Waiting List :");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, -1, 30));
-
         jLabel12.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Number of copies");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 160, 30));
-
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.setBorder(null);
-        jComboBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jComboBox1.setOpaque(false);
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 350, 180, -1));
 
         jButton19.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton19.setForeground(new java.awt.Color(255, 255, 255));
@@ -189,7 +169,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jTextField7FocusGained(evt);
             }
         });
-        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 200, -1));
+        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 230, -1));
 
         jTextField6.setEditable(false);
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
@@ -369,10 +349,6 @@ public class Show_All_Books extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
       
        if(i==0)
@@ -445,7 +421,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                if(Home.login)
                {
                    Home.libs[Home.current_user_index].rent_book(name);
-                   JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with id "+Home.books[i].getBook_ID());
+                   JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with ID "+Home.books[i].getBook_ID());
                }
                else
                {
@@ -456,7 +432,7 @@ public class Show_All_Books extends javax.swing.JFrame {
        }
         else if (Home.isgest==true)
         {
-            JOptionPane.showMessageDialog(new Show_All_Books(), "you must be member to use this feruer");
+            JOptionPane.showMessageDialog(new Show_All_Books(), "You must be a member to use this feature");
         }
         
     }//GEN-LAST:event_jButton20ActionPerformed
@@ -535,12 +511,10 @@ public class Show_All_Books extends javax.swing.JFrame {
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

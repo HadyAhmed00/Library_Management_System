@@ -212,7 +212,7 @@ int id;
         {
             
             Home.readers[User.current_member_id].is_Blocked=true;
-            JOptionPane.showMessageDialog(new Block_User(), "the user with id "+id+" is blocked");
+            JOptionPane.showMessageDialog(new Block_User(), "the user with ID "+id+" is blocked");
         }
         else
              JOptionPane.showMessageDialog(new Block_User(), "Member is not found!!","Alert",JOptionPane.WARNING_MESSAGE);;

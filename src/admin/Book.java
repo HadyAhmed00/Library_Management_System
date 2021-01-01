@@ -10,12 +10,12 @@ package admin;
  * @author hadi Atef
  */
 public class Book {
-   private int Book_ID;
-   private String Book_Name;
-   private String production_year;
+   private final int Book_ID;
+   private final String Book_Name;
+   private final String production_year;
    private int no_of_existing_copies;
-   private String author_name;
-   private String category;
+   private final String author_name;
+   private final String category;
    int watting_list_index=0;
    User waitting_list[]=new User[5];
    public Book(int Book_Id, String Book_Name, String Book_Production_year, int no_of_existing_copies, String author_name, String category) 

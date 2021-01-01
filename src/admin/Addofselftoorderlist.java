@@ -222,7 +222,7 @@ public class Addofselftoorderlist extends javax.swing.JFrame {
        String book_name=jTextField3.getText();
         Reader.Add_of_self_to_watting_list(book_name);
         }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+                    JOptionPane.showMessageDialog(new Add_Book(), "Wrong data","Error",JOptionPane.ERROR_MESSAGE);
 
         }
         

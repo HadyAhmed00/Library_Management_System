@@ -25,8 +25,8 @@ public class Display_Book extends javax.swing.JFrame {
         jTextField4.setText(id);
         jTextField5.setText(a_name);
         jTextField6.setText(year);
-        jTextField7.setText(category);
-        jTextField8.setText(num);
+        jTextField8.setText(category);
+        jTextField7.setText(num);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -389,7 +389,7 @@ public class Display_Book extends javax.swing.JFrame {
         }
         else 
         {
-            JOptionPane.showMessageDialog(new Show_All_Books(), "you must to be member to use this frtuer");
+            JOptionPane.showMessageDialog(new Show_All_Books(), "You must be a member to use this feature");
         }
     }//GEN-LAST:event_jButton17ActionPerformed
 
@@ -439,6 +439,8 @@ public class Display_Book extends javax.swing.JFrame {
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
+        cont.Dis_Book.setVisible(false);
+        cont.se_book.setVisible(true);
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed

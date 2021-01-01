@@ -269,13 +269,13 @@ public class display_new_user extends javax.swing.JFrame {
         cont.Admin.setVisible(true);
 
     }//GEN-LAST:event_jButton31ActionPerformed
-    public void set_the_new (String name , int id , String pass, String addres,int phon,String email)
+    public void set_the_new (String name , int id , String pass, String addres,String phon,String email)
     {
         name_f.setText(name);
         id_f.setText(String.valueOf(id));
         pass_f.setText(pass);
         addres_f.setText(addres);
-        phone_f.setText(String.valueOf(phon));
+        phone_f.setText(phon);
         email_f.setText(email);
     }
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed

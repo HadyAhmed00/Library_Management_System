@@ -53,8 +53,8 @@ int id;
         jLabel15.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("Remove User");
-        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 160, 20));
+        jLabel15.setText("Remove Reader");
+        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 170, 20));
 
         jTextField9.setBackground(new java.awt.Color(17, 9, 50));
         jTextField9.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,7 +137,7 @@ int id;
         jButton15.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton15.setText("Remove User");
+        jButton15.setText("Remove Reader");
         jButton15.setBorder(null);
         jButton15.setBorderPainted(false);
         jButton15.setContentAreaFilled(false);
@@ -199,11 +199,10 @@ int id;
         // TODO add your handling code here:
         
          if(Validation.valid1(jTextField9.getText())){
-      id=Integer.valueOf(jTextField9.getText());
+        id=Integer.valueOf(jTextField9.getText());
         librarian.remove_reader(id);
-        JOptionPane.showMessageDialog(new Remove_User(), "You have removed data of user no."+id);
         }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+                    JOptionPane.showMessageDialog(new Add_Book(), "Invaild data","Error",JOptionPane.ERROR_MESSAGE);
 
         }
     }//GEN-LAST:event_jButton15ActionPerformed

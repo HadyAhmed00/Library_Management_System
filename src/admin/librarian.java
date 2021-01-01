@@ -14,10 +14,11 @@ import admin.contaner;
  */
 public class librarian extends User 
 {
-    public librarian(int ID, String password, String Type, String First_Name, String Last_Name, String Address, int Cellphone, String Email, boolean is_Blocked) 
-    {
-        super(ID, password, Type, First_Name, Last_Name, Address, Cellphone, Email, is_Blocked);
+
+    public librarian(int ID, String password, String Type, String First_Name, String Last_Name, String Address, String Cellphone, String Email, boolean is_blooked) {
+        super(ID, password, Type, First_Name, Last_Name, Address, Cellphone, Email, is_blooked);
     }
+    
     
     public static void add_book( int id, String name,String production_year,int no_copies,String auther,String category)
     {
@@ -41,7 +42,7 @@ public class librarian extends User
             JOptionPane.showMessageDialog(new Remove_Book(), "Sorry book is not found");
         } 
     }
-    public static void add_rEADER(int id,String pass,String first, String last,int phone, String type, String address, String email, boolean b)     
+    public static void add_rEADER(int id,String pass,String first, String last,String phone, String type, String address, String email, boolean b)     
     {
         Home.readers[Home.r_index]=new Reader(id,pass,type,first,last,address,phone,email,b);
         System.out.println("user is registered");
@@ -51,12 +52,20 @@ public class librarian extends User
         int the_index;
         if(User.search_member(id, Home.r_index, Home.readers))
         {
-            the_index=User.current_member_id;
-            for (int i = the_index; i <Home.r_index;i++)
+            if(User.type.equals("r"))
             {
-                Home.readers[i]=Home.readers[i+1];
+                the_index = User.current_member_id;
+                for (int i = the_index; i < Home.r_index; i++) {
+                    Home.readers[i] = Home.readers[i + 1];
+                }
+                Home.r_index--;
+                JOptionPane.showMessageDialog(new Remove_User(), "You have removed data of user no." + id);
             }
-            Home.r_index--;
+            else  
+            {
+                JOptionPane.showMessageDialog(new Remove_User(), "Reader is not found","Alert",JOptionPane.WARNING_MESSAGE);
+            }
+            
           
         }
     }
@@ -71,7 +80,7 @@ public class librarian extends User
                 {
                     if(Home.books[User.currentbook_id].watting_list_index==5)
                     {
-                        JOptionPane.showMessageDialog(new Add_User_to_list(), "sorry you can't book this book now");
+                        JOptionPane.showMessageDialog(new Add_User_to_list(), "Sorry, you can't book this book now");
                     }
                     else
                     {
@@ -79,29 +88,29 @@ public class librarian extends User
                         {
                             Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.readers[User.current_member_id];
                             Home.books[User.currentbook_id].watting_list_index++;
-                            JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
+                            JOptionPane.showMessageDialog(new Add_User_to_list(), "User is added");
                         }
                         else
                         {
                             Home.books[User.currentbook_id].waitting_list[Home.books[User.currentbook_id].watting_list_index]=Home.libs[User.current_member_id];
                             Home.books[User.currentbook_id].watting_list_index++;
-                            JOptionPane.showMessageDialog(new Add_User_to_list(), "user is added");
+                            JOptionPane.showMessageDialog(new Add_User_to_list(), "User is added");
                         }
                     }
                 }
                 else
                 {
-                    JOptionPane.showMessageDialog(new Add_User_to_list(), "user is not found");
+                    JOptionPane.showMessageDialog(new Add_User_to_list(), "User is not found");
                 }   
             }
             else
             {
-                JOptionPane.showMessageDialog(new Add_User_to_list(), "you can't do that as this book is avilable");
+                JOptionPane.showMessageDialog(new Add_User_to_list(), "You don't have to add the user to the waiting list because this book is already avilable");
             }
         }
         else
         {
-            JOptionPane.showMessageDialog(new Add_User_to_list(), "book is not found");
+            JOptionPane.showMessageDialog(new Add_User_to_list(), "Book is not found","Alert",JOptionPane.WARNING_MESSAGE);
         }
         
     }
@@ -134,10 +143,10 @@ public class librarian extends User
                 JOptionPane.showMessageDialog(new Remove_User_from_list(), "User is removed from the book list with name "+Home.books[User.currentbook_id].getBook_Name());
             }
           else 
-            JOptionPane.showMessageDialog(new Remove_User_from_list(), "user is not found in list");
+            JOptionPane.showMessageDialog(new Remove_User_from_list(), "User is not found in list");
        }
       else
-        JOptionPane.showMessageDialog(new Remove_User_from_list(), "book is not found in list");
+        JOptionPane.showMessageDialog(new Remove_User_from_list(), "Book is not found in list");
     }
     @Override
     public  void rent_book(String name)
@@ -172,9 +181,5 @@ public class librarian extends User
         {
             JOptionPane.showMessageDialog(new Rent_a_Book(),"This book has not been found!!","Alert",JOptionPane.WARNING_MESSAGE);
         }     
-    }
-    public void return_book(String name)
-    {
-        System.out.println("Hello World");
     }
 }

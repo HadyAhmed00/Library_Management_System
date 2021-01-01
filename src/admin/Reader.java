@@ -13,9 +13,11 @@ import javax.swing.JOptionPane;
  */
 public class Reader extends User 
 {
-        public Reader(int ID, String password, String Type, String First_Name, String Last_Name, String Address, int Cellphone, String Email, boolean is_Blocked) {
-            super(ID, password, Type, First_Name, Last_Name, Address, Cellphone, Email, is_Blocked);
-        }
+
+    public Reader(int ID, String password, String Type, String First_Name, String Last_Name, String Address, String Cellphone, String Email, boolean is_blooked) {
+        super(ID, password, Type, First_Name, Last_Name, Address, Cellphone, Email, is_blooked);
+    }
+        
         
     public static void Add_of_self_to_watting_list(String book_name)
     {
@@ -36,7 +38,7 @@ public class Reader extends User
             }
             else
             {
-                JOptionPane.showMessageDialog(new Add_User_to_list(), "you catnt do that as this book is avilable");
+                JOptionPane.showMessageDialog(new Add_User_to_list(), "You can't do that as this book is avilable");
             }
         }
         else
@@ -68,14 +70,14 @@ public class Reader extends User
                 {
                     if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
                     {
-                        JOptionPane.showMessageDialog(new Rent_a_Book(),"sorry you can't rent this book and you can book it");
+                        JOptionPane.showMessageDialog(new Rent_a_Book(),"Sorry you can't rent this book but you can book it");
                     }
                     else
                     {
                         if(Home.readers[Home.current_user_index].rented_index==2)
                         {
                             System.out.println(Home.readers[ctr].is_Blocked);
-                            JOptionPane.showMessageDialog(new Rent_a_Book(),"sorry you can't rent more books");
+                            JOptionPane.showMessageDialog(new Rent_a_Book(),"Sorry you can't rent more books");
                         }
                         else
                         {
@@ -98,8 +100,5 @@ public class Reader extends User
                 JOptionPane.showMessageDialog(new Rent_a_Book(),"This book has not been found!!","Alert",JOptionPane.WARNING_MESSAGE);
             }    
         }
-    public void return_book(String name)
-    {
-        System.out.println("Hello World");
-    }
+    
 }

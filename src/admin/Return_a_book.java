@@ -193,13 +193,22 @@ String name;
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        cont.rent.setVisible(false);
-        cont.option.setVisible(true);
+        if(Home.login)
+        {
+            cont.ret_book.setVisible(false);
+            cont.Admin.setVisible(true);
+        }
+        else
+        {
+            cont.ret_book.setVisible(false);
+            cont.read.setVisible(true);
+        }
+        
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         // TODO add your handling code here:
-        cont.rent.setVisible(false );
+        cont.rent.setVisible(false);
         cont.log.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
 
@@ -210,120 +219,8 @@ String name;
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-
-           
-        
-        boolean rented_is_found=false;
-        boolean rented_is_found_for_current_user=false;
-        int index=0;
-        int index_for_current_user=0;
         name=jTextField3.getText();
-        
-        if(User.search_for_book(name, Home.b_index, Home.books)) 
-        {
-           for(int i=0;i<=Home.rented_book_index;i++)
-            {
-                if(Home.Rented_books[i].getBook_Name().equals(name))
-                {
-                    rented_is_found=true;
-                    index=i;
-                    break;
-                }
-                else
-                {
-                    rented_is_found=false;
-                }
-            }
-            if(rented_is_found==true)
-            {
-                if(Home.login)
-                {
-                    
-                   for (int i = 0; i <= Home.libs[Home.current_user_index].rented_index; i++) {
-                    if(Home.libs[Home.current_user_index].my_rented[i].getBook_Name().equals(name))
-                    {
-                        rented_is_found_for_current_user=true;
-                        index_for_current_user=i;
-                        break;
-                    }
-                    else
-                    {
-                        rented_is_found_for_current_user=false;
-                    }
-                } 
-                  if(rented_is_found_for_current_user) 
-                  {
-                      for (int i = index; i <= Home.rented_book_index; i++) {
-                    Home.Rented_books[i]=Home.Rented_books[i+1];
-                }
-                
-                Home.rented_book_index--;
-                int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
-                no++;
-                Home.books[User.currentbook_id].setNo_of_existing_copies(no);
-                JOptionPane.showMessageDialog(new Return_a_book(), "You have returned this book successfully");
-                      for (int i = index_for_current_user; i < Home.libs[Home.current_user_index].rented_index; i++) {
-                    Home.libs[Home.current_user_index].my_rented[i]=Home.libs[Home.current_user_index].my_rented[i+1];
-                }
-                      Home.libs[Home.current_user_index].rented_index--;
-                  }
-                  else{
-                      JOptionPane.showMessageDialog(new Return_a_book(), "Ya nasab");
-                  }
-                  
-                }
-                else
-                {
-                    for (int i = 0; i <= Home.readers[Home.current_user_index].rented_index; i++) {
-                    if(Home.readers[Home.current_user_index].my_rented[i].getBook_Name().equals(name))
-                    {
-                        rented_is_found_for_current_user=true;
-                        index_for_current_user=i;
-                        break;
-                    }
-                    else
-                    {
-                        rented_is_found_for_current_user=false;
-                    }
-                } 
-                  if(rented_is_found_for_current_user) 
-                  {for (int i = index; i <= Home.rented_book_index; i++) {
-                    Home.Rented_books[i]=Home.Rented_books[i+1];
-                }
-                
-                Home.rented_book_index--;
-                int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
-                no++;
-                Home.books[User.currentbook_id].setNo_of_existing_copies(no);
-                JOptionPane.showMessageDialog(new Return_a_book(), "You have returned this book successfully");
-                      for (int i = index_for_current_user; i < Home.readers[Home.current_user_index].rented_index; i++) {
-                    Home.readers[Home.current_user_index].my_rented[i]=Home.readers[Home.current_user_index].my_rented[i+1];
-                }
-                      Home.readers[Home.current_user_index].rented_index--;
-                  }
-                  else{
-                      JOptionPane.showMessageDialog(new Return_a_book(), "Ya nasab");
-                  }
-                }
-                
-                
-                
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(new Return_a_book(), "The book has not been found","Failed!",JOptionPane.WARNING_MESSAGE);
-            } 
-        }
-        else{
-            JOptionPane.showMessageDialog(new Return_a_book(), "This book has not been found");
-        }
-            
-            
-       
-            
-            
-        
-        
+        User.return_book(name);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     /**

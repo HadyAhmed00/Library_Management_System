@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
         int id;
         String password;
         String address;
-        int phone;
+        String phone;
         String email;
         boolean isblooked;
         public Add_User() {
@@ -65,7 +65,7 @@ import javax.swing.JOptionPane;
 
         jTextField1.setBackground(new java.awt.Color(17, 9, 50));
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Enter last Name");
+        jTextField1.setText("Enter last name");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -99,7 +99,7 @@ import javax.swing.JOptionPane;
         jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(17, 9, 50));
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("ID");
+        jTextField3.setText("ID will be set automatically");
         jTextField3.setBorder(null);
         jTextField3.setOpaque(false);
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 200, 20));
@@ -215,6 +215,11 @@ import javax.swing.JOptionPane;
                 jTextField6FocusGained(evt);
             }
         });
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 340, 210, 20));
         jPanel3.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 210, 10));
 
@@ -322,7 +327,7 @@ import javax.swing.JOptionPane;
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-       if(Validation.valid2(jTextField1.getText())&&Validation.valid2(jTextField2.getText())&&Validation.valid1(jTextField5.getText())){
+       if(Validation.valid2(jTextField1.getText())&&Validation.valid2(jTextField2.getText())&&Validation.valid3(jTextField6.getText())){
         cont.add_user.setVisible(false);
         cont.new_user_info.setVisible(true);
         Home.r_index++;
@@ -333,7 +338,7 @@ import javax.swing.JOptionPane;
         jTextField3.setText(String.valueOf(id));
         password=jPasswordField1.getText();
         address=jTextField4.getText();
-        phone=Integer.valueOf(jTextField5.getText());
+        phone=jTextField5.getText();
         email=jTextField6.getText();
         librarian.add_rEADER( id, password, first_name, last_name, phone, "r", address, email, isblooked);
         cont.new_user_info.set_the_new(first_name+" "+last_name, id, password, address, phone, email); 
@@ -342,9 +347,13 @@ import javax.swing.JOptionPane;
         }
        else
        {
-           JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+           JOptionPane.showMessageDialog(new Add_Book(), "There is missing data or invalid data","Error",JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
 
     /**
      * @param args the command line arguments

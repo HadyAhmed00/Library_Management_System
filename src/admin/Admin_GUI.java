@@ -183,7 +183,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton4.setText("Remove User");
+        jButton4.setText("Remove Reader");
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
@@ -475,7 +475,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         
         if(Home.rented_book_index==-1)
         {
-            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to rent");
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to rent","Failed",JOptionPane.WARNING_MESSAGE);
         }
         
  
@@ -494,7 +494,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(Home.rented_book_index==-1)
         {
-            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to return");
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no rented books to return","Failed",JOptionPane.WARNING_MESSAGE);
         }
         else{
             cont.ret_book.setVisible(true);

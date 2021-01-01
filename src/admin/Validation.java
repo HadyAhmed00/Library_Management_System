@@ -27,4 +27,17 @@ public class Validation {
         }
         return v;
     }
+     static boolean valid3(String x)
+     {
+         boolean v=false;
+         for (int i = 0; i < x.length(); i++) {
+             //v = isLetter(x.charAt(i));
+             if(x.charAt(i)=='@')
+             {
+                 v=true;
+                 break;
+             }
+         }
+         return v;
+     }
 }

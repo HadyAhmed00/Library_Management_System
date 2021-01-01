@@ -250,7 +250,7 @@ public class Search_For_Book extends javax.swing.JFrame {
                
             if(Home.books[User.currentbook_id].watting_list_index==0)
             {
-                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", 0, " ", false);
+                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
                 model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
                  cont.Dis_Book.jList1.setModel(model2);
                 cont.se_book.setVisible(false);

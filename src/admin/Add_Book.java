@@ -133,7 +133,7 @@ String name,production_year,auther,category;
         jTextField14.setEditable(false);
         jTextField14.setBackground(new java.awt.Color(17, 9, 50));
         jTextField14.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField14.setText("Enter Book  ID");
+        jTextField14.setText("ID will be set automatically");
         jTextField14.setBorder(null);
         jTextField14.setOpaque(false);
         jTextField14.setVerifyInputWhenFocusTarget(false);
@@ -336,8 +336,8 @@ String name,production_year,auther,category;
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
-        if(Validation.valid2(jTextField7.getText())&&Validation.valid2(jTextField10.getText())&&Validation.valid2(jTextField12.getText())&&Validation.valid1(jTextField11.getText())&&Validation.valid1(jTextField13.getText())){
-                      Home.b_index++;
+        if(Validation.valid2(jTextField10.getText())&&Validation.valid2(jTextField12.getText())&&Validation.valid1(jTextField11.getText())&&Validation.valid1(jTextField13.getText())){
+        Home.b_index++;
         Home.bookid++;
         name=jTextField7.getText();
         id=Integer.valueOf(Home.bookid);
@@ -349,7 +349,7 @@ String name,production_year,auther,category;
         librarian.add_book(id, name, production_year, no_copies, auther, category);
         JOptionPane.showMessageDialog(new Add_Book(), "You have added a new book succesfully");
         }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+                    JOptionPane.showMessageDialog(new Add_Book(), "There is invalid data or missing data","Error",JOptionPane.ERROR_MESSAGE);
 
         }
     }//GEN-LAST:event_jButton16ActionPerformed

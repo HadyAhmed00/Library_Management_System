@@ -137,10 +137,10 @@ public static int getIdForIsBlocked;
         jLabel3.setText("Welcome Back");
         jLabel3.setToolTipText("");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 250, 60));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 250, 60));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/liogin lift.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/gest lift dis.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 490));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/liogin right.png"))); // NOI18N
@@ -217,7 +217,7 @@ public static int getIdForIsBlocked;
             }
              else
                 {
-                    JOptionPane.showMessageDialog(new Login(), "sorry your information is not correct");
+                    JOptionPane.showMessageDialog(new Login(), "Sorry, your information is not correct");
                 }
         
         
@@ -243,7 +243,7 @@ public static int getIdForIsBlocked;
             }
              else
                 {
-                    JOptionPane.showMessageDialog(new Login(), "sorry your information is not correct");
+                    JOptionPane.showMessageDialog(new Login(), "Sorry, your information is not correct");
                 }
         
         }

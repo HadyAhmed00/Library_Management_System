@@ -246,7 +246,7 @@ int user_id;
         librarian.add_user_to_watting_list(user_id, book_name);
         System.out.println(Home.books[1].waitting_list[0].ID);
         }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "wrong data");
+                    JOptionPane.showMessageDialog(new Add_Book(), "Wrong data","Error",JOptionPane.ERROR_MESSAGE);
 
         }
     }//GEN-LAST:event_jButton13ActionPerformed

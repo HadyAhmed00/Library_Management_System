@@ -178,10 +178,10 @@ public class Home extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        libs[0]=new librarian(1, "h5","l" , "hadi", "atef", "cairo", 012, "hadiatef", false);
-        libs[1]=new librarian(2, "r3","l" , "hadi", "ahmed", "Paris", 014, "hadiahmed", false);
-        readers[0]=new Reader(100, "m5","r" , "mo", "salah", "giza", 011, "mosalah", true);
-        readers[1]=new Reader(101, "g5","r" , "Fadi", "3adalat", "Alex", 022, "fadiolla", false);
+        libs[0]=new librarian(1, "h5","l" , "hadi", "atef", "cairo", "012495674", "hadiatef", false);
+        libs[1]=new librarian(2, "r3","l" , "hadi", "ahmed", "Paris", "01480808080", "hadiahmed", false);
+        readers[0]=new Reader(100, "m5","r" , "mo", "salah", "giza", "010030879643", "mosalah", true);
+        readers[1]=new Reader(101, "g5","r" , "Fadi", "3adalat", "Alex", "010239876543", "fadiolla", false);
         books[0]=new Book(1000, "book1", "1998", 4,"emad","ro3b");
         books[1]=new Book(1001, "book2", "2001", 0,"mostafa","drama");
         books[2]=new Book(1002, "book3", "1925", 9,"ibrahem","romantic");
