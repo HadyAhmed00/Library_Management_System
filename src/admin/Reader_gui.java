@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package admin;
-import javax.swing.JList;
-import javax.swing.JScrollPane;
 import static admin.Admin_GUI.cont;
 import javax.swing.JOptionPane;
 
@@ -253,8 +251,9 @@ public class Reader_gui extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        
         cont.read.setVisible(false);
-        cont.se_member.setVisible(true);
+        cont.op_search.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed

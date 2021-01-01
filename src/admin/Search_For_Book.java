@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package admin;
 
 import static admin.Admin_GUI.cont;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
-import javax.swing.JList;
-
 /**
  *
  * @author Hady Ahmed
@@ -39,8 +32,8 @@ public class Search_For_Book extends javax.swing.JFrame {
         jSeparator31 = new javax.swing.JSeparator();
         jSeparator32 = new javax.swing.JSeparator();
         jSeparator33 = new javax.swing.JSeparator();
-        jLabel26 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
         jButton33 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
@@ -63,19 +56,32 @@ public class Search_For_Book extends javax.swing.JFrame {
         jPanel6.add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
         jPanel6.add(jSeparator33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 10));
 
-        jLabel26.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("Book Name");
-        jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, -1, -1));
-
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
         jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 110, 80));
 
+        jTextField2.setEditable(false);
+        jTextField2.setBackground(new java.awt.Color(17, 9, 50));
+        jTextField2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField2.setText("Book Name");
+        jTextField2.setBorder(null);
+        jTextField2.setOpaque(false);
+        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField2FocusGained(evt);
+            }
+        });
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, -1, 20));
+
         jTextField1.setBackground(new java.awt.Color(17, 9, 50));
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Enter book's name");
+        jTextField1.setText("Enter book's info");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -217,33 +223,9 @@ public class Search_For_Book extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
         //cont.Dis_Book.
-       /* name=jTextField1.getText();
-        DefaultListModel<String> model2 = new DefaultListModel<>();
-        if(User.search_for_book(name, Home.b_index, Home.books))
+        if (cont.op_search.isname) 
         {
-               
-            if(Home.books[User.currentbook_id].watting_list_index==0)
-            {
-                cont.se_book.setVisible(false);
-               cont.Dis_Book.setVisible(true);
-            }
-            else
-            {
-            for (int i = 0; i <= Home.books[User.currentbook_id].watting_list_index; i++) {
-                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
-                cont.Dis_Book.jList1.setModel(model2);
-                 cont.se_book.setVisible(false);
-               cont.Dis_Book.setVisible(true);
-            }
-            }
-        }
-        else 
-            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);*/
-       
-       
-        
-  
-      name=jTextField1.getText();
+        name=jTextField1.getText();
         DefaultListModel<String> model2 = new DefaultListModel<>();
         if(User.search_for_book(name, Home.b_index, Home.books))
         {
@@ -267,14 +249,38 @@ public class Search_For_Book extends javax.swing.JFrame {
             }
         }
         else 
+            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);   
+        }
+        else 
+        {
+            int id=Integer.valueOf(jTextField1.getText()); 
+        DefaultListModel<String> model2 = new DefaultListModel<>();
+        if(User.search_for_book(id, Home.b_index, Home.books))
+        {
+               
+            if(Home.books[User.currentbook_id].watting_list_index==0)
+            {
+                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                cont.se_book.setVisible(false);
+               cont.Dis_Book.setVisible(true);
+            }
+            else
+            {
+            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                 cont.se_book.setVisible(false);
+                 cont.Dis_Book.setVisible(true);
+            }
+            }
+        }
+        else 
             JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);
             
-     
-          
-        
-
-            
-        
+        }
+       
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -293,6 +299,14 @@ public class Search_For_Book extends javax.swing.JFrame {
       cont.log.setVisible(true);
       Home.login=false;
     }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2FocusGained
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -339,7 +353,6 @@ public class Search_For_Book extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator30;
@@ -347,5 +360,6 @@ public class Search_For_Book extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator32;
     private javax.swing.JSeparator jSeparator33;
     private javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

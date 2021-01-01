@@ -4,11 +4,7 @@
  * and open the template in the editor.
  */
 package admin;
-//import admin.Home;
-//import admin.Home;
-//import java.util.Scanner;
-//import javax.swing.JFrame;
-//import javax.swing.JOptionPane;
+
 import static admin.Admin_GUI.cont;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;

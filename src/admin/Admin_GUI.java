@@ -4,23 +4,15 @@
  * and open the template in the editor.
  */
 package admin;
-
-import javax.swing.JList;
 import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-
 /**
  *
  * @author Hady Ahmed
  */
 public class Admin_GUI extends javax.swing.JFrame {
-    
-
-    
     public Admin_GUI() {
         initComponents();
     }
-    
     public static contaner cont =new contaner();
     /**
      * This method is called from within the constructor to initialize the form.
@@ -49,6 +41,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -76,7 +69,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 400, 180, 50));
+        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 180, 50));
 
         jButton1.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -93,7 +86,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 180, 50));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 180, 50));
 
         jButton16.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton16.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,7 +103,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton16ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 180, 50));
+        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 180, 50));
 
         jButton15.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
@@ -127,7 +120,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton15ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, 180, 50));
+        jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 320, 180, 50));
 
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
@@ -144,7 +137,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 180, 50));
+        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 180, 50));
 
         jButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -161,7 +154,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 180, 50));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 180, 50));
 
         jButton3.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -178,7 +171,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 180, 50));
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 180, 50));
 
         jButton4.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -195,7 +188,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 180, 50));
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 70, 180, 50));
 
         jButton5.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
@@ -212,7 +205,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 180, 50));
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 120, 180, 50));
 
         jButton6.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
@@ -229,7 +222,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, 180, 50));
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 180, 50));
 
         jButton7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
@@ -246,7 +239,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 250, 180, 50));
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 220, 180, 50));
 
         jButton8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
@@ -263,7 +256,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 180, 50));
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 180, 50));
 
         jButton9.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
@@ -280,7 +273,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 180, 50));
+        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 180, 50));
 
         jButton10.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
@@ -297,7 +290,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 180, 50));
+        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 180, 50));
 
         jButton12.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
@@ -315,6 +308,23 @@ public class Admin_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 180, 50));
+
+        jButton18.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(255, 255, 255));
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
+        jButton18.setText("unblock user");
+        jButton18.setBorder(null);
+        jButton18.setBorderPainted(false);
+        jButton18.setContentAreaFilled(false);
+        jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton18.setFocusPainted(false);
+        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, 180, 50));
 
         jButton14.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton14.setForeground(new java.awt.Color(255, 255, 255));
@@ -406,7 +416,7 @@ public class Admin_GUI extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         cont.Admin.setVisible(false);
-        cont.se_book.setVisible(true);
+        cont.op_search.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -500,18 +510,17 @@ public class Admin_GUI extends javax.swing.JFrame {
             cont.ret_book.setVisible(true);
             cont.Admin.setVisible(false);
         }
-        
-      
-        
-       //cont.se_member.setVisible(true);
-       // cont.Admin.setVisible(false);
     }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        cont.Admin.setVisible(false);
+        cont.unblock.setVisible(true);
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -521,6 +530,7 @@ public class Admin_GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
