@@ -43,6 +43,8 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -307,7 +309,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 180, 50));
+        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 200, 50));
 
         jButton18.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
@@ -341,7 +343,15 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton14ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 180, 50));
+        jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 200, 50));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel5.setText(" ");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel7.setText(" ");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -543,6 +553,8 @@ public class Admin_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator5;

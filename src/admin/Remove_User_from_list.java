@@ -46,6 +46,9 @@ public class Remove_User_from_list extends javax.swing.JFrame {
         jButton26 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -120,7 +123,7 @@ public class Remove_User_from_list extends javax.swing.JFrame {
                 jButton24ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 180, 50));
+        jPanel3.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 50));
 
         jButton25.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton25.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,7 +140,7 @@ public class Remove_User_from_list extends javax.swing.JFrame {
                 jButton25ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 180, 50));
+        jPanel3.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 50));
 
         jButton26.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
@@ -154,7 +157,7 @@ public class Remove_User_from_list extends javax.swing.JFrame {
                 jButton26ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 180, 50));
+        jPanel3.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -176,6 +179,18 @@ public class Remove_User_from_list extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 180, 50));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel3.setText(" ");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
+        jLabel6.setText(" ");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel9.setText(" ");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -294,10 +309,13 @@ public class Remove_User_from_list extends javax.swing.JFrame {
     private javax.swing.JButton jButton26;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator6;

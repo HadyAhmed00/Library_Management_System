@@ -39,6 +39,9 @@ public class Search_For_Book extends javax.swing.JFrame {
         jButton34 = new javax.swing.JButton();
         jButton35 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -111,7 +114,7 @@ public class Search_For_Book extends javax.swing.JFrame {
                 jButton33ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 180, 50));
+        jPanel6.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 50));
 
         jButton34.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton34.setForeground(new java.awt.Color(255, 255, 255));
@@ -128,7 +131,7 @@ public class Search_For_Book extends javax.swing.JFrame {
                 jButton34ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 180, 50));
+        jPanel6.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 50));
 
         jButton35.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton35.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,7 +148,7 @@ public class Search_For_Book extends javax.swing.JFrame {
                 jButton35ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 180, 50));
+        jPanel6.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
@@ -163,6 +166,18 @@ public class Search_For_Book extends javax.swing.JFrame {
             }
         });
         jPanel6.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 180, 50));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel3.setText(" ");
+        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
+        jLabel5.setText(" ");
+        jPanel6.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel6.setText(" ");
+        jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -353,7 +368,10 @@ public class Search_For_Book extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator30;
     private javax.swing.JSeparator jSeparator31;

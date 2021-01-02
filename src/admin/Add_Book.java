@@ -33,6 +33,8 @@ String name,production_year,auther,category;
 
         jPanel5 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         jSeparator16 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
@@ -58,6 +60,7 @@ String name,production_year,auther,category;
         jSeparator28 = new javax.swing.JSeparator();
         jTextField13 = new javax.swing.JTextField();
         jSeparator29 = new javax.swing.JSeparator();
+        jLabel6 = new javax.swing.JLabel();
         jButton16 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -71,6 +74,14 @@ String name,production_year,auther,category;
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Add Book Form");
         jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, 170, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
+        jLabel5.setText(" ");
+        jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel3.setText(" ");
+        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
 
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
@@ -172,7 +183,7 @@ String name,production_year,auther,category;
                 jButton30ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 180, 50));
+        jPanel5.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 50));
 
         jButton31.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton31.setForeground(new java.awt.Color(255, 255, 255));
@@ -189,7 +200,7 @@ String name,production_year,auther,category;
                 jButton31ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 180, 50));
+        jPanel5.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 50));
 
         jButton32.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
@@ -206,7 +217,7 @@ String name,production_year,auther,category;
                 jButton32ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 180, 50));
+        jPanel5.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
 
         jLabel24.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
@@ -247,6 +258,10 @@ String name,production_year,auther,category;
         });
         jPanel5.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 210, 20));
         jPanel5.add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 210, 10));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel6.setText(" ");
+        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jButton16.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton16.setForeground(new java.awt.Color(255, 255, 255));
@@ -413,7 +428,10 @@ String name,production_year,auther,category;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator16;
     private javax.swing.JSeparator jSeparator18;
