@@ -70,6 +70,11 @@ int id;
                 jTextField9FocusGained(evt);
             }
         });
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField9ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 190, 200, 20));
         jPanel4.add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 200, 10));
         jPanel4.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
@@ -227,6 +232,10 @@ int id;
           cont.remove_user.setVisible(false );
         cont.log.setVisible(true);
     }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

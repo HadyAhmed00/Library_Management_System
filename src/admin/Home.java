@@ -180,15 +180,15 @@ public class Home extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        libs[0]=new librarian(1, "h5","l" , "hadi", "atef", "cairo", "012495674", "hadiatef", false);
-        libs[1]=new librarian(2, "r3","l" , "hadi", "ahmed", "Paris", "01480808080", "hadiahmed", false);
-        readers[0]=new Reader(100, "m5","r" , "mo", "salah", "giza", "010030879643", "mosalah", false);
-        readers[1]=new Reader(101, "g5","r" , "Fadi", "3adalat", "Alex", "010239876543", "fadiolla", false);
-        books[0]=new Book(1000, "book1", "1998", 4,"emad","ro3b");
-        books[1]=new Book(1001, "book2", "2001", 0,"mostafa","drama");
-        books[2]=new Book(1002, "book3", "1925", 9,"ibrahem","romantic");
-        books[3]=new Book(10003, "book4", "2000", 2,"sayed","fantasy");
-        books[4]=new Book(1004, "book5", "2019", 8,"mona","action");
+        libs[0]=new librarian(1, "h5","l" , "Hadi", "Atef", "Cairo", "01027080999", "hadiatef@gmail.com", false);
+        libs[1]=new librarian(2, "r3","l" , "Hadi", "Ahmed", "Paris", "01116074321", "hadiahmed@gmail.com", false);
+        readers[0]=new Reader(100, "m5","r" , "Mo", "Salah", "Giza", "01003087968", "Mosalah@gmail.com", false);
+        readers[1]=new Reader(101, "g5","r" , "Mahmoud", "Hamza", "Alexandria", "01023987654", "m_hamza1@gmail.com", false);
+        books[0]=new Book(1000, "book1", "1998", 4,"Emad Sharaf","Horror");
+        books[1]=new Book(1001, "book2", "2001", 0,"Mostafa ElBeltagi","Drama");
+        books[2]=new Book(1002, "book3", "1925", 9,"Ahmed Khaled Tawfik","Romantic");
+        books[3]=new Book(1003, "book4", "2000", 2,"Sayed Ibrahim","Fantasy");
+        books[4]=new Book(1004, "book5", "2019", 8,"Mona elEgeezi","Novel");
         
         
        

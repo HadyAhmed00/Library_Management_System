@@ -145,7 +145,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 380, 180, 50));
+        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, 180, 50));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
@@ -162,7 +162,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 180, 50));
+        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 180, 50));
 
         jButton18.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
@@ -179,7 +179,7 @@ public void show_r(String first_name,String last_name,String Id,String address,S
                 jButton18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, 180, 50));
+        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 180, 50));
 
         jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));

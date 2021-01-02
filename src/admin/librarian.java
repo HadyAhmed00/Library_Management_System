@@ -55,7 +55,7 @@ public class librarian extends User
             if(User.type.equals("r"))
             {
                 the_index = User.current_member_id;
-                for (int i = the_index; i < Home.r_index; i++) {
+                for (int i = the_index; i <= Home.r_index; i++) {
                     Home.readers[i] = Home.readers[i + 1];
                 }
                 Home.r_index--;
@@ -63,7 +63,7 @@ public class librarian extends User
             }
             else  
             {
-                JOptionPane.showMessageDialog(new Remove_User(), "Reader is not found","Alert",JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(new Remove_User(), "This is not a reader's data","Alert",JOptionPane.WARNING_MESSAGE);
             }
             
           

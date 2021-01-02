@@ -156,7 +156,7 @@ public class Show_rented_books extends javax.swing.JFrame {
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 180, 50));
+        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 390, 180, 50));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
@@ -173,7 +173,7 @@ public class Show_rented_books extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 390, 180, 50));
+        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 180, 50));
 
         jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
@@ -386,7 +386,7 @@ public class Show_rented_books extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-
+        // TODO add your handling code here:
         if(i==0)
         {
             JOptionPane.showMessageDialog(new Show_All_Books(), "Sorry there are no more books");
@@ -396,9 +396,6 @@ public class Show_rented_books extends javax.swing.JFrame {
             i--;
             show_rented(Home.Rented_books[i].getBook_Name(), String.valueOf(Home.Rented_books[i].getBook_ID()), Home.Rented_books[i].getProduction_year(), Home.Rented_books[i].getAuthor_name(), Home.Rented_books[i].getCategory(),String.valueOf(Home.Rented_books[i].getNo_of_existing_copies()));
         }
-        // TODO add your handling code here:
-        //ont.Dis_Book.setVisible(false);
-        //cont.se_book.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jTextField7FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusGained
@@ -447,47 +444,10 @@ public class Show_rented_books extends javax.swing.JFrame {
         cont.home.setVisible(true);
     }//GEN-LAST:event_jButton26ActionPerformed
 
-<<<<<<< HEAD
+
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton18ActionPerformed
-
-=======
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Show_rented_books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Show_rented_books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Show_rented_books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Show_rented_books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Show_rented_books().setVisible(true);
-            }
-        });
-    }
->>>>>>> c191ac25b3f5c8cdc91f13d351a9dfcde1f8d662
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton17;

@@ -200,7 +200,7 @@ public class Show_All_Books extends javax.swing.JFrame {
                 jTextField8FocusGained(evt);
             }
         });
-        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, -1, 30));
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 80, 30));
         jPanel3.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 400, 10));
 
         jTextField5.setEditable(false);

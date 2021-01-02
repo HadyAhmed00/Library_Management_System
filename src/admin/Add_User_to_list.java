@@ -60,8 +60,8 @@ int user_id;
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Add User To Book List Form");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 280, -1));
+        jLabel5.setText("Add User To Waiting List Form");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 320, -1));
         jPanel3.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 200, 10));
 
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N

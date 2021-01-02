@@ -29,9 +29,6 @@ import javax.swing.JOptionPane;
         jLabel9 = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jSeparator11 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
@@ -84,29 +81,14 @@ import javax.swing.JOptionPane;
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Password");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, -1, -1));
-        jPanel3.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 210, 10));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
+        jPanel3.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 210, 10));
 
         jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Name");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("ID");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, -1, -1));
-
-        jTextField3.setEditable(false);
-        jTextField3.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("ID will be set automatically");
-        jTextField3.setBorder(null);
-        jTextField3.setOpaque(false);
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 200, 20));
-        jPanel3.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 200, 10));
         jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 10));
         jPanel3.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 10));
         jPanel3.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 10));
@@ -121,12 +103,12 @@ import javax.swing.JOptionPane;
                 jPasswordField1FocusGained(evt);
             }
         });
-        jPanel3.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 210, -1));
+        jPanel3.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 210, -1));
 
         jLabel11.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Contacts");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 90, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 90, -1));
 
         jTextField2.setBackground(new java.awt.Color(17, 9, 50));
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
@@ -150,8 +132,8 @@ import javax.swing.JOptionPane;
                 jTextField4FocusGained(evt);
             }
         });
-        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 210, 20));
-        jPanel3.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 210, 10));
+        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 210, 20));
+        jPanel3.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 210, 10));
 
         jButton24.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
@@ -202,7 +184,7 @@ import javax.swing.JOptionPane;
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Address");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 90, -1));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 90, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -223,8 +205,8 @@ import javax.swing.JOptionPane;
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 340, 210, 20));
-        jPanel3.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 210, 10));
+        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, 210, 20));
+        jPanel3.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, 210, 10));
 
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
@@ -236,8 +218,8 @@ import javax.swing.JOptionPane;
                 jTextField5FocusGained(evt);
             }
         });
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 210, 20));
-        jPanel3.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 210, 10));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 210, 20));
+        jPanel3.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 210, 10));
 
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
@@ -350,7 +332,6 @@ import javax.swing.JOptionPane;
         last_name=jTextField1.getText();
         first_name=jTextField2.getText();
         id=Integer.valueOf(Home.userid);
-        jTextField3.setText(String.valueOf(id));
         password=jPasswordField1.getText();
         address=jTextField4.getText();
         phone=jTextField5.getText();
@@ -387,12 +368,10 @@ import javax.swing.JOptionPane;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator10;
-    private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator14;
@@ -403,7 +382,6 @@ import javax.swing.JOptionPane;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    public javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;

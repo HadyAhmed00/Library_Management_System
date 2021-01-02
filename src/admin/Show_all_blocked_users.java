@@ -141,7 +141,7 @@ public class Show_all_blocked_users extends javax.swing.JFrame {
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 380, 180, 50));
+        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 380, 180, 50));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,7 +158,7 @@ public class Show_all_blocked_users extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 180, 50));
+        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 180, 50));
 
         jButton18.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
@@ -175,7 +175,7 @@ public class Show_all_blocked_users extends javax.swing.JFrame {
                 jButton18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, 180, 50));
+        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 380, 180, 50));
 
         jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(17, 9, 50));
@@ -232,7 +232,7 @@ public class Show_all_blocked_users extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, -1, 30));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 220, 30));
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));

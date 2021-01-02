@@ -5,7 +5,6 @@
  */
 package admin;
 import javax.swing.JOptionPane;
-import admin.Home;
 /**
  *
  * @author Hady Ahmed
@@ -44,12 +43,9 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
-<<<<<<< HEAD
         jButton19 = new javax.swing.JButton();
-=======
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
->>>>>>> c191ac25b3f5c8cdc91f13d351a9dfcde1f8d662
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -81,7 +77,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton1.setText("Add User");
+        jButton1.setText("Add Reader");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -350,14 +346,6 @@ public class Admin_GUI extends javax.swing.JFrame {
         });
         jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 200, 50));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
-        jLabel5.setText(" ");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel7.setText(" ");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
-
         jButton19.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton19.setForeground(new java.awt.Color(255, 255, 255));
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
@@ -374,6 +362,14 @@ public class Admin_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 420, 180, 50));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel5.setText(" ");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel7.setText(" ");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -507,7 +503,8 @@ public class Admin_GUI extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-        cont.home.setVisible(true);
+        Home.login=false;
+        cont.log.setVisible(true);
         cont.Admin.setVisible(false);
         cont.read.setVisible(false);
     }//GEN-LAST:event_jButton12ActionPerformed
@@ -556,11 +553,10 @@ public class Admin_GUI extends javax.swing.JFrame {
             cont.Admin.setVisible(false);
             cont.unblock.setVisible(true);
         }
-        
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        //((DefaultListModel)cont.Display.jList1.getModel()).clear();
+        // TODO add your handling code here:
         if(Home.blocked_user_index ==-1)
         {
             JOptionPane.showMessageDialog(new Admin_GUI(), "There are no blocked users to show them","Failed",JOptionPane.WARNING_MESSAGE);
@@ -571,7 +567,6 @@ public class Admin_GUI extends javax.swing.JFrame {
             cont.show_all_blocked.setVisible(true);
             cont.Admin.setVisible(false);
         }
-
     }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
