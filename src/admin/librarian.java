@@ -182,4 +182,79 @@ public class librarian extends User
             JOptionPane.showMessageDialog(new Rent_a_Book(),"This book has not been found!!","Alert",JOptionPane.WARNING_MESSAGE);
         }     
     }
+    public static void block_user(int id)
+    {
+        int index=0;
+        //int index_for_current_user=0;
+        boolean blocked_is_found=false;
+                 if (User.search_member(id, Home.r_index, Home.readers)) {
+                     if(User.type.equals("r"))
+                     {
+                         if(Home.readers[User.current_member_id].is_Blocked==true)
+                         {
+                             JOptionPane.showMessageDialog(new Block_User(), "This User is already blocked");
+                         }
+                         else
+                         {
+                             Home.readers[User.current_member_id].is_Blocked=true;
+                             JOptionPane.showMessageDialog(new Block_User(), "This user of ID "+id+" has been blocked successfully");
+                             Home.blocked_user_index++;
+                             Home.blocked_readers[Home.blocked_user_index]=Home.readers[User.current_member_id];
+                         }
+                         
+                     }
+                     else
+                     {
+                         JOptionPane.showMessageDialog(new Block_User(), "Member is not found!!", "Alert", JOptionPane.WARNING_MESSAGE);
+                     }
+                 }
+         else {
+            JOptionPane.showMessageDialog(new Block_User(), "Member is not found!!", "Alert", JOptionPane.WARNING_MESSAGE);
+        }
+    }
+    public static void unblock_user(int id)
+    {
+        int index=0;
+        boolean blocked_is_found=false;
+        if(User.search_member(id, Home.r_index, Home.readers))
+            {
+                if(Home.readers[User.current_member_id].is_Blocked==false)
+                {
+                    JOptionPane.showMessageDialog(new unblock_user(), "This user is already unblocked");
+                
+                }
+                else
+                {
+                    Home.readers[User.current_member_id].is_Blocked=false;
+                    JOptionPane.showMessageDialog(new unblock_user(), "The user with ID "+id+" has been unblocked");
+                    for(int i=0;i<=Home.blocked_user_index;i++){
+                        if(id==Home.blocked_readers[i].ID)
+                        {
+                            blocked_is_found=true;
+                            index=i;
+                            break;
+                        }
+                        else
+                        {
+                            blocked_is_found=false;
+                        }
+                    }
+                    if(blocked_is_found)
+                    {
+                        for (int i = index; i <= Home.blocked_user_index; i++) {
+                            Home.blocked_readers[i] = Home.blocked_readers[i + 1];
+                        }
+                        Home.blocked_user_index--;
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(new unblock_user(), "This user has not been found","Error",JOptionPane.ERROR_MESSAGE);
+                    }
+                }
+
+                
+            }
+            else
+            JOptionPane.showMessageDialog(new unblock_user(), "Member is not found!!","Alert",JOptionPane.WARNING_MESSAGE);
+    }
 }

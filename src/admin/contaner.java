@@ -19,6 +19,7 @@ public class contaner
    Search_For_Book se_book =new Search_For_Book();
    Search_For_Member se_member = new Search_For_Member();
    Show_All_Reders show_reders =new Show_All_Reders();
+   Show_all_blocked_users show_all_blocked=new Show_all_blocked_users();
    Rant_Book_Option option = new Rant_Book_Option();
    Reader_gui read=new Reader_gui();
    Gest_Gui gest = new Gest_Gui();

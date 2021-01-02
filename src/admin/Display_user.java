@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -120,8 +121,8 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jLabel12.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Rented Books");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, -1, 30));
+        jLabel12.setText("Rented Books :");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 120, 30));
 
         jButton17.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
@@ -249,7 +250,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         jButton20.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton20.setForeground(new java.awt.Color(255, 255, 255));
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton20.setText("Search For Member");
+        jButton20.setText("Find Another Member");
         jButton20.setBorder(null);
         jButton20.setBorderPainted(false);
         jButton20.setContentAreaFilled(false);
@@ -261,7 +262,7 @@ public void Display_u(String f_name,String l_name, String id,String address , St
                 jButton20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 340, 180, 50));
+        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 340, 190, 50));
 
         jButton24.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
@@ -426,8 +427,14 @@ public void Display_u(String f_name,String l_name, String id,String address , St
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
         
-        cont.Display.setVisible(false);
-        cont.se_member.setVisible(true);
+        if(Home.login){
+            int id=Integer.valueOf(jTextField4.getText());
+            librarian.block_user(id);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(new Display_user(), "You must be an admin to use this feature","Error",JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
@@ -436,49 +443,18 @@ public void Display_u(String f_name,String l_name, String id,String address , St
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
-        
+        cont.Display.setVisible(false);
+        cont.se_member.setVisible(true);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         // TODO add your handling code here:
           cont.Display.setVisible(false );
-        cont.log.setVisible(true);
+          cont.log.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Display_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Display_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Display_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Display_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() { 
-            public void run() {
-                cont.Display.setVisible(true);
-            }
-        });
-    }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton17;

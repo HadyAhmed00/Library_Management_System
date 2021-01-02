@@ -118,7 +118,7 @@ public class display_new_user extends javax.swing.JFrame {
         addres_f.setBackground(new java.awt.Color(17, 9, 50));
         addres_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         addres_f.setForeground(new java.awt.Color(255, 255, 255));
-        addres_f.setText("Adress");
+        addres_f.setText("Address");
         addres_f.setBorder(null);
         addres_f.setOpaque(false);
         jPanel10.add(addres_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 210, 20));
@@ -177,7 +177,7 @@ public class display_new_user extends javax.swing.JFrame {
 
         jLabel45.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel45.setText("Adress");
+        jLabel45.setText("Address");
         jPanel10.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 100, -1));
 
         id_f.setEditable(false);
@@ -202,7 +202,7 @@ public class display_new_user extends javax.swing.JFrame {
         email_f.setBackground(new java.awt.Color(17, 9, 50));
         email_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         email_f.setForeground(new java.awt.Color(255, 255, 255));
-        email_f.setText("Emaile");
+        email_f.setText("Email");
         email_f.setBorder(null);
         email_f.setOpaque(false);
         jPanel10.add(email_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 210, 20));
@@ -297,38 +297,6 @@ public class display_new_user extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton32ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(display_new_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(display_new_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(display_new_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(display_new_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            cont.new_user_info.setVisible(true);
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField addres_f;

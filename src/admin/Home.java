@@ -20,9 +20,11 @@ public class Home extends javax.swing.JFrame {
         static int l_index=1;//the last index of the librarian array
         static int b_index=4;//the last index of the book array
         static int rented_book_index=-1; //the last index of the array of all rented books
+        static int blocked_user_index=-1; //the last index of the array of all blocked readers
         static Book books[]=new Book[15];//array of book class and it refers to the books in the library
         static Book []Rented_books=new Book[100];//refers to all rented books in the library
         static Reader readers[]=new Reader[15];//refers to the readers in library
+        static Reader blocked_readers[]=new Reader[15];//refers to the blocked readers in the library
         static librarian libs[]=new librarian[15];//refers to the admins in the library
         static int current_user_index;//refers to the index of current reader or admin
         static boolean login=false; //use to know if the user is reader or admin
@@ -180,7 +182,7 @@ public class Home extends javax.swing.JFrame {
     public static void main(String args[]) {
         libs[0]=new librarian(1, "h5","l" , "hadi", "atef", "cairo", "012495674", "hadiatef", false);
         libs[1]=new librarian(2, "r3","l" , "hadi", "ahmed", "Paris", "01480808080", "hadiahmed", false);
-        readers[0]=new Reader(100, "m5","r" , "mo", "salah", "giza", "010030879643", "mosalah", true);
+        readers[0]=new Reader(100, "m5","r" , "mo", "salah", "giza", "010030879643", "mosalah", false);
         readers[1]=new Reader(101, "g5","r" , "Fadi", "3adalat", "Alex", "010239876543", "fadiolla", false);
         books[0]=new Book(1000, "book1", "1998", 4,"emad","ro3b");
         books[1]=new Book(1001, "book2", "2001", 0,"mostafa","drama");

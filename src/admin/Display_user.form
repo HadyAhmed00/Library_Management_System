@@ -170,11 +170,11 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Rented Books"/>
+            <Property name="text" type="java.lang.String" value="Rented Books :"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="340" y="290" width="-1" height="30"/>
+              <AbsoluteConstraints x="340" y="290" width="120" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -455,7 +455,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/admin/lib textuers/botton.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Search For Member"/>
+            <Property name="text" type="java.lang.String" value="Find Another Member"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
@@ -472,7 +472,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="340" width="180" height="50"/>
+              <AbsoluteConstraints x="540" y="340" width="190" height="50"/>
             </Constraint>
           </Constraints>
         </Component>

@@ -26,6 +26,7 @@ public abstract class User
     static int currentbook_id=0;//the index of the book that i search
     static int current_member_id=0;//the index of the reader that i search
     int rented_index=-1;//the last index of the my rented array, It is special for each reader
+    //int blocked_index=-1; //the last index
     Book my_rented[]=new Book[3];//array of reader rented books,It is special for each reader 
     static String type;
     DefaultListModel<String> model = new DefaultListModel<>();

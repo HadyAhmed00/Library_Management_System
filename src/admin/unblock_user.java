@@ -212,57 +212,14 @@ public class unblock_user extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        int id = Integer.valueOf(jTextField2.getText());
         if(Validation.valid1(jTextField2.getText())){
-           int id = Integer.valueOf(jTextField2.getText());
-            if(User.search_member(id, Home.r_index, Home.readers))
-            {
-
-                Home.readers[User.current_member_id].is_Blocked=false;
-                JOptionPane.showMessageDialog(new unblock_user(), "the user with ID "+id+" is blocked");
-            }
-            else
-            JOptionPane.showMessageDialog(new unblock_user(), "Member is not found!!","Alert",JOptionPane.WARNING_MESSAGE);;
+           librarian.unblock_user(id);
         }else{
-            JOptionPane.showMessageDialog(new unblock_user(), "wrong data");
+            JOptionPane.showMessageDialog(new Add_Book(), "Invalid Data","Error",JOptionPane.ERROR_MESSAGE);
 
         }
-
     }//GEN-LAST:event_jButton13ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(unblock_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(unblock_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(unblock_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(unblock_user.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new unblock_user().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton13;

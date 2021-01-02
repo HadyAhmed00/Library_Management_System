@@ -5,6 +5,7 @@
  */
 package admin;
 import javax.swing.JOptionPane;
+import admin.Home;
 /**
  *
  * @author Hady Ahmed
@@ -43,6 +44,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -312,7 +314,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton18.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton18.setText("unblock user");
+        jButton18.setText("Unblock User");
         jButton18.setBorder(null);
         jButton18.setBorderPainted(false);
         jButton18.setContentAreaFilled(false);
@@ -324,7 +326,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton18ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, 180, 50));
+        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, 180, 50));
 
         jButton14.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton14.setForeground(new java.awt.Color(255, 255, 255));
@@ -342,6 +344,23 @@ public class Admin_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 180, 50));
+
+        jButton19.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(255, 255, 255));
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
+        jButton19.setText("Show All Blocked Users");
+        jButton19.setBorder(null);
+        jButton19.setBorderPainted(false);
+        jButton19.setContentAreaFilled(false);
+        jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton19.setFocusPainted(false);
+        jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 420, 180, 50));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -514,9 +533,33 @@ public class Admin_GUI extends javax.swing.JFrame {
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
-        cont.Admin.setVisible(false);
-        cont.unblock.setVisible(true);
+        if(Home.blocked_user_index ==-1)
+        {
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no blocked users to unblock them","Failed",JOptionPane.WARNING_MESSAGE);
+        }
+        else
+        {
+            cont.show_all_blocked.show_blocked(Home.blocked_readers[0].First_Name,Home.blocked_readers[0].Last_Name, String.valueOf(Home.blocked_readers[0].ID), Home.blocked_readers[0].Address, String.valueOf(Home.blocked_readers[0].Cellphone), Home.blocked_readers[0].Email);
+            cont.Admin.setVisible(false);
+            cont.unblock.setVisible(true);
+        }
+        
     }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        //((DefaultListModel)cont.Display.jList1.getModel()).clear();
+        if(Home.blocked_user_index ==-1)
+        {
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no blocked users to show them","Failed",JOptionPane.WARNING_MESSAGE);
+        }
+        else
+        {
+            cont.show_all_blocked.show_blocked(Home.blocked_readers[0].First_Name,Home.blocked_readers[0].Last_Name, String.valueOf(Home.blocked_readers[0].ID), Home.blocked_readers[0].Address, String.valueOf(Home.blocked_readers[0].Cellphone), Home.blocked_readers[0].Email);
+            cont.show_all_blocked.setVisible(true);
+            cont.Admin.setVisible(false);
+        }
+
+    }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -531,6 +574,7 @@ public class Admin_GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
