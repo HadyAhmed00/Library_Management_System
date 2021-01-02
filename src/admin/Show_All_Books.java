@@ -303,7 +303,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jLabel6.setText(" ");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu icon.png"))); // NOI18N
         jLabel7.setText(" ");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
 

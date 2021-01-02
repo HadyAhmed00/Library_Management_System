@@ -281,7 +281,6 @@ String name,production_year,auther,category;
         jPanel5.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 430, 180, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
-        jLabel2.setText("jLabel1");
         jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 490));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/right.jpg"))); // NOI18N

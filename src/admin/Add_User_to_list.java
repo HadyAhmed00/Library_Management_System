@@ -45,9 +45,9 @@ int user_id;
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -160,6 +160,10 @@ int user_id;
         });
         jPanel3.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel10.setText(" ");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
         jLabel3.setText(" ");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
@@ -167,10 +171,6 @@ int user_id;
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
         jLabel6.setText(" ");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel9.setText(" ");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -286,6 +286,7 @@ int user_id;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -293,7 +294,6 @@ int user_id;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator6;

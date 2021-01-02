@@ -56,6 +56,9 @@ public class display_new_user extends javax.swing.JFrame {
         jSeparator63 = new javax.swing.JSeparator();
         phone_f = new javax.swing.JTextField();
         jSeparator64 = new javax.swing.JSeparator();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -139,7 +142,7 @@ public class display_new_user extends javax.swing.JFrame {
                 jButton31ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 180, 50));
+        jPanel10.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 190, 50));
 
         jButton32.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
@@ -156,7 +159,7 @@ public class display_new_user extends javax.swing.JFrame {
                 jButton32ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 180, 50));
+        jPanel10.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 50));
 
         jButton33.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
@@ -173,7 +176,7 @@ public class display_new_user extends javax.swing.JFrame {
                 jButton33ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 180, 50));
+        jPanel10.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
 
         jLabel45.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
@@ -217,6 +220,18 @@ public class display_new_user extends javax.swing.JFrame {
         phone_f.setOpaque(false);
         jPanel10.add(phone_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 210, 20));
         jPanel10.add(jSeparator64, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 450, 10));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel6.setText(" ");
+        jPanel10.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu icon.png"))); // NOI18N
+        jLabel7.setText(" ");
+        jPanel10.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel15.setText(" ");
+        jPanel10.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
@@ -307,6 +322,7 @@ public class display_new_user extends javax.swing.JFrame {
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
@@ -316,6 +332,8 @@ public class display_new_user extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JSeparator jSeparator55;
     private javax.swing.JSeparator jSeparator57;

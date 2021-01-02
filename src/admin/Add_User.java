@@ -47,9 +47,9 @@ import javax.swing.JOptionPane;
         jTextField5 = new javax.swing.JTextField();
         jSeparator14 = new javax.swing.JSeparator();
         jButton13 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -238,6 +238,10 @@ import javax.swing.JOptionPane;
         });
         jPanel3.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 420, 180, 50));
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel8.setText(" ");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
         jLabel3.setText(" ");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
@@ -245,10 +249,6 @@ import javax.swing.JOptionPane;
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
         jLabel6.setText(" ");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel12.setText(" ");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -361,13 +361,13 @@ import javax.swing.JOptionPane;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;
