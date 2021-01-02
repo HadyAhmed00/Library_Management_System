@@ -43,6 +43,9 @@ int id;
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -98,7 +101,7 @@ int id;
                 jButton27ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 180, 50));
+        jPanel4.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 50));
 
         jButton28.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
@@ -115,7 +118,7 @@ int id;
                 jButton28ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 180, 50));
+        jPanel4.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 50));
 
         jButton29.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton29.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,7 +135,7 @@ int id;
                 jButton29ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 180, 50));
+        jPanel4.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
 
         jButton15.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
@@ -149,6 +152,18 @@ int id;
             }
         });
         jPanel4.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, 180, 50));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
+        jLabel3.setText(" ");
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
+        jLabel5.setText(" ");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
+        jLabel6.setText(" ");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -223,7 +238,10 @@ int id;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator19;
     private javax.swing.JSeparator jSeparator20;
