@@ -56,14 +56,15 @@ public class display_new_user extends javax.swing.JFrame {
         jSeparator63 = new javax.swing.JSeparator();
         phone_f = new javax.swing.JTextField();
         jSeparator64 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Library Management System");
+        setResizable(false);
+        setType(java.awt.Window.Type.UTILITY);
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -95,7 +96,9 @@ public class display_new_user extends javax.swing.JFrame {
         pass_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         pass_f.setForeground(new java.awt.Color(255, 255, 255));
         pass_f.setText("password");
+        pass_f.setToolTipText("password");
         pass_f.setBorder(null);
+        pass_f.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         pass_f.setOpaque(false);
         jPanel10.add(pass_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, 210, 20));
         jPanel10.add(jSeparator58, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 450, 10));
@@ -113,7 +116,9 @@ public class display_new_user extends javax.swing.JFrame {
         name_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         name_f.setForeground(new java.awt.Color(255, 255, 255));
         name_f.setText("The First Name");
+        name_f.setToolTipText("The First Name");
         name_f.setBorder(null);
+        name_f.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         name_f.setOpaque(false);
         jPanel10.add(name_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 210, 20));
 
@@ -122,14 +127,18 @@ public class display_new_user extends javax.swing.JFrame {
         addres_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         addres_f.setForeground(new java.awt.Color(255, 255, 255));
         addres_f.setText("Address");
+        addres_f.setToolTipText("Address");
         addres_f.setBorder(null);
+        addres_f.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         addres_f.setOpaque(false);
         jPanel10.add(addres_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 210, 20));
         jPanel10.add(jSeparator62, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 450, 10));
 
         jButton31.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton31.setForeground(new java.awt.Color(255, 255, 255));
-        jButton31.setText("Main Menu");
+        jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu 1.png"))); // NOI18N
+        jButton31.setText("      Main Menu");
+        jButton31.setToolTipText("To Main Menu");
         jButton31.setBorder(null);
         jButton31.setBorderPainted(false);
         jButton31.setContentAreaFilled(false);
@@ -137,16 +146,19 @@ public class display_new_user extends javax.swing.JFrame {
         jButton31.setDefaultCapable(false);
         jButton31.setFocusPainted(false);
         jButton31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton31.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu 2.png"))); // NOI18N
         jButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton31ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 190, 50));
+        jPanel10.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 50));
 
         jButton32.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
+        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 1.png"))); // NOI18N
         jButton32.setText("Logout");
+        jButton32.setToolTipText("Logout");
         jButton32.setBorder(null);
         jButton32.setBorderPainted(false);
         jButton32.setContentAreaFilled(false);
@@ -154,6 +166,7 @@ public class display_new_user extends javax.swing.JFrame {
         jButton32.setDefaultCapable(false);
         jButton32.setFocusPainted(false);
         jButton32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton32.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 2.png"))); // NOI18N
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton32ActionPerformed(evt);
@@ -163,7 +176,9 @@ public class display_new_user extends javax.swing.JFrame {
 
         jButton33.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
+        jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 1.png"))); // NOI18N
         jButton33.setText("Home");
+        jButton33.setToolTipText("Home");
         jButton33.setBorder(null);
         jButton33.setBorderPainted(false);
         jButton33.setContentAreaFilled(false);
@@ -171,6 +186,7 @@ public class display_new_user extends javax.swing.JFrame {
         jButton33.setDefaultCapable(false);
         jButton33.setFocusPainted(false);
         jButton33.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton33.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 2.png"))); // NOI18N
         jButton33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton33ActionPerformed(evt);
@@ -188,7 +204,9 @@ public class display_new_user extends javax.swing.JFrame {
         id_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         id_f.setForeground(new java.awt.Color(255, 255, 255));
         id_f.setText("ID");
+        id_f.setToolTipText("ID");
         id_f.setBorder(null);
+        id_f.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         id_f.setOpaque(false);
         jPanel10.add(id_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, 210, 20));
 
@@ -206,7 +224,9 @@ public class display_new_user extends javax.swing.JFrame {
         email_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         email_f.setForeground(new java.awt.Color(255, 255, 255));
         email_f.setText("Email");
+        email_f.setToolTipText("Email");
         email_f.setBorder(null);
+        email_f.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         email_f.setOpaque(false);
         jPanel10.add(email_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 210, 20));
         jPanel10.add(jSeparator63, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 450, 10));
@@ -216,33 +236,25 @@ public class display_new_user extends javax.swing.JFrame {
         phone_f.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         phone_f.setForeground(new java.awt.Color(255, 255, 255));
         phone_f.setText("Phone number");
+        phone_f.setToolTipText("Phone number");
         phone_f.setBorder(null);
+        phone_f.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         phone_f.setOpaque(false);
         jPanel10.add(phone_f, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 210, 20));
         jPanel10.add(jSeparator64, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 450, 10));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
-        jLabel6.setText(" ");
-        jPanel10.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu icon.png"))); // NOI18N
-        jLabel7.setText(" ");
-        jPanel10.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel15.setText(" ");
-        jPanel10.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jButton13.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
         jButton13.setText("Back");
+        jButton13.setToolTipText("Back to the previous page");
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
         jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton13.setFocusPainted(false);
         jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton13.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton2_1.png"))); // NOI18N
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -258,22 +270,7 @@ public class display_new_user extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         jPanel10.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 740, 490));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel10);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -282,6 +279,7 @@ public class display_new_user extends javax.swing.JFrame {
         // TODO add your handling code here:
         cont.new_user_info.setVisible(false);
         cont.Admin.setVisible(true);
+        cont.Admin.setResizable(false);
 
     }//GEN-LAST:event_jButton31ActionPerformed
     public void set_the_new (String name , int id , String pass, String addres,String phon,String email)
@@ -303,13 +301,14 @@ public class display_new_user extends javax.swing.JFrame {
         // TODO add your handling code here:
        cont.new_user_info.setVisible(false);
        cont.add_user.setVisible(true);
+       cont.add_user.setResizable(false);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
         cont.new_user_info.setVisible(false);
         cont.log.setVisible(true);
-        
+        cont.log.setResizable(false);
     }//GEN-LAST:event_jButton32ActionPerformed
 
 
@@ -322,7 +321,6 @@ public class display_new_user extends javax.swing.JFrame {
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
@@ -332,8 +330,6 @@ public class display_new_user extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JSeparator jSeparator55;
     private javax.swing.JSeparator jSeparator57;

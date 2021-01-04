@@ -43,13 +43,14 @@ int id;
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Library Management System");
+        setResizable(false);
+        setType(java.awt.Window.Type.UTILITY);
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -62,6 +63,7 @@ int id;
         jTextField9.setBackground(new java.awt.Color(17, 9, 50));
         jTextField9.setForeground(new java.awt.Color(255, 255, 255));
         jTextField9.setText("Enter ID");
+        jTextField9.setToolTipText("Enter ID");
         jTextField9.setBorder(null);
         jTextField9.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField9.setOpaque(false);
@@ -93,7 +95,9 @@ int id;
 
         jButton27.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton27.setForeground(new java.awt.Color(255, 255, 255));
+        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back 1.png"))); // NOI18N
         jButton27.setText("Back");
+        jButton27.setToolTipText("Back to the previous page");
         jButton27.setBorder(null);
         jButton27.setBorderPainted(false);
         jButton27.setContentAreaFilled(false);
@@ -101,6 +105,7 @@ int id;
         jButton27.setDefaultCapable(false);
         jButton27.setFocusPainted(false);
         jButton27.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton27.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back 2.png"))); // NOI18N
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton27ActionPerformed(evt);
@@ -110,14 +115,17 @@ int id;
 
         jButton28.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
+        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 1.png"))); // NOI18N
         jButton28.setText("Logout");
+        jButton28.setToolTipText("Logout");
         jButton28.setBorder(null);
         jButton28.setBorderPainted(false);
         jButton28.setContentAreaFilled(false);
-        jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton28.setDefaultCapable(false);
         jButton28.setFocusPainted(false);
         jButton28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton28.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 2.png"))); // NOI18N
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton28ActionPerformed(evt);
@@ -127,7 +135,9 @@ int id;
 
         jButton29.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton29.setForeground(new java.awt.Color(255, 255, 255));
+        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 1.png"))); // NOI18N
         jButton29.setText("Home");
+        jButton29.setToolTipText("Home");
         jButton29.setBorder(null);
         jButton29.setBorderPainted(false);
         jButton29.setContentAreaFilled(false);
@@ -135,6 +145,7 @@ int id;
         jButton29.setDefaultCapable(false);
         jButton29.setFocusPainted(false);
         jButton29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton29.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 2.png"))); // NOI18N
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton29ActionPerformed(evt);
@@ -146,29 +157,20 @@ int id;
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
         jButton15.setText("Remove Reader");
+        jButton15.setToolTipText("Remove This Reader");
         jButton15.setBorder(null);
         jButton15.setBorderPainted(false);
         jButton15.setContentAreaFilled(false);
+        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton15.setFocusPainted(false);
         jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton15.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton2_1.png"))); // NOI18N
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
             }
         });
         jPanel4.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, 180, 50));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
-        jLabel3.setText(" ");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
-        jLabel5.setText(" ");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel6.setText(" ");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -178,22 +180,7 @@ int id;
         jLabel1.setText("jLabel1");
         jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 740, 490));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel4);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -202,6 +189,7 @@ int id;
         // TODO add your handling code here:
         cont.remove_user.setVisible(false);
         cont.Admin.setVisible(true);
+        cont.Admin.setResizable(false);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jTextField9FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField9FocusGained
@@ -231,6 +219,7 @@ int id;
         // TODO add your handling code here:
           cont.remove_user.setVisible(false );
         cont.log.setVisible(true);
+        cont.log.setResizable(false);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
@@ -247,10 +236,7 @@ int id;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator19;
     private javax.swing.JSeparator jSeparator20;

@@ -47,13 +47,12 @@ import javax.swing.JOptionPane;
         jTextField5 = new javax.swing.JTextField();
         jSeparator14 = new javax.swing.JSeparator();
         jButton13 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Library Management System");
+        setType(java.awt.Window.Type.UTILITY);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -66,6 +65,7 @@ import javax.swing.JOptionPane;
         jTextField1.setBackground(new java.awt.Color(17, 9, 50));
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Enter last name");
+        jTextField1.setToolTipText("Enter last name");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -96,6 +96,7 @@ import javax.swing.JOptionPane;
         jPasswordField1.setBackground(new java.awt.Color(17, 9, 50));
         jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
         jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setToolTipText("Use a strong password that includes numbers and letters");
         jPasswordField1.setBorder(null);
         jPasswordField1.setOpaque(false);
         jPasswordField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -113,6 +114,7 @@ import javax.swing.JOptionPane;
         jTextField2.setBackground(new java.awt.Color(17, 9, 50));
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
         jTextField2.setText("Enter first name");
+        jTextField2.setToolTipText("Enter first name");
         jTextField2.setBorder(null);
         jTextField2.setOpaque(false);
         jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -125,6 +127,7 @@ import javax.swing.JOptionPane;
         jTextField4.setBackground(new java.awt.Color(17, 9, 50));
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
         jTextField4.setText("Enter address");
+        jTextField4.setToolTipText("Enter address");
         jTextField4.setBorder(null);
         jTextField4.setOpaque(false);
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -137,7 +140,9 @@ import javax.swing.JOptionPane;
 
         jButton24.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back 1.png"))); // NOI18N
         jButton24.setText("Back");
+        jButton24.setToolTipText("Back To The Previous Page");
         jButton24.setBorder(null);
         jButton24.setBorderPainted(false);
         jButton24.setContentAreaFilled(false);
@@ -145,6 +150,7 @@ import javax.swing.JOptionPane;
         jButton24.setDefaultCapable(false);
         jButton24.setFocusPainted(false);
         jButton24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton24.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back 2.png"))); // NOI18N
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
@@ -154,7 +160,9 @@ import javax.swing.JOptionPane;
 
         jButton25.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton25.setForeground(new java.awt.Color(255, 255, 255));
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 1.png"))); // NOI18N
         jButton25.setText("Logout");
+        jButton25.setToolTipText("Logout");
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         jButton25.setContentAreaFilled(false);
@@ -162,11 +170,14 @@ import javax.swing.JOptionPane;
         jButton25.setDefaultCapable(false);
         jButton25.setFocusPainted(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton25.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 2.png"))); // NOI18N
         jPanel3.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 50));
 
         jButton26.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
+        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 1.png"))); // NOI18N
         jButton26.setText("Home");
+        jButton26.setToolTipText("Home");
         jButton26.setBorder(null);
         jButton26.setBorderPainted(false);
         jButton26.setContentAreaFilled(false);
@@ -174,6 +185,7 @@ import javax.swing.JOptionPane;
         jButton26.setDefaultCapable(false);
         jButton26.setFocusPainted(false);
         jButton26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton26.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 2.png"))); // NOI18N
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
@@ -193,6 +205,7 @@ import javax.swing.JOptionPane;
         jTextField6.setBackground(new java.awt.Color(17, 9, 50));
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
         jTextField6.setText("Enter email");
+        jTextField6.setToolTipText("Enter email");
         jTextField6.setBorder(null);
         jTextField6.setOpaque(false);
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -211,6 +224,7 @@ import javax.swing.JOptionPane;
         jTextField5.setBackground(new java.awt.Color(17, 9, 50));
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
         jTextField5.setText("Enter phone number");
+        jTextField5.setToolTipText("Enter phone number");
         jTextField5.setBorder(null);
         jTextField5.setOpaque(false);
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -225,30 +239,20 @@ import javax.swing.JOptionPane;
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
         jButton13.setText("Save User");
+        jButton13.setToolTipText("Save User");
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
         jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton13.setFocusPainted(false);
         jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton13.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton2_1.png"))); // NOI18N
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 420, 180, 50));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel8.setText(" ");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
-        jLabel3.setText(" ");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/back icon.png"))); // NOI18N
-        jLabel6.setText(" ");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/lefte.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
@@ -258,22 +262,7 @@ import javax.swing.JOptionPane;
         jLabel1.setText("jLabel1");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 740, 490));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -282,7 +271,7 @@ import javax.swing.JOptionPane;
         // TODO add your handling code here:
         cont.add_user.setVisible(false);
         cont.Admin.setVisible(true);
-        
+        cont.Admin.setResizable(false);
         
     }//GEN-LAST:event_jButton24ActionPerformed
 
@@ -362,12 +351,9 @@ import javax.swing.JOptionPane;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;

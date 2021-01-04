@@ -68,9 +68,6 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -78,6 +75,10 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton18 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Library Management System");
+        setResizable(false);
+        setType(java.awt.Window.Type.UTILITY);
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -98,6 +99,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));
         jTextField3.setText(" name");
+        jTextField3.setToolTipText(" name");
         jTextField3.setBorder(null);
         jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField3.setOpaque(false);
@@ -129,12 +131,14 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton19.setForeground(new java.awt.Color(255, 255, 255));
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
         jButton19.setText("Next Book");
+        jButton19.setToolTipText("Next Book");
         jButton19.setBorder(null);
         jButton19.setBorderPainted(false);
         jButton19.setContentAreaFilled(false);
         jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton19.setFocusPainted(false);
         jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton19.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton2_1.png"))); // NOI18N
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
@@ -146,12 +150,14 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
         jButton17.setText("Previous Book");
+        jButton17.setToolTipText("Previous Book");
         jButton17.setBorder(null);
         jButton17.setBorderPainted(false);
         jButton17.setContentAreaFilled(false);
         jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton17.setFocusPainted(false);
         jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton17.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton2_1.png"))); // NOI18N
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
@@ -164,6 +170,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
         jTextField7.setText("number of copies is uneditable");
+        jTextField7.setToolTipText("number of copies is uneditable");
         jTextField7.setBorder(null);
         jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField7.setOpaque(false);
@@ -179,6 +186,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField6.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
         jTextField6.setText("production year");
+        jTextField6.setToolTipText("production year");
         jTextField6.setBorder(null);
         jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField6.setOpaque(false);
@@ -193,6 +201,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField8.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField8.setForeground(new java.awt.Color(255, 255, 255));
         jTextField8.setText("category");
+        jTextField8.setToolTipText("category");
         jTextField8.setBorder(null);
         jTextField8.setOpaque(false);
         jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -208,6 +217,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(255, 255, 255));
         jTextField5.setText("author");
+        jTextField5.setToolTipText("author");
         jTextField5.setBorder(null);
         jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField5.setOpaque(false);
@@ -218,6 +228,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
         jTextField4.setText("ID");
+        jTextField4.setToolTipText("ID");
         jTextField4.setBorder(null);
         jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField4.setOpaque(false);
@@ -235,12 +246,14 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton20.setForeground(new java.awt.Color(255, 255, 255));
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
         jButton20.setText("Rent This One");
+        jButton20.setToolTipText("Rent This One");
         jButton20.setBorder(null);
         jButton20.setBorderPainted(false);
         jButton20.setContentAreaFilled(false);
         jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton20.setFocusPainted(false);
         jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton20.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton2_1.png"))); // NOI18N
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
@@ -250,7 +263,9 @@ public class Show_All_Books extends javax.swing.JFrame {
 
         jButton24.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
-        jButton24.setText("Main Menu");
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu 1.png"))); // NOI18N
+        jButton24.setText("     Main Menu");
+        jButton24.setToolTipText("To Main Menu");
         jButton24.setBorder(null);
         jButton24.setBorderPainted(false);
         jButton24.setContentAreaFilled(false);
@@ -258,6 +273,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton24.setDefaultCapable(false);
         jButton24.setFocusPainted(false);
         jButton24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton24.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu 2.png"))); // NOI18N
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
@@ -267,7 +283,9 @@ public class Show_All_Books extends javax.swing.JFrame {
 
         jButton25.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton25.setForeground(new java.awt.Color(255, 255, 255));
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 1.png"))); // NOI18N
         jButton25.setText("Logout");
+        jButton25.setToolTipText("Logout");
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         jButton25.setContentAreaFilled(false);
@@ -275,6 +293,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton25.setDefaultCapable(false);
         jButton25.setFocusPainted(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton25.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout 2.png"))); // NOI18N
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton25ActionPerformed(evt);
@@ -284,7 +303,9 @@ public class Show_All_Books extends javax.swing.JFrame {
 
         jButton26.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
+        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 1.png"))); // NOI18N
         jButton26.setText("Home");
+        jButton26.setToolTipText("Home");
         jButton26.setBorder(null);
         jButton26.setBorderPainted(false);
         jButton26.setContentAreaFilled(false);
@@ -292,24 +313,13 @@ public class Show_All_Books extends javax.swing.JFrame {
         jButton26.setDefaultCapable(false);
         jButton26.setFocusPainted(false);
         jButton26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton26.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home 2.png"))); // NOI18N
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 200, 50));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/home icon.png"))); // NOI18N
-        jLabel6.setText(" ");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/menu icon.png"))); // NOI18N
-        jLabel7.setText(" ");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, -1));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/logout icon.png"))); // NOI18N
-        jLabel13.setText(" ");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/diff logo.png"))); // NOI18N
@@ -344,22 +354,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         });
         jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, 180, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel3);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -386,6 +381,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         {
             cont.show.setVisible(false);
             cont.Admin.setVisible(true);
+            cont.Admin.setResizable(false);
         }
         if (Home.login==false)
         {
@@ -393,11 +389,13 @@ public class Show_All_Books extends javax.swing.JFrame {
             {
                 cont.show.setVisible(false);
                 cont.read.setVisible(true);
+                cont.read.setResizable(false);
             }
             else if (Home.isgest==true)
             {
                 cont.show.setVisible(false);
                 cont.gest.setVisible(true);
+                cont.gest.setResizable(false);
             }
         }
     }//GEN-LAST:event_jButton24ActionPerformed
@@ -478,6 +476,7 @@ public class Show_All_Books extends javax.swing.JFrame {
         // TODO add your handling code here:
         cont.show.setVisible(false);
         cont.log.setVisible(true);
+        cont.log.setResizable(false);
     }//GEN-LAST:event_jButton25ActionPerformed
 
 
@@ -493,14 +492,11 @@ public class Show_All_Books extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
