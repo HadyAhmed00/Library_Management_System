@@ -55,7 +55,9 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library Management System");
+        setMinimumSize(new java.awt.Dimension(940, 490));
         setName("Book"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(940, 490));
         setResizable(false);
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
