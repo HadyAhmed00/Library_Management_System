@@ -267,6 +267,7 @@ import javax.swing.JOptionPane;
         getContentPane().add(jPanel3);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed

@@ -188,6 +188,7 @@ public class Search_For_Member extends javax.swing.JFrame {
         getContentPane().add(jPanel6);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed

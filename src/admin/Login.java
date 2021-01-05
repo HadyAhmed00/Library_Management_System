@@ -130,7 +130,7 @@ public static int getIdForIsBlocked;
         jPasswordField1.setBackground(new java.awt.Color(17, 9, 50));
         jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
         jPasswordField1.setText("jPasswordField1");
-        jPasswordField1.setToolTipText("Use a strong password that includes numbers and letters");
+        jPasswordField1.setToolTipText("Enter a password that includes numbers and letters");
         jPasswordField1.setBorder(null);
         jPasswordField1.setOpaque(false);
         jPasswordField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -160,6 +160,7 @@ public static int getIdForIsBlocked;
         getContentPane().add(jPanel2);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

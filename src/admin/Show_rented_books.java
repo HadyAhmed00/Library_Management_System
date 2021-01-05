@@ -342,6 +342,7 @@ public class Show_rented_books extends javax.swing.JFrame {
         getContentPane().add(jPanel3);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed

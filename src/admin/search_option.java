@@ -172,6 +172,7 @@ public class search_option extends javax.swing.JFrame {
         getContentPane().add(jPanel3);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     public boolean isname =true;
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed

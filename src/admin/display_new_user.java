@@ -273,6 +273,7 @@ public class display_new_user extends javax.swing.JFrame {
         getContentPane().add(jPanel10);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed

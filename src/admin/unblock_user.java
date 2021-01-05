@@ -182,6 +182,7 @@ public class unblock_user extends javax.swing.JFrame {
         getContentPane().add(jPanel3);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
