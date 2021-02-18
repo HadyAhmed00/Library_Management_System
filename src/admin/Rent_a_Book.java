@@ -10,6 +10,7 @@ package admin;
  * @author Hany
  */
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 public class Rent_a_Book extends javax.swing.JFrame {
@@ -19,6 +20,7 @@ public class Rent_a_Book extends javax.swing.JFrame {
      */
     public Rent_a_Book() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

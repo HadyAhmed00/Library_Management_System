@@ -5,6 +5,7 @@
  */
 package admin;
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JList;
 
 /**
@@ -33,6 +34,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**
@@ -58,7 +60,6 @@ public class Home extends javax.swing.JFrame {
         setFocusCycleRoot(false);
         setMinimumSize(new java.awt.Dimension(940, 490));
         setName(""); // NOI18N
-        setPreferredSize(new java.awt.Dimension(940, 490));
         setResizable(false);
         setSize(new java.awt.Dimension(0, 0));
         setType(java.awt.Window.Type.UTILITY);

@@ -7,6 +7,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import javax.swing.JPopupMenu;
 
@@ -21,6 +22,7 @@ public static int getIdForIsBlocked;
     /** Creates new form Login */
     public Login() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /** This method is called from within the constructor to

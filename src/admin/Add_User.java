@@ -1,6 +1,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
     public class Add_User extends javax.swing.JFrame 
@@ -15,6 +16,7 @@ import javax.swing.JOptionPane;
         boolean isblooked;
         public Add_User() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     @SuppressWarnings("unchecked")

@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,6 +20,7 @@ int id;
      */
     public Remove_User() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

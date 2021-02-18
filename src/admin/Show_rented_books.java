@@ -7,6 +7,7 @@ package admin;
 
 import javax.swing.JOptionPane;
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 
 /**
  *
@@ -28,6 +29,7 @@ public class Show_rented_books extends javax.swing.JFrame {
      */
     public Show_rented_books() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

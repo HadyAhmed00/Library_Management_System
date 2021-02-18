@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,6 +20,7 @@ public class Display_user extends javax.swing.JFrame {
      */
     public Display_user() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 public void Display_u(String f_name,String l_name, String id,String address , String phone,String email) {
         jTextField3.setText(f_name+" "+l_name);

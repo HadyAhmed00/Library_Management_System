@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package admin;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 /**
  *
@@ -12,6 +13,7 @@ import javax.swing.JOptionPane;
 public class Admin_GUI extends javax.swing.JFrame {
     public Admin_GUI() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
     public static contaner cont =new contaner();
     /**

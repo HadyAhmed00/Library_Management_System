@@ -5,6 +5,7 @@
  */
 package admin;
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 /**
  *
@@ -17,6 +18,7 @@ String name;
      */
     public Return_a_book() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

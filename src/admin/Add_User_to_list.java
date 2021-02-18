@@ -10,6 +10,7 @@ package admin;
  * @author Hany
  */
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 public class Add_User_to_list extends javax.swing.JFrame {
@@ -20,6 +21,7 @@ int user_id;
      */
     public Add_User_to_list() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 
 /**
  *
@@ -18,6 +19,7 @@ public class Rant_Book_Option extends javax.swing.JFrame {
      */
     public Rant_Book_Option() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

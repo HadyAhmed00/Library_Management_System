@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 
 /**
  *
@@ -18,6 +19,7 @@ public class display_new_user extends javax.swing.JFrame {
      */
     public display_new_user() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

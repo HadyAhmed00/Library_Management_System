@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 
@@ -28,6 +29,7 @@ public class Show_All_Books extends javax.swing.JFrame {
      */
     public Show_All_Books() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

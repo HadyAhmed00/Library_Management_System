@@ -1,6 +1,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,6 +15,7 @@ public class search_option extends javax.swing.JFrame {
      */
     public search_option() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

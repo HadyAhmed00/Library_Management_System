@@ -6,6 +6,9 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.RenderingHints;
+import java.awt.Toolkit;
+import javafx.scene.input.KeyCode;
 import javax.swing.JOptionPane;
 
 /**
@@ -20,6 +23,7 @@ String name,production_year,auther,category;
      */
     public Add_Book() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**
@@ -291,6 +295,14 @@ String name,production_year,auther,category;
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/right.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
+        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel1KeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jLabel1KeyTyped(evt);
+            }
+        });
         jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 740, 490));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -383,6 +395,15 @@ String name,production_year,auther,category;
         cont.log.setVisible(true);
         cont.log.setResizable(false);
     }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1KeyPressed
+
+    private void jLabel1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyTyped
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jLabel1KeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

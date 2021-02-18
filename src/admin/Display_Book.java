@@ -6,6 +6,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,6 +20,7 @@ public class Display_Book extends javax.swing.JFrame {
      */
     public Display_Book() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
     public void Display(String name, String id,String year , String a_name,String category,String num) {
         jTextField3.setText(name);

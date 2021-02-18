@@ -7,6 +7,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
@@ -25,6 +26,7 @@ public class Search_For_Member extends javax.swing.JFrame {
     /** Creates new form Search_For_Member */
     public Search_For_Member() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /** This method is called from within the constructor to

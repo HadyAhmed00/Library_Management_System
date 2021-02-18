@@ -1,6 +1,7 @@
 package admin;
 
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 /**
@@ -15,6 +16,7 @@ public class Search_For_Book extends javax.swing.JFrame {
      */
     public Search_For_Book() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**

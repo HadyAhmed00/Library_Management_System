@@ -10,6 +10,7 @@ package admin;
  * @author Hany
  */
 import static admin.Admin_GUI.cont;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 public class Block_User extends javax.swing.JFrame {
@@ -19,6 +20,7 @@ int id;
      */
     public Block_User() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
     }
 
     /**
