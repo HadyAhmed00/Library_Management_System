@@ -182,77 +182,9 @@ public static int getIdForIsBlocked;
     }//GEN-LAST:event_jPasswordField1FocusGained
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-          if(!Validation.valid1(jTextField3.getText())||jPasswordField1.getText().isEmpty())
-        {
-            JOptionPane.showMessageDialog(new Login(), "Wrong data");
-        }
-        
-        
-        else
-        {
-            id = Integer.valueOf(jTextField3.getText());
-        pass=jPasswordField1.getText();
-        boolean log=false;
-        if(Home.login==true)
-        {
-            for (int i = 0; i <= Home.l_index; i++) {
-                if(id==Home.libs[i].ID&&pass.equals(Home.libs[i].password)&&Home.libs[i].Type.equals("l"))
-                {
-                    log=true;
-                    Home.current_user_index=i;
-                    break;
-                }
-                else 
-                {
-                    log=false;
-                }
-            }
-            if(log==true)
-            {
-                cont.log.setVisible(false);
-                cont.Admin.setVisible(true); 
-                cont.Admin.setResizable(false);
-            }
-             else
-                {
-                    JOptionPane.showMessageDialog(new Login(), "Sorry, your information is not correct");
-                }
-        
-        
-        }
-        else
-        {
-            for (int i = 0; i <= Home.r_index; i++) {
-                if(id==Home.readers[i].ID&&pass.equals(Home.readers[i].password)&&Home.readers[i].Type.equals("r"))
-                {
-                    log=true;
-                    Home.current_user_index=i;
-                    break;
-                }
-                else 
-                {
-                    log=false;
-                }
-            }
-            if(log==true)
-            {
-                cont.log.setVisible(false);
-                cont.read.setVisible(true); 
-                cont.read.setResizable(false);
-            }
-             else
-                {
-                    JOptionPane.showMessageDialog(new Login(), "Sorry, your information is not correct");
-                }
-        
-        }
-        }
-         
-
+        // TODO add your handling code here:     
+        User.Login(jTextField3.getText(),jPasswordField1.getText());
     }//GEN-LAST:event_jButton2ActionPerformed
-
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

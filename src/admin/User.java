@@ -43,7 +43,7 @@ public abstract class User
         this.is_Blocked = is_Blocked;
         //my_rented[0]=new Book(0,"" , "", 0, "", "");
     }
-   public static boolean search_member(int id,int r_index,Reader r_arr[])
+    public static boolean search_member(int id,int r_index,Reader r_arr[])
     {
         boolean found1=false;
        // boolean found2=false;
@@ -256,10 +256,77 @@ public abstract class User
                 JOptionPane.showMessageDialog(new Return_a_book(), "The book has not been found","Failed!",JOptionPane.WARNING_MESSAGE);
             } 
         }
-        else{
+        else
+        {
             JOptionPane.showMessageDialog(new Return_a_book(), "This book has not been found");
         }
     }
+    
+    public static void Login(String ID,String password)
+    {
+            if(!Validation.valid1(ID)||password.isEmpty())
+            {
+                JOptionPane.showMessageDialog(new Login(), "Wrong data");
+            }
+            else
+            {
+                int id = Integer.valueOf(ID);
+                String pass=password;
+                boolean log=false;
+                if(Home.login==true)
+                {
+                    for (int i = 0; i <= Home.l_index; i++) 
+                    {
+                        if(id==Home.libs[i].ID&&pass.equals(Home.libs[i].password)&&Home.libs[i].Type.equals("l"))
+                        {
+                            log=true;
+                            Home.current_user_index=i;
+                            break;
+                        }
+                        else 
+                        {
+                            log=false;
+                        }
+                    }
+                    if(log==true)
+                    {
+                        cont.log.setVisible(false);
+                        cont.Admin.setVisible(true); 
+                        cont.Admin.setResizable(false);
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(new Login(), "Sorry, your information is not correct");
+                    }
+                }
+            else
+            {
+                for (int i = 0; i <= Home.r_index; i++) 
+                {
+                    if(id==Home.readers[i].ID&&pass.equals(Home.readers[i].password)&&Home.readers[i].Type.equals("r"))
+                    {
+                        log=true;
+                        Home.current_user_index=i;
+                        break;
+                    }
+                    else 
+                    {
+                        log=false;
+                    }
+                }
+                if(log==true)
+                {
+                    cont.log.setVisible(false);
+                    cont.read.setVisible(true); 
+                    cont.read.setResizable(false);
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(new Login(), "Sorry, your information is not correct");
+                }
+            }
+       }
+   }
 }
 
       
