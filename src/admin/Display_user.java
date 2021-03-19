@@ -75,7 +75,6 @@ public void Display_u(String f_name,String l_name, String id,String address , St
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library Management System");
         setResizable(false);
-        setType(java.awt.Window.Type.UTILITY);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

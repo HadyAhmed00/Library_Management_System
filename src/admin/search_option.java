@@ -44,9 +44,7 @@ public class search_option extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library Management System");
         setMinimumSize(new java.awt.Dimension(940, 490));
-        setPreferredSize(new java.awt.Dimension(940, 490));
         setResizable(false);
-        setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel3.setRequestFocusEnabled(false);

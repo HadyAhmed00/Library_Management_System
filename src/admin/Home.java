@@ -62,7 +62,6 @@ public class Home extends javax.swing.JFrame {
         setName(""); // NOI18N
         setResizable(false);
         setSize(new java.awt.Dimension(0, 0));
-        setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N

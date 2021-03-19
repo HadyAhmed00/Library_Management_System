@@ -52,7 +52,6 @@ String name;
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library Management System");
         setResizable(false);
-        setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

@@ -48,7 +48,6 @@ public class Rant_Book_Option extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library Management System");
         setResizable(false);
-        setType(java.awt.Window.Type.UTILITY);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
