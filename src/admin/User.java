@@ -30,7 +30,7 @@ public abstract class User
     Book my_rented[]=new Book[3];//array of reader rented books,It is special for each reader 
     static String type;
     DefaultListModel<String> model = new DefaultListModel<>();
-    public User(int ID, String password, String Type, String First_Name, String Last_Name, String Address, String Cellphone, String Email, boolean is_blooked) 
+    public User(int ID, String password, String Type, String First_Name, String Last_Name, String Address, String Cellphone, String Email, boolean is_Blocked) 
     {
         this.ID = ID;
         this.password = password;
