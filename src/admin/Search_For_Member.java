@@ -221,7 +221,7 @@ public class Search_For_Member extends javax.swing.JFrame {
       id=Integer.valueOf(jTextField15.getText());
         
         DefaultListModel<String> model = new DefaultListModel<>();
-        if(User.search_member(id, Home.r_index, Home.readers))
+        if(User.search_member(id))
         {
             
                  

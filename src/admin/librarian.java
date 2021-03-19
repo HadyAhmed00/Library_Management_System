@@ -50,7 +50,7 @@ public class librarian extends User
     public static void remove_reader(int id)
     {
         int the_index;
-        if(User.search_member(id, Home.r_index, Home.readers))
+        if(User.search_member(id))
         {
             if(User.type.equals("r"))
             {
@@ -76,7 +76,7 @@ public class librarian extends User
         {
             if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
             {
-                if(User.search_member(user_id, Home.r_index, Home.readers))
+                if(User.search_member(user_id))
                 {
                     if(Home.books[User.currentbook_id].watting_list_index==5)
                     {
@@ -187,7 +187,7 @@ public class librarian extends User
         int index=0;
         //int index_for_current_user=0;
         boolean blocked_is_found=false;
-                 if (User.search_member(id, Home.r_index, Home.readers)) {
+                 if (User.search_member(id)) {
                      if(User.type.equals("r"))
                      {
                          if(Home.readers[User.current_member_id].is_Blocked==true)
@@ -216,7 +216,7 @@ public class librarian extends User
     {
         int index=0;
         boolean blocked_is_found=false;
-        if(User.search_member(id, Home.r_index, Home.readers))
+        if(User.search_member(id))
             {
                 if(Home.readers[User.current_member_id].is_Blocked==false)
                 {

@@ -43,13 +43,19 @@ public abstract class User
         this.is_Blocked = is_Blocked;
         //my_rented[0]=new Book(0,"" , "", 0, "", "");
     }
-    public static boolean search_member(int id,int r_index,Reader r_arr[])
+    
+    /**
+     * This method is used to search for any user whether a librarian or a reader
+     * @param id We search for the user by entering his/her ID 
+     * @return a boolean value;"true" if the user is found,"false" if the user is not found.
+     */
+    public static boolean search_member(int id)
     {
         boolean found1=false;
        // boolean found2=false;
-        for (int i = 0; i <=r_index; i++) 
+        for (int i = 0; i <=Home.r_index; i++) 
         {
-            if(id==r_arr[i].ID)
+            if(id==Home.readers[i].ID)
             {
                 current_member_id=i;
                 found1=true;

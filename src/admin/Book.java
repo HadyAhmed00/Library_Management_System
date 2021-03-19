@@ -18,6 +18,7 @@ public class Book {
    private final String category;
    int watting_list_index=0;
    User waitting_list[]=new User[5];
+   
    public Book(int Book_Id, String Book_Name, String Book_Production_year, int no_of_existing_copies, String author_name, String category) 
    {
         this.Book_ID = Book_Id;
