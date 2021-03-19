@@ -157,7 +157,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton2.setText("Add User To List");
+        jButton2.setText("Add To Waiting List");
         jButton2.setToolTipText("To Add User To List");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
@@ -230,10 +230,10 @@ public class Admin_GUI extends javax.swing.JFrame {
         });
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 120, 180, 50));
 
-        jButton6.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/admin/lib textuers/botton.png"))); // NOI18N
-        jButton6.setText("Remove User From List");
+        jButton6.setText("Remove From Waiting List");
         jButton6.setToolTipText("To Remove User From List");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
@@ -247,7 +247,7 @@ public class Admin_GUI extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 180, 50));
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 170, 200, 50));
 
         jButton7.setFont(new java.awt.Font("Berlin Sans FB", 0, 16)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
