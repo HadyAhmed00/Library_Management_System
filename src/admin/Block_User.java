@@ -211,12 +211,14 @@ int id;
         // TODO add your handling code here:
         
           id = Integer.valueOf(jTextField2.getText());
-          if(Validation.valid1(jTextField2.getText())){
-          librarian.block_user(id);
-        }else{
-                    JOptionPane.showMessageDialog(new Add_Book(), "Invalid Data","Error",JOptionPane.ERROR_MESSAGE);
-
-        }
+          if(Validation.valid1(jTextField2.getText()))
+          {
+            librarian.block_user(id);
+          }
+          else
+          {
+            JOptionPane.showMessageDialog(new Add_Book(), "Invalid Data","Error",JOptionPane.ERROR_MESSAGE);
+          }
      
         
     }//GEN-LAST:event_jButton13ActionPerformed

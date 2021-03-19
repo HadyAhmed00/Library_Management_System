@@ -451,6 +451,7 @@ public class Admin_GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         cont.Admin.setVisible(false);
         cont.add_book.setVisible(true);
+        cont.add_book.setsome();
         cont.add_book.setResizable(false);
         
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -479,10 +480,17 @@ public class Admin_GUI extends javax.swing.JFrame {
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
-        cont.show_reders.show_r(Home.readers[0].First_Name,Home.readers[0].Last_Name, String.valueOf(Home.readers[0].ID), Home.readers[0].Address, String.valueOf(Home.readers[0].Cellphone), Home.readers[0].Email);
-        cont.Admin.setVisible(false);
-        cont.show_reders.setVisible(true);
-        cont.show_reders.setResizable(false);
+        if (Home.r_index<0) 
+        {
+            JOptionPane.showMessageDialog(new Admin_GUI(), "There are no Readers","Failed",JOptionPane.WARNING_MESSAGE);
+        }
+        else
+        {
+            cont.show_reders.show_r(Home.readers[0].First_Name,Home.readers[0].Last_Name, String.valueOf(Home.readers[0].ID), Home.readers[0].Address, String.valueOf(Home.readers[0].Cellphone), Home.readers[0].Email);
+            cont.Admin.setVisible(false);
+            cont.show_reders.setVisible(true);
+            cont.show_reders.setResizable(false);
+        }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
@@ -522,13 +530,17 @@ public class Admin_GUI extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        
+        if (Home.b_index<0) {
+             JOptionPane.showMessageDialog(new Admin_GUI(), "There are no books","Failed",JOptionPane.WARNING_MESSAGE);
+            
+        }
+        else{
         cont.show.show(Home.books[0].getBook_Name(), String.valueOf(Home.books[0].getBook_ID()), Home.books[0].getProduction_year(), Home.books[0].getAuthor_name(), Home.books[0].getCategory(),String.valueOf(Home.books[0].getNo_of_existing_copies()));
         cont.show.i=0;
          //all.setVisible(true);
          cont.Admin.setVisible(false);
         cont.show.setVisible(true);
-        cont.show.setResizable(false);
+        cont.show.setResizable(false);}
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed

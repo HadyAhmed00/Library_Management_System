@@ -8,8 +8,10 @@ package admin;
 import static admin.Admin_GUI.cont;
 import java.awt.RenderingHints;
 import java.awt.Toolkit;
+import java.util.Optional;
 import javafx.scene.input.KeyCode;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -24,6 +26,15 @@ String name,production_year,auther,category;
     public Add_Book() {
         initComponents();
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ic_logo.png")));
+    }
+
+    public void setsome() {
+        this.jTextField10.setText("Enter Book  Author");
+        this.jTextField11.setText("Enter Number Of Copies");
+        this.jTextField12.setText("Enter Category");
+        this.jTextField13.setText("Enter Production Year");
+        this.jTextField14.setText("ID will be set automatically");
+        this.jTextField7 .setText("Enter Book Name");
     }
 
     /**
@@ -165,6 +176,11 @@ String name,production_year,auther,category;
                 jTextField11FocusGained(evt);
             }
         });
+        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField11ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 210, 20));
         jPanel5.add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, 210, 10));
 
@@ -265,6 +281,11 @@ String name,production_year,auther,category;
         jTextField13.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField13FocusGained(evt);
+            }
+        });
+        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField13ActionPerformed(evt);
             }
         });
         jPanel5.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 210, 20));
@@ -377,11 +398,16 @@ String name,production_year,auther,category;
         production_year=jTextField13.getText();
         category=jTextField12.getText();
         librarian.add_book(id, name, production_year, no_copies, auther, category);
+        cont.Saved_book.setData(name, String.valueOf(id), auther, production_year, no_copies, category);
         JOptionPane.showMessageDialog(new Add_Book(), "You have added a new book succesfully");
-        }else{
+        cont.add_book.setVisible(false);
+        cont.Saved_book.setVisible(true);
+        }
+        else{
                     JOptionPane.showMessageDialog(new Add_Book(), "There is invalid data or missing data","Error",JOptionPane.ERROR_MESSAGE);
 
         }
+        
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -403,6 +429,14 @@ String name,production_year,auther,category;
         // TODO add your handling code here:
         
     }//GEN-LAST:event_jLabel1KeyTyped
+
+    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField13ActionPerformed
+
+    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField11ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

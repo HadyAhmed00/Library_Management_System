@@ -239,7 +239,8 @@ public class Reader_gui extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
         cont.Dis_Book.Display(Home.books[0].getBook_Name(), String.valueOf(Home.books[0].getBook_ID()), Home.books[0].getProduction_year(), Home.books[0].getAuthor_name(),Home.books[0].getCategory(),String.valueOf(Home.books[0].getNo_of_existing_copies()));
-
+        cont.show.show(Home.books[0].getBook_Name(), String.valueOf(Home.books[0].getBook_ID()), Home.books[0].getProduction_year(), Home.books[0].getAuthor_name(), Home.books[0].getCategory(),String.valueOf(Home.books[0].getNo_of_existing_copies()));
+        cont.show.i=0;
         //all.setVisible(true);
         cont.read.setVisible(false);
         cont.show.setVisible(true);
