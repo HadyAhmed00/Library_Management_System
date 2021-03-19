@@ -21,7 +21,7 @@ public class Reader extends User
         
     public static void Add_of_self_to_watting_list(String book_name)
     {
-        if(User.search_for_book(book_name, Home.b_index, Home.books))
+        if(User.search_for_book(book_name))
         {
             if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
             {
@@ -46,10 +46,14 @@ public class Reader extends User
             JOptionPane.showMessageDialog(new Add_User_to_list(), "book is not found");
         }
     }
+    /**
+     * This method allows a reader to rent a book
+     * @param name the name of the required book
+     */
     @Override
         public  void rent_book(String name)
         {
-            if(User.search_for_book(name,Home.b_index ,Home.books))
+            if(User.search_for_book(name))
             {
                 int checkForID=Login.getIdForIsBlocked;
                 int ctr;

@@ -437,7 +437,6 @@ public class Show_All_Books extends javax.swing.JFrame {
                if(Home.login)
                {
                    Home.libs[Home.current_user_index].rent_book(name);
-                   JOptionPane.showMessageDialog(new Show_All_Books(), "You have rented this book with ID "+Home.books[i].getBook_ID());
                }
                else
                {

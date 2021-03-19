@@ -19,15 +19,27 @@ public class librarian extends User
         super(ID, password, Type, First_Name, Last_Name, Address, Cellphone, Email, is_blooked);
     }
     
-    
+    /**
+     * This method adds a new object of book into the last index of the array of books
+     * @param id ID of the new book object
+     * @param name Name of the new book object
+     * @param production_year Production Year of the new book object
+     * @param no_copies Number of copies of the new book object
+     * @param auther Name of the new book object
+     * @param category Category of the new book object
+     */
     public static void add_book( int id, String name,String production_year,int no_copies,String auther,String category)
     {
         Home.books[Home.b_index]=new Book(id,name,production_year,no_copies,auther,category);
     }
+    /**
+     * This method is used by the librarian to remove a book data from the array of books
+     * @param name The name of the required book to be removed
+     */
     public static void remove_book(String name)
     {
         int the_index;
-        if(User.search_for_book(name, Home.b_index, Home.books))
+        if(User.search_for_book(name))
         {
             the_index=User.currentbook_id;
             for (int i = the_index; i <Home.b_index;i++) 
@@ -42,11 +54,27 @@ public class librarian extends User
             JOptionPane.showMessageDialog(new Remove_Book(), "Sorry book is not found");
         } 
     }
+    /**
+     * This method adds a new object of reader into the last index of the array of readers
+     * @param id ID of the new reader object
+     * @param pass password of the new reader object
+     * @param first first name of the new reader object
+     * @param last  last name of the new reader object
+     * @param phone phone number of the new reader object
+     * @param type type of reader (to solve login issues) 
+     * @param address address of the new reader object
+     * @param email e-mail of the new reader object
+     * @param b boolean 
+     */
     public static void add_rEADER(int id,String pass,String first, String last,String phone, String type, String address, String email, boolean b)     
     {
         Home.readers[Home.r_index]=new Reader(id,pass,type,first,last,address,phone,email,b);
         System.out.println("user is registered");
     }
+    /**
+     * This method is used to search for a reader to remove him/her from the array of readers
+     * @param id Reader's ID that the librarian wants to remove
+     */
     public static void remove_reader(int id)
     {
         int the_index;
@@ -69,10 +97,14 @@ public class librarian extends User
           
         }
     }
-    
+    /**
+     * This method is used to add a user in the waiting list for a book which has no left copies in the library
+     * @param user_id The waiting user_id
+     * @param book_name The book name that the user wants
+     */
     public static void add_user_to_watting_list(int user_id,String book_name)
     {
-        if(User.search_for_book(book_name, Home.b_index, Home.books))
+        if(User.search_for_book(book_name))
         {
             if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
             {
@@ -118,7 +150,7 @@ public class librarian extends User
     {
       int the_index=0;
       boolean is_found=false;
-      if(User.search_for_book(book_name, Home.b_index, Home.books))
+      if(User.search_for_book(book_name))
        {
           for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) 
            {
@@ -148,10 +180,14 @@ public class librarian extends User
       else
         JOptionPane.showMessageDialog(new Remove_User_from_list(), "Book is not found in list");
     }
+    /**
+     * This method allows a librarian to rent a book 
+     * @param name the name of the required book
+     */
     @Override
     public  void rent_book(String name)
     {
-        if(User.search_for_book(name,Home.b_index ,Home.books))
+        if(User.search_for_book(name))
         {
             if(Home.books[User.currentbook_id].getNo_of_existing_copies()==0)
             {
@@ -182,6 +218,11 @@ public class librarian extends User
             JOptionPane.showMessageDialog(new Rent_a_Book(),"This book has not been found!!","Alert",JOptionPane.WARNING_MESSAGE);
         }     
     }
+    
+    /**
+     * This methods allows a librarian to block a user who returns books late
+     * @param id The ID of the user who will be blocked
+     */
     public static void block_user(int id)
     {
         int index=0;
@@ -212,6 +253,10 @@ public class librarian extends User
             JOptionPane.showMessageDialog(new Block_User(), "Member is not found!!", "Alert", JOptionPane.WARNING_MESSAGE);
         }
     }
+    /**
+     * This method allows a librarian to unblock a user
+     * @param id The ID of the user who will be unblocked
+     */
     public static void unblock_user(int id)
     {
         int index=0;

@@ -36,7 +36,7 @@ public class Search_For_Book extends javax.swing.JFrame {
         jSeparator33 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
+        bookinfo = new javax.swing.JTextField();
         jButton33 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
         jButton35 = new javax.swing.JButton();
@@ -85,23 +85,23 @@ public class Search_For_Book extends javax.swing.JFrame {
         });
         jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, -1, 20));
 
-        jTextField1.setBackground(new java.awt.Color(17, 9, 50));
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Enter book's info");
-        jTextField1.setToolTipText("Enter book's info");
-        jTextField1.setBorder(null);
-        jTextField1.setOpaque(false);
-        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+        bookinfo.setBackground(new java.awt.Color(17, 9, 50));
+        bookinfo.setForeground(new java.awt.Color(255, 255, 255));
+        bookinfo.setText("Enter book's info");
+        bookinfo.setToolTipText("Enter book's info");
+        bookinfo.setBorder(null);
+        bookinfo.setOpaque(false);
+        bookinfo.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField1FocusGained(evt);
+                bookinfoFocusGained(evt);
             }
         });
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        bookinfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                bookinfoActionPerformed(evt);
             }
         });
-        jPanel6.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 204, 200, 20));
+        jPanel6.add(bookinfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 204, 200, 20));
 
         jButton33.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
@@ -229,80 +229,81 @@ public class Search_For_Book extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
+        Book.search_option(cont.op_search.isname);
         //cont.Dis_Book.
-        if (cont.op_search.isname) 
-        {
-        name=jTextField1.getText();
-        DefaultListModel<String> model2 = new DefaultListModel<>();
-        if(User.search_for_book(name, Home.b_index, Home.books))
-        {
-               
-            if(Home.books[User.currentbook_id].watting_list_index==0)
-            {
-                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
-                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
-                 cont.Dis_Book.jList1.setModel(model2);
-                cont.se_book.setVisible(false);
-               cont.Dis_Book.setVisible(true);
-               cont.Dis_Book.setResizable(false);
-            }
-            else
-            {
-            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
-                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
-                 cont.Dis_Book.jList1.setModel(model2);
-                 cont.se_book.setVisible(false);
-                 cont.Dis_Book.setVisible(true);
-                 cont.Dis_Book.setResizable(false);
-            }
-            }
-        }
-        else 
-            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);   
-        }
-        else 
-        {
-            int id=Integer.valueOf(jTextField1.getText()); 
-        DefaultListModel<String> model2 = new DefaultListModel<>();
-        if(User.search_for_book(id, Home.b_index, Home.books))
-        {
-               
-            if(Home.books[User.currentbook_id].watting_list_index==0)
-            {
-                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
-                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
-                 cont.Dis_Book.jList1.setModel(model2);
-                cont.se_book.setVisible(false);
-               cont.Dis_Book.setVisible(true);
-               cont.Dis_Book.setResizable(false);
-            }
-            else
-            {
-            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
-                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
-                 cont.Dis_Book.jList1.setModel(model2);
-                 cont.se_book.setVisible(false);
-                 cont.Dis_Book.setVisible(true);
-                 cont.Dis_Book.setResizable(false);
-            }
-            }
-        }
-        else 
-            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);
-            
-        }
+//        if (cont.op_search.isname) 
+//        {
+//        name=bookinfo.getText();
+//        DefaultListModel<String> model2 = new DefaultListModel<>();
+//        if(User.search_for_book(name))
+//        {
+//               
+//            if(Home.books[User.currentbook_id].watting_list_index==0)
+//            {
+//                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
+//                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
+//                 cont.Dis_Book.jList1.setModel(model2);
+//                cont.se_book.setVisible(false);
+//               cont.Dis_Book.setVisible(true);
+//               cont.Dis_Book.setResizable(false);
+//            }
+//            else
+//            {
+//            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
+//                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
+//                 cont.Dis_Book.jList1.setModel(model2);
+//                 cont.se_book.setVisible(false);
+//                 cont.Dis_Book.setVisible(true);
+//                 cont.Dis_Book.setResizable(false);
+//            }
+//            }
+//        }
+//        else 
+//            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);   
+//        }
+//        else 
+//        {
+//            int id=Integer.valueOf(bookinfo.getText()); 
+//        DefaultListModel<String> model2 = new DefaultListModel<>();
+//        if(User.search_for_book(id))
+//        {
+//               
+//            if(Home.books[User.currentbook_id].watting_list_index==0)
+//            {
+//                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
+//                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
+//                 cont.Dis_Book.jList1.setModel(model2);
+//                cont.se_book.setVisible(false);
+//               cont.Dis_Book.setVisible(true);
+//               cont.Dis_Book.setResizable(false);
+//            }
+//            else
+//            {
+//            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
+//                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
+//                 cont.Dis_Book.jList1.setModel(model2);
+//                 cont.se_book.setVisible(false);
+//                 cont.Dis_Book.setVisible(true);
+//                 cont.Dis_Book.setResizable(false);
+//            }
+//            }
+//        }
+//        else 
+//            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);
+//            
+//        }
        
     }//GEN-LAST:event_jButton17ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void bookinfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookinfoActionPerformed
         // TODO add your handling code here:
        
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_bookinfoActionPerformed
 
-    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
+    private void bookinfoFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_bookinfoFocusGained
         // TODO add your handling code here:
-        jTextField1.setText("");
-    }//GEN-LAST:event_jTextField1FocusGained
+        bookinfo.setText("");
+    }//GEN-LAST:event_bookinfoFocusGained
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
@@ -322,6 +323,7 @@ public class Search_For_Book extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTextField bookinfo;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton33;
     private javax.swing.JButton jButton34;
@@ -335,7 +337,6 @@ public class Search_For_Book extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator31;
     private javax.swing.JSeparator jSeparator32;
     private javax.swing.JSeparator jSeparator33;
-    private javax.swing.JTextField jTextField1;
     public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,9 +5,13 @@
  */
 package admin;
 
+import static admin.Admin_GUI.cont;
+import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author hadi Atef
+ * @author Hadi Ehab
  */
 public class Book {
    private final int Book_ID;
@@ -55,5 +59,74 @@ public class Book {
 
     public String getCategory() {
         return category;
+    }
+    
+    /**
+     * This method is used to search for a book by one of two ways 
+     * @param is_name the boolean argument that determines whether the search is done by searching book name or book ID
+     */
+    public static void search_option(boolean is_name){
+        if (cont.op_search.isname) 
+        {
+        String name=cont.se_book.bookinfo.getText();
+        DefaultListModel<String> model2 = new DefaultListModel<>();
+        if(User.search_for_book(name))
+        {
+               
+            if(Home.books[User.currentbook_id].watting_list_index==0)
+            {
+                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                cont.se_book.setVisible(false);
+               cont.Dis_Book.setVisible(true);
+               cont.Dis_Book.setResizable(false);
+            }
+            else
+            {
+            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                 cont.se_book.setVisible(false);
+                 cont.Dis_Book.setVisible(true);
+                 cont.Dis_Book.setResizable(false);
+            }
+            }
+        }
+        else 
+            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);   
+        }
+        else 
+        {
+            int id=Integer.valueOf(cont.se_book.bookinfo.getText()); 
+        DefaultListModel<String> model2 = new DefaultListModel<>();
+        if(User.search_for_book(id))
+        {
+               
+            if(Home.books[User.currentbook_id].watting_list_index==0)
+            {
+                Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                cont.se_book.setVisible(false);
+               cont.Dis_Book.setVisible(true);
+               cont.Dis_Book.setResizable(false);
+            }
+            else
+            {
+            for (int i = 0; i < Home.books[User.currentbook_id].watting_list_index; i++) {
+                model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[i].ID));
+                 cont.Dis_Book.jList1.setModel(model2);
+                 cont.se_book.setVisible(false);
+                 cont.Dis_Book.setVisible(true);
+                 cont.Dis_Book.setResizable(false);
+            }
+            }
+        }
+        else 
+            JOptionPane.showMessageDialog(new Search_For_Book(), "This book has not been found!!", "Alert", JOptionPane.WARNING_MESSAGE);
+            
+        }
+       
     }
 }

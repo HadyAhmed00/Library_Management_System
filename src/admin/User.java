@@ -10,7 +10,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 /**
  *
- * @author hadi Atef
+ * @author Hadi Ehab
  */
 public abstract class User 
 {
@@ -46,8 +46,8 @@ public abstract class User
     
     /**
      * This method is used to search for any user whether a librarian or a reader
-     * @param id We search for the user by entering his/her ID 
-     * @return a boolean value;"true" if the user is found,"false" if the user is not found.
+     * @param id The user is searched for by entering his/her ID 
+     * @return A boolean value;"true" if the user is found,"false" if the user is not found.
      */
     public static boolean search_member(int id)
     {
@@ -106,11 +106,17 @@ public abstract class User
            }
         }
     }
-    public static boolean search_for_book(String namee, int b_index,Book b_arr[])
+    
+    /**
+     * This method searches for a required book inside the array of books (by entering its name)
+     * @param namee Book name entered by the user
+     * @return A boolean value;"true" if the book is found,"false" if the book is not found.
+     */
+    public static boolean search_for_book(String namee)
     {
         boolean found=false;
-        for (int i = 0; i <= b_index; i++) {
-            if(namee.equals(b_arr[i].getBook_Name()))
+        for (int i = 0; i <= Home.b_index; i++) {
+            if(namee.equals(Home.books[i].getBook_Name()))
             {
                 currentbook_id=i;
                 found=true;
@@ -136,11 +142,17 @@ public abstract class User
             return false;
         }
     }
-    public static boolean search_for_book(int id, int b_index,Book b_arr[])
+    
+    /**
+     * This method searches for a required book inside the array of books (by entering its ID)
+     * @param id Book id entered by the user
+     * @return A boolean value;"true" if the book is found,"false" if the book is not found.
+     */
+    public static boolean search_for_book(int id)
     {
         boolean found=false;
-        for (int i = 0; i <= b_index; i++) {
-            if(id==b_arr[i].getBook_ID())
+        for (int i = 0; i <= Home.b_index; i++) {
+            if(id==Home.books[i].getBook_ID())
             {
                 currentbook_id=i;
                 found=true;
@@ -166,14 +178,26 @@ public abstract class User
             return false;
         }
     }
+    /**
+     * This abstract method is overridden in subclasses(librarian,Reader) 
+     * and it is used to rent a book by entering its name
+     * @param name The book name that the user enters
+     */
     public abstract void rent_book(String name);
+    
+    /**
+     * This method is used to return a rented book by the user by entering its name
+     * The method checks for whether the book entered by the user is rented or not
+     * If it is rented, it checks whether this book is rented by the active user or not
+     * @param name The rented book name entered by user
+     */
     public static void return_book(String name)
     {
         boolean rented_is_found=false;
         boolean rented_is_found_for_current_user=false;
         int index=0;
         int index_for_current_user=0;
-        if(User.search_for_book(name, Home.b_index, Home.books)) 
+        if(User.search_for_book(name)) 
         {
            for(int i=0;i<=Home.rented_book_index;i++)
             {
@@ -268,6 +292,12 @@ public abstract class User
         }
     }
     
+    /**
+     * This method validates Login Operation by checking whether ID and password entered by user 
+     * are both stored and valid or not
+     * @param ID ID entered by user (should be a valid stored value to login successfully)
+     * @param password password entered by user (should be a valid stored value to login successfully)
+     */
     public static void Login(String ID,String password)
     {
             if(!Validation.valid1(ID)||password.isEmpty())
