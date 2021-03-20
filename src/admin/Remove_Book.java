@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  * @author Hady Ahmed
  */
 public class Remove_Book extends javax.swing.JFrame {
-int id;
+//int id;
 String name;
     /**
      * Creates new form Remove_Book
@@ -194,13 +194,13 @@ String name;
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
         cont.remov_book.setVisible(false);
-        cont.home.setVisible(true);
+        cont.home.setVisible(true);       //Home page (First Menu)
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         // TODO add your handling code here:
         cont.remov_book.setVisible(false);
-        cont.Admin.setVisible(true);
+        cont.Admin.setVisible(true);        //Admin GUI (back)
         cont.Admin.setResizable(false);
     }//GEN-LAST:event_jButton33ActionPerformed
 
@@ -212,7 +212,7 @@ String name;
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
           cont.remov_book.setVisible(false );
-        cont.log.setVisible(true);
+        cont.log.setVisible(true);          //(Logout)Back to Admin Login Page 
         cont.log.setResizable(false);
     }//GEN-LAST:event_jButton34ActionPerformed
 

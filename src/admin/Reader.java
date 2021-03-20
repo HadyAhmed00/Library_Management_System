@@ -91,10 +91,10 @@ public class Reader extends User
                             int no=Home.books[User.currentbook_id].getNo_of_existing_copies();
                             no--;
                             Home.books[User.currentbook_id].setNo_of_existing_copies(no);                
-                            Home.rented_book_index++;
+                            Home.rented_book_index++;      //the last index of array of all rented books
                             Home.Rented_books[Home.rented_book_index]=Home.books[User.currentbook_id];
                             JOptionPane.showMessageDialog(new Rent_a_Book(),"You have rented the required book of name "+name+" successfully");
-                            System.out.println(Home.readers[ctr].is_Blocked);
+                            //System.out.println(Home.readers[ctr].is_Blocked);
                         }
                     }
                 }

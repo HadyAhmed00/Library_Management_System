@@ -349,7 +349,7 @@ String name,production_year,auther,category;
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         // TODO add your handling code here:
         cont.add_book.setVisible(false);
-        cont.Admin.setVisible(true);
+        cont.Admin.setVisible(true); //Admin GUI
         cont.Admin.setResizable(false);
     }//GEN-LAST:event_jButton30ActionPerformed
 
@@ -381,7 +381,7 @@ String name,production_year,auther,category;
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
         cont.add_book.setVisible(false);
-        cont.home.setVisible(true);
+        cont.home.setVisible(true);     //Home (first menu)
         cont.home.setResizable(false);
     }//GEN-LAST:event_jButton32ActionPerformed
 
@@ -389,7 +389,7 @@ String name,production_year,auther,category;
         // TODO add your handling code here:
         if(Validation.valid2(jTextField10.getText())&&Validation.valid2(jTextField12.getText())&&Validation.valid1(jTextField11.getText())&&Validation.valid1(jTextField13.getText())){
         Home.b_index++;
-        Home.bookid++;
+        Home.bookid++; //set ID automatically
         name=jTextField7.getText();
         id=Integer.valueOf(Home.bookid);
         jTextField14.setText(String.valueOf(id));
@@ -417,7 +417,7 @@ String name,production_year,auther,category;
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         // TODO add your handling code here:
         cont.add_book.setVisible(false );
-        cont.log.setVisible(true);
+        cont.log.setVisible(true);     //Admin Login Page
         cont.log.setResizable(false);
     }//GEN-LAST:event_jButton31ActionPerformed
 

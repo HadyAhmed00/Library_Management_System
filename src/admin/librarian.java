@@ -95,6 +95,9 @@ public class librarian extends User
             }
             
           
+        }else{
+            JOptionPane.showMessageDialog(new Remove_User(), "The user with" + id+" does not exist","Alert",JOptionPane.WARNING_MESSAGE);
+
         }
     }
     /**

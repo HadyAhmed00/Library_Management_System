@@ -77,8 +77,8 @@ public class Book {
             {
                 Home.books[User.currentbook_id].waitting_list[0]=new Reader(0, " ", "r", " ", " ", " ", "0", " ", false);
                 model2.addElement(String.valueOf(Home.books[User.currentbook_id].waitting_list[0].ID));
-                 cont.Dis_Book.jList1.setModel(model2);
-                cont.se_book.setVisible(false);
+               cont.Dis_Book.jList1.setModel(model2);
+               cont.se_book.setVisible(false);
                cont.Dis_Book.setVisible(true);
                cont.Dis_Book.setResizable(false);
             }
