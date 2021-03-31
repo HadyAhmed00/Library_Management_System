@@ -10,7 +10,7 @@
 6. Walid Shaban Ismail Mohamed
 
 ## Features:
-This app made to be used by to types of users 
+### This app made to be used by three types of users 
 ### Librarians that can:
 * Addition/Removal of a book from the library
 * Addition/Removal of a user from the library
@@ -22,6 +22,9 @@ This app made to be used by to types of users
 * Searching of books or users
 * Addition of self to Book- Order list
 * Rent a book
+### Gest that can:
+ * Searching of books
+ * See all books Library
 
 <br>
 
