@@ -12,8 +12,8 @@
 ## Features:
 ### This app is used by three types of users 
 ### Librarians that can:
-* Add/Remov a book from the library
-* Add/Remov a user from the library
+* Add/Remove a book from the library
+* Add/Remove a user from the library
 * Search for books or members
 * Add/Remov a user from Book- Order list
 * Block a user
