@@ -1,7 +1,7 @@
 # Library Management System
 ![Banner](https://github.com/HadyAhmed00/Library_Management_System/blob/master/h0.png)
 
-## Library Management System is an OOP project devloped by students:
+## Library Management System is an OOP project developed by students:
 1. Hadi Ahmed Abdel Salam
 2. Hadi Atef Sayed
 3. Hadi Ehab Ragaa
