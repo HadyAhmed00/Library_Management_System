@@ -1,7 +1,7 @@
 # Library Management System
 ![Banner](https://github.com/HadyAhmed00/Library_Management_System/blob/master/h0.png)
 
-## Library Management System is a OOP project devloped by students:
+## Library Management System is an OOP project devloped by students:
 1. Hadi Ahmed Abdel Salam
 2. Hadi Atef Sayed
 3. Hadi Ehab Ragaa
@@ -10,21 +10,21 @@
 6. Walid Shaban Ismail Mohamed
 
 ## Features:
-### This app made to be used by three types of users 
+### This app is used by three types of users 
 ### Librarians that can:
-* Addition/Removal of a book from the library
-* Addition/Removal of a user from the library
+* Add/Remov a book from the library
+* Add/Remov a user from the library
 * Search for books or members
-* Addition/Removal of users from Book- Order list
-* Blocking of users
+* Add/Remov a user from Book- Order list
+* Block a user
 * Rent a book
 ### Readers that can:
-* Searching of books or users
-* Addition of self to Book- Order list
+* Search for books or users
+* Add of self to Book- Order list
 * Rent a book
-### Gests that can:
- * Searching of books
- * See all books Library
+### Guests that can:
+ * Search for books
+ * See all Library's books
 
 <br>
 
