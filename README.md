@@ -22,7 +22,7 @@
 * Searching of books or users
 * Addition of self to Book- Order list
 * Rent a book
-### Gest that can:
+### Gests that can:
  * Searching of books
  * See all books Library
 
